@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title= Rockbar
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  %body
+    = render 'layouts/header'
+    .main-content  
+      = yield
+      = render 'layouts/featured'
+    = render 'layouts/footer'

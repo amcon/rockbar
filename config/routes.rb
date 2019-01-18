@@ -1,10 +1,30 @@
 Rails.application.routes.draw do
-  get 'photos/index'
-  
-  resources :events
-  resources :photo_albums
-  resources :photos
 
-  root 'home#index'
+	root 'home#index'
+
+	get 'home/index'
+	get 'about/index'
+	get 'contact/index'
+
+	resources :admin_users
+
+  resources :events do
+  	member do
+  		get :delete
+  	end
+  end
+
+  resources :photo_albums do
+  	member do
+  		get :delete
+  	end
+  end
+
+  resources :photos, except: [:show] do
+  	collection do
+  		get :delete
+  	end
+  end
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

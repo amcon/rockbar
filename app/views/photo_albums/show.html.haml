@@ -1,0 +1,12 @@
+= link_to("<< Back to Gallery", photo_albums_path)
+
+.album-page
+	%h2
+		= @album.title
+	%p	
+		= @album.description
+	.album-photos
+		%h3 Here are the photos from this album:
+		- @album.photos.each do |photo|
+			%p
+				= photo.title			

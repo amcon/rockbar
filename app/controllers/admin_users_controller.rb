@@ -1,4 +1,4 @@
-class PhotosController < ApplicationController
+class AdminUsersController < ApplicationController
 
   def index
   end
@@ -23,5 +23,5 @@ class PhotosController < ApplicationController
 
   def destroy
   end
-  
+
 end

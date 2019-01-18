@@ -1,1 +1,54 @@
-%h1 One Event:
+= link_to("<< Back to All Events", events_path)
+
+.event-page
+	%h2
+		= @event.title
+	%table
+		%tr
+			%th #
+			%td
+				= @event.id
+		%tr		
+			%th Image
+			%td
+				= @event.profile_image_id
+		%tr		
+			%th Description
+			%td
+				= @event.description
+		%tr		
+			%th Date
+			%td
+				= @event.date
+		%tr				
+			%th Start Time
+			%td
+				= @event.start_time
+		%tr		
+			%th End Time
+			%td
+				= @event.end_time
+		%tr		
+			%th Hosted By
+			%td
+				= @event.hosted_by
+		%tr		
+			%th DJ
+			%td
+				= @event.dj
+		%tr		
+			%th Drink Specials
+			%td
+				= @event.drink_specials
+		%tr		
+			%th Cover Charge
+			%td
+				= @event.cover_charge
+		%tr		
+			%th Event Type
+			%td
+				= @event.event_type
+		%tr		
+			%th Social Media Link
+			%td
+				= @event.event_link

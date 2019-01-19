@@ -1,3 +1,13 @@
 %header
-	%h1 ROCKBAR NYC HEADER
+	- if !current_page?(root_path)
+		.header-logo
+			= link_to root_path do
+				= image_tag "rockbar_logo_white.png"
+	- else 
+		%div			
 	%h1 =
+%nav
+	= link_to("calendar", events_path)
+	= link_to("about", '/about/index')
+	= link_to("contact", '/contact/index')
+	= link_to("gallery", photo_albums_path)

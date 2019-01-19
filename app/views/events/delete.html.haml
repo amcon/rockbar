@@ -1,0 +1,6 @@
+= simple_form_for @event, method: :delete do |f|
+
+	%h1 "Are you sure you want to delete '#{@event.title}'?"
+
+	= link_to('Cancel', events_path)
+	= f.button :submit, value: 'delete'

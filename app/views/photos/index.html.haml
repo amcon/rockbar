@@ -1,1 +1,23 @@
-%h1 Photos
+.gallery-page
+	%h1 All Photos
+
+	= link_to("Add New Photo", new_photo_path)
+
+	.calendar
+		%table
+			%tr
+				%th #
+				%th Photo Name
+				%th Photo Image
+				%th Actions
+			- @photos.each do |photo|
+				%tr
+					%td
+						= photo.id
+					%td
+						= photo.title
+					%td
+						= photo.photo_image_id
+					%td
+						= link_to("Edit", edit_photo_path(photo))
+						= link_to("Delete", delete_photo_path(photo))	

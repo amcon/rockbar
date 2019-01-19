@@ -1,0 +1,10 @@
+$brand-red: #67021B;
+$brand-dark-red: #210208;
+
+footer {
+	padding: 1em;
+	background: $brand-dark-red;
+	.footer-logo img {
+		width: 100px;
+	}
+}

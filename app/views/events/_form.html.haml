@@ -1,0 +1,14 @@
+= simple_form_for @event do |f|
+	= f.input :title, as: :string
+	= f.input :profile_image_id
+	= f.input :description
+	= f.input :date, as: :date
+	= f.input :start_time, as: :time
+	= f.input :end_time, as: :time
+	= f.input :hosted_by, as: :string
+	= f.input :dj, as: :string
+	= f.input :drink_specials, as: :string
+	= f.input :cover_charge, as: :string
+	= f.input :event_type, as: :string
+	= f.input :event_link, as: :url
+	= f.button :submit

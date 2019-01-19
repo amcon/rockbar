@@ -1,3 +1,5 @@
+- @page_title = "Album: #{@album.title}"
+
 = link_to("<< Back to Gallery", photo_albums_path)
 
 .album-page
@@ -9,4 +11,7 @@
 		%h3 Here are the photos from this album:
 		- @album.photos.each do |photo|
 			%p
-				= photo.title			
+				= photo.title	
+			%p
+				= link_to("Edit", edit_photo_path(photo))
+				= link_to("Delete", delete_photo_path(photo))

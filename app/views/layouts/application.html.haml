@@ -1,7 +1,11 @@
 !!!
 %html
   %head
-    %title= Rockbar
+    %title
+      - if @page_title.present?
+        = "Rockbar | #{@page_title}"
+      - else
+        = Rockbar   
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
@@ -9,6 +13,12 @@
   %body
     = render 'layouts/header'
     .main-content  
+
+      - if !flash[:notice].blank?
+        .notice
+          %p
+            = flash[:notice]
+
       = yield
-      = render 'layouts/featured'
+      -# = render 'layouts/featured'
     = render 'layouts/footer'

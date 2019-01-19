@@ -1,1 +1,8 @@
-%h1 Edit Photo:
+- @page_title = "Edit #{@photo.title}"
+
+= link_to("<< Back to All Photos", photos_path)
+
+.photo-create
+	%h1 "Edit '#{@photo.title}':"
+
+	= render partial: 'form'

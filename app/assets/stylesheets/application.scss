@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+$brand-red: #67021B;
+$brand-dark-red: #210208;
+
+body {
+	margin: 0;
+	background: black;
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+	margin: 0;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		color: $brand-red;
+		text-decoration: underline;
+	}
+}
+
+.main-content {
+	min-height: 500px;
+	padding: 1em;
+}
+
+
+
+@import "variables";
+@import "header";
+@import "footer";
+@import "home";
+@import "about";
+@import "admin_users";
+@import "contact";
+@import "events";
+@import "photo_albums";
+@import "photos";

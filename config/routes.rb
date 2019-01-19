@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   end
 
   resources :photos, except: [:show] do
-  	collection do
+  	member do
   		get :delete
   	end
   end

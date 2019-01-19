@@ -1,1 +1,8 @@
-%h1 Edit Event:
+- @page_title = "Edit #{@event.title}"
+
+= link_to("<< Back to Calendar", events_path)
+
+.event-edit
+	%h1 "Edit '#{@event.title}':"
+
+	= render partial: 'form'

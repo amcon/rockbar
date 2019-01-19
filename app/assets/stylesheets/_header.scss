@@ -1,0 +1,12 @@
+$brand-red: #67021B;
+$brand-dark-red: #210208;
+
+header {
+	padding: 1em;
+	border-bottom: 1px solid;
+	display: flex;
+	justify-content: space-between;
+	.header-logo img {
+		width: 100px;
+	}
+}

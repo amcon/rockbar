@@ -5,6 +5,18 @@
 $brand-red: #67021B;
 $brand-dark-red: #210208;
 
-.home-logo img {
-	width: 500px;
-}
+.home-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 8em 0 10em;
+	.home-logo img {
+		width: 650px;
+		margin-bottom: 4em;
+	}
+	h5 {
+		font-size: 1.5em;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}	

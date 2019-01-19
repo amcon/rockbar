@@ -1,13 +1,22 @@
 %footer
-	.footer-logo
-		= image_tag "rockbar_logo_white.png"
-	.footer-sections
-		.footer-section
-			%h2 Store Hours
-			%p Mon - Fri : 4pm - 4am
-		.footer-section
-			%h2 Social Media
-			%p Facebook
-			%p Twitter
-			%p Instagram
-	%p All Rights Reserved ROCKBAR NYC, 2019
+	.main-width
+		.footer-logo
+			= image_tag "rockbar_logo_white.png"
+		.footer-sections
+			.footer-section
+				%h2 Bar Hours
+				%p Mon to Thur: 5pm - 2am
+				%p Friday: 4pm - 4am
+				%p Saturday: 2pm - 4am
+				%p Sunday: 2pm - 2am
+			.footer-section
+				%h2 Sections
+				= link_to("Calendar of Events", events_path)
+				= link_to("About Us & Staff", '/about/index')
+				= link_to("Contact Us & Map", '/contact/index')
+				= link_to("Gallery of Albums", photo_albums_path)	
+			.footer-section
+				%h2 Follow Us
+				= link_to "Facebook", "https://www.facebook.com/rockbarnyc/"
+				= link_to "Instagram", "https://www.instagram.com/rockbarnyc/"
+		%p.rights All Rights Reserved ROCKBAR NYC, 2019

@@ -4,3 +4,13 @@
 
 $brand-red: #67021B;
 $brand-dark-red: #210208;
+
+.gallery-page {
+	margin: 2em 0 8em;
+	h1 {
+		font-size: 2.5em;
+		text-transform: uppercase;
+		color: $brand-red;
+		margin-bottom: 3em;
+	}
+}

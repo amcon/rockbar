@@ -8,17 +8,18 @@
         = Rockbar   
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application'
 
   %body
     = render 'layouts/header'
-    .main-content  
+    .main-content 
+      .main-width 
 
-      - if !flash[:notice].blank?
-        .notice
-          %p
-            = flash[:notice]
+        - if !flash[:notice].blank?
+          .notice
+            %p
+              = flash[:notice]
 
-      = yield
-      -# = render 'layouts/featured'
+        = yield
+        -# = render 'layouts/featured'
     = render 'layouts/footer'

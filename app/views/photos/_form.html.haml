@@ -1,4 +1,6 @@
-= simple_form_for @photo do |f|
+= simple_form_for [@album, @photo] do |f|
+	= error_messages_for(f.object)
+	= f.input :photo_album_id, as: :hidden, input_html: { value: @album.id }
 	= f.input :title, as: :string
 	= f.input :photo_image_id
 	= f.button :submit

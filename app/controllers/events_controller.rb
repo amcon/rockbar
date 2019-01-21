@@ -10,6 +10,7 @@ class EventsController < ApplicationController
 
 	def new
 		@event = Event.new
+		@event_types = ["drag", "disco", "fetish", "naked"]
 	end
 
 	def create
@@ -18,12 +19,14 @@ class EventsController < ApplicationController
 			flash[:notice] = "#{@event.title} was created successfully!"
 			redirect_to(event_path(@event))
 		else
+			@event_types = ["drag", "disco", "fetish", "naked"]
 			render('new')
 		end
 	end
 
 	def edit
 		@event = Event.find(params[:id])
+		@event_types = ["drag", "disco", "fetish", "naked"]
 	end
 
 	def update

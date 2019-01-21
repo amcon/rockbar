@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require activestorage
+//= require bootstrap-datepicker
 // require turbolinks
 //= require home
 //= require_tree .

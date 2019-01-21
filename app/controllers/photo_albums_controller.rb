@@ -1,7 +1,7 @@
 class PhotoAlbumsController < ApplicationController
 
   def index
-  	@albums = PhotoAlbum.all
+  	@albums = PhotoAlbum.newest_first
   end
 
   def show

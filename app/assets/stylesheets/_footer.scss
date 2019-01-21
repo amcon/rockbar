@@ -1,9 +1,7 @@
-$brand-red: #67021B;
-$brand-dark-red: #210208;
-
 footer {
 	padding: 4em 1em;
 	background: $brand-dark-red;
+	min-width: 920px;
 	.footer-logo img {
 		width: 180px;
 		margin-bottom: 6em;
@@ -12,7 +10,7 @@ footer {
 		display: flex;
 		margin-bottom: 7em;
 		.footer-section {
-			width: 300px;
+			width: 400px;
 			display: flex;
 			flex-direction: column;
 			h2 {

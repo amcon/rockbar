@@ -10,3 +10,12 @@ $ ->
 	$('.fa.fa-times').click ->
 	  $('nav').removeClass 'open'
 	  return  
+
+	fade_out = ->
+    $('.notice').fadeOut().empty()
+    $('.notice').attr 'style', 'z-index: -5;'
+    return
+
+  setTimeout fade_out, 2000  
+
+  $('#datepicker').datepicker();

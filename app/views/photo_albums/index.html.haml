@@ -3,9 +3,7 @@
 .gallery-page
 	%h1 Gallery
 
-	= link_to("Add New Album", new_photo_album_path)
-
-	.calendar
+	.gallery
 		%table
 			%tr
 				%th #
@@ -27,3 +25,5 @@
 						= link_to("Show", photo_album_path(album))
 						= link_to("Edit", edit_photo_album_path(album))
 						= link_to("Delete", delete_photo_album_path(album))	
+		%h2
+			= link_to("+ Add New Album", new_photo_album_path)				

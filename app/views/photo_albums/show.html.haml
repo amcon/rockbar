@@ -13,5 +13,7 @@
 			%p
 				= photo.title	
 			%p
-				= link_to("Edit", edit_photo_path(photo))
-				= link_to("Delete", delete_photo_path(photo))
+				= link_to("Edit", edit_photo_album_photo_path(@album, photo))
+				= link_to("Delete", delete_photo_album_photo_path(@album, photo))
+		%h2
+			= link_to("+ Add a new photo", new_photo_album_photo_path(@album))		

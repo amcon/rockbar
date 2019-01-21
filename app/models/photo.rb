@@ -4,4 +4,6 @@ class Photo < ApplicationRecord
 
 	belongs_to :photo_album
 
+	validates_presence_of :title
+
 end

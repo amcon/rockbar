@@ -9,10 +9,12 @@ class PhotosController < ApplicationController
   end
 
   def new
+  	@album = PhotoAlbum.find(params[:photo_album_id])
   	@photo = Photo.new
   end
 
   def create
+  	@album = PhotoAlbum.find(params[:photo_album_id])
   	@photo = Photo.new(photo_params)
   	if @photo.save
   		flash[:notice] = "Photo: '#{@photo.title}' was successfully added"
@@ -23,24 +25,28 @@ class PhotosController < ApplicationController
   end
 
   def edit
+  	@album = PhotoAlbum.find(params[:photo_album_id])
   	@photo = Photo.find(params[:id])
   end
 
   def update
+  	@album = PhotoAlbum.find(params[:photo_album_id])
   	@photo = Photo.find(params[:id])
   	if @photo.update_attributes(photo_params)
   		flash[:notice] = "Photo: '#{@photo.title}' was successfully updated"
   		redirect_to(photo_album_path(@photo.photo_album))
   	else
-  		render(photos_path)
+  		render('edit')
   	end
   end
 
   def delete
+  	@album = PhotoAlbum.find(params[:photo_album_id])
   	@photo = Photo.find(params[:id])
   end
 
   def destroy
+  	@album = PhotoAlbum.find(params[:photo_album_id])
   	@photo = Photo.find(params[:id])
 		@photo.destroy
 		flash[:notice] = "Photo: '#{@photo.title}' was deleted successfully"
@@ -50,7 +56,7 @@ class PhotosController < ApplicationController
   private
 
   def photo_params
-  	params.require(:photo).permit(:title, :photo_image_id)
+  	params.require(:photo).permit(:title, :photo_album_id, :photo_image_id)
   end
   
 end

@@ -8,4 +8,6 @@ class Event < ApplicationRecord
 		events.order(date: :asc).select { |e| e.date >= Date.today }.limit(5)
 	end
 
+	validates_presence_of :title, :description, :date, :start_time, :end_time
+
 end

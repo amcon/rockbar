@@ -19,6 +19,7 @@
 					%p.mr-2 
 						|
 					= link_to("Delete", delete_photo_album_path(album))
+		= link_to new_photo_album_path do	
+			%h4.new-album
+				+ Add New Album
 		.clear			
-		%h2
-			= link_to("+ Add New Album", new_photo_album_path)				

@@ -42,6 +42,18 @@
 				display: flex;
 			}
 		}
+		.new-album {
+			width: 31%;
+			height: 250px;
+			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 3px dashed $brand-red;
+			&:hover {
+				background: rgba(103, 2, 27, .7);
+			}
+		}
 		.clear {
 			clear: both;
 		}

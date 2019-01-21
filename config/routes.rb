@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
 	root 'home#index'
 
-	get 'home/index'
 	get 'about/index'
 	get 'contact/index'
 
@@ -12,6 +11,7 @@ Rails.application.routes.draw do
   	member do
   		get :delete
   	end
+  	resources :home, only: [:index]
   end
 
   resources :photo_albums do

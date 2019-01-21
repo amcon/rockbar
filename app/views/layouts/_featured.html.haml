@@ -1,3 +1,23 @@
-%h1 FEATURED EVENTS
+%h1 UPCOMING EVENTS
 
-= render partial: 'events/featured_events'
+.featured-events
+	- @featured_events.each do |event|
+		- if event == @featured_events.first
+			.featured-event.special
+				%h6
+					- if event.date == Date.today
+						= "TONIGHT: #{event.date}"
+					- else
+						= event.date
+				%p 
+					= link_to( event.title, event_path(event))
+		- else			
+			.featured-event
+				%h6
+					= event.date
+				%p 
+					= link_to( event.title, event_path(event))
+	.clear
+.link	
+	= link_to("see all events >>", events_path)	
+					

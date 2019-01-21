@@ -4,10 +4,19 @@
 
 .contact-page {
 	margin: 2em 0 8em;
-	h1 {
-		font-size: 2.5em;
-		text-transform: uppercase;
-		color: $brand-red;
-		margin-bottom: 3em;
+	h4 {
+		line-height: 2em;
+	}
+	h4:last-of-type {
+		margin-bottom: 531px;
+	}
+	.google-map {
+		margin-top: 5em;
+		background: grey;
+		min-height: 400px;
+		width: 100vw;
+		position: absolute;
+		top: 500px;
+		left: 0;
 	}
 }

@@ -15,6 +15,14 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 	letter-spacing: 2px;
 }
 
+h1 {
+	font-size: 2.5em;
+	text-transform: uppercase;
+	color: $brand-red;
+	margin-bottom: 3em;
+	font-weight: 700;
+}
+
 a {
 	text-decoration: none;
 	&:hover {
@@ -72,5 +80,42 @@ a {
 		font-size: 1.5em;
 		text-transform: uppercase;
 		text-align: center;
+		margin-bottom: 5em;
+	}
+	.home-featured {
+		width: 100%;
+		margin-top: 5em;
+		.featured-events {
+			.featured-event {
+				float: left;
+				margin-right: 2.5%;
+				width: 14.375%;
+				a {
+					margin-top: 1em;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					border: 5px solid $brand-red;
+					box-sizing: border-box;
+					height: 225px;
+				}
+			}
+			.featured-event:first-of-type {
+				width: 30%;
+				a {
+					height: 450px;
+				}	
+			}
+			.featured-event:nth-of-type(5n) {
+				margin-right: 0;
+			}
+			.clear {
+				clear: both;
+			}
+		}
+		.link {
+			margin-top: 5em;
+		}
 	}
 }	

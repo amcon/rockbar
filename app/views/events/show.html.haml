@@ -25,11 +25,11 @@
 		%tr				
 			%th Start Time
 			%td
-				= @event.start_time
+				= @event.start_time.strftime("%-I:%M")
 		%tr		
 			%th End Time
 			%td
-				= @event.end_time
+				= @event.end_time.strftime("%-I:%M")
 		%tr		
 			%th Hosted By
 			%td
@@ -54,3 +54,9 @@
 			%th Social Media Link
 			%td
 				= @event.event_link
+		%tr
+			%td
+				= link_to("Edit", edit_event_path(@event))
+		%tr
+			%td		
+				= link_to("Delete", delete_event_path(@event))		

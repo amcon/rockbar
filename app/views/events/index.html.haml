@@ -3,55 +3,16 @@
 .calendar-page
 	%h1 Calendar
 
-	= link_to("Add New Event", new_event_path)
+	= month_calendar do |date|
+		= date.day
 
-	.calendar
-		%table
-			%tr
-				%th #
-				%th Event
-				%th Profile Image
-				%th Description
-				%th Date
-				%th Start Time
-				%th End Time
-				%th Hosted by
-				%th DJ
-				%th Drink Specials
-				%th Cover Charge
-				%th Event Type
-				%th Link
-				%th Actions
-			- @events.each do |event|
-				%tr
-					%td
-						= event.id
-					%td
-						= event.title
-					%td
-						= event.profile_image_id
-					%td
-						= event.description
-					%td
-						= event.date
-					%td
-						= event.start_time
-					%td
-						= event.end_time
-					%td
-						= event.hosted_by
-					%td
-						= event.dj
-					%td
-						= event.drink_specials
-					%td
-						= event.cover_charge
-					%td
-						= event.event_type
-					%td
-						= event.event_link
-					%td
-						= link_to("Show", event_path(event))
-						= link_to("Edit", edit_event_path(event))
-						= link_to("Delete", delete_event_path(event))	
+		- @events.each do |event|
+			- if event.date == date
+				%div
+					%h5
+						= link_to event.title, event
+					%p
+						= "#{event.start_time.strftime("%-I")} - #{event.end_time.strftime("%-I")}"	
 
+	%h2.mt-5
+		= link_to("+ Add New Event", new_event_path)

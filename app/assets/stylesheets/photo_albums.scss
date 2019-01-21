@@ -4,4 +4,46 @@
 
 .gallery-page {
 	margin: 2em 0 8em;
+	.gallery {
+		.album:nth-of-type(3n) {
+			margin-right: 0;
+		}
+		.album {
+			width: 31%;
+			margin-right: 3.5%;
+			float: left;
+			margin-bottom: 1em;
+			.image-overlay {
+				position: relative;
+				height: 250px;
+		    border: 2px solid $brand-red;
+		    margin-bottom: 1em;
+				span {
+					height: 100%;
+			    width: 100%;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+			  }  
+				.cover-photo {
+					height: 100%;
+				}
+				&:hover {
+					span {
+						background: rgba(103, 2, 27, .7);
+					}
+				}
+			}
+			.admin {
+				display: flex;
+			}
+		}
+		.clear {
+			clear: both;
+		}
+	}
 }

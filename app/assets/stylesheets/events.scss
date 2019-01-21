@@ -4,4 +4,80 @@
 
 .calendar-page {
 	margin: 2em 0 8em;
+
+	h1 {
+		margin-top: 3em;
+		margin-bottom: 2em;
+	}
+
+	.simple-calendar {
+		.calendar-heading {
+			background: $brand-red;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: flex-end;
+	    justify-content: flex-end;
+	    padding: 2em 2em 8em;
+	    .calendar-title {
+	    	margin-right: -3px;
+	    }
+			span {
+		    font-size: 3em;
+		    text-transform: uppercase;
+		    font-weight: 700;
+			}
+			div {
+				a:first-of-type {
+					margin-right: 10px;
+				}
+				a {
+					font-size: .75em;
+				}
+			}
+		}
+		.table {
+			thead {
+				background: $brand-red;
+				tr {
+					border: 1px solid $brand-red;
+					th {
+						border: $brand-red;
+					}
+				}
+			}
+			tbody {
+				tr {
+					border: $brand-red;
+					.day {
+						height: 150px;
+						border: 3px solid $brand-red;
+						font-weight: 700;
+						h5 {
+							line-height: .75em;
+							margin-top: 1em;
+							margin-bottom: .5em;
+						}
+						a {
+							font-size: .65em;
+							font-weight: 800;
+							text-transform: uppercase;
+						}
+						p {
+							font-size: .5em;
+						}
+					}
+					.prev-month, .next-month {
+						background: rgba(103, 2, 27, .7);
+					}
+					.today {
+						background: white;
+						color: $brand-red;
+						a, p {
+							color: $brand-red;
+						}
+					}
+				}
+			}
+		}
+	}
 }

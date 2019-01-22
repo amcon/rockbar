@@ -1,9 +1,8 @@
 class Photo < ApplicationRecord
-
-	attr_accessor :name
-
+	
+	belongs_to :admin_user
 	belongs_to :photo_album
 
-	validates_presence_of :title
+	validates :title, length: { maximum: 255 }
 
 end

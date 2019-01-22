@@ -1,5 +1,7 @@
 class PhotoAlbumsController < ApplicationController
 
+  before_action :confirm_logged_in, except: [:index, :show]
+
   def index
   	@albums = PhotoAlbum.newest_first
   end

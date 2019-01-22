@@ -1,5 +1,7 @@
 class PhotosController < ApplicationController
 
+  before_action :confirm_logged_in, except: [:index, :show]
+
   def index
   	@photos = Photo.all
   end

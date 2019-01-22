@@ -1,5 +1,24 @@
 class AdminUser < ApplicationRecord
 
-	attr_accessor :email
+	has_secure_password
+
+	has_many :events
+	has_many :photo_albums
+	has_many :photos
+
+	validates :email, confirmation: true,
+										uniqueness: true		
+
+	validate :is_allowed_email
+
+	private
 	
+	ALLOWED_EMAIL = 'rockbar.nyc@gmail.com'
+
+	def is_allowed_email
+		if !ALLOWED_EMAIL.include?(email)
+			errors.add("No other users, except the admin, can create an account")
+		end
+	end
+
 end

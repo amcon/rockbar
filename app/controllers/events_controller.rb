@@ -1,5 +1,7 @@
 class EventsController < ApplicationController
 
+	before_action :confirm_logged_in, except: [:index, :show]
+
 	def index
 		@events = Event.sorted
 	end

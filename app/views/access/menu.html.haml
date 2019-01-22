@@ -1,0 +1,16 @@
+- @page_title = "Admin Menu"
+
+.div.menu
+	%h1 Admin Menu
+	.identify
+		%p
+			Logged in as:
+	%ul
+		%li
+			= link_to("Manage Events", events_path)
+		%li
+			= link_to("Manage Albums", photo_albums_path)
+		%li
+			= link_to("Manage Account", '#')
+		%li
+			= link_to("Log Out", access_logout_path)				

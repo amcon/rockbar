@@ -2,8 +2,13 @@ Rails.application.routes.draw do
 
 	root 'home#index'
 
-	get 'about/index'
-	get 'contact/index'
+	get 'admin', to: 'access#menu'
+	get 'about', to: 'about#index'
+	get 'contact', to: 'contact#index'
+	get 'admin', to: 'access#menu'
+	get 'login', to: 'access#login'
+	post 'access/attempt_login'
+	get 'access/logout'
 
 	resources :admin_users
 

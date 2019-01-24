@@ -1,11 +1,6 @@
 - @page_title = "Admin Login"
 
 .div.login
-	-# = simple_form_for access_attempt_login_path, method: :post do |f|
-	-# 	= f.input :email, as: :string
-	-# 	= f.input :password, as: :password
-	-# 	= f.button :submit
-
 	= form_tag(access_attempt_login_path, method: :post) do
 		%table 
 			%tr 
@@ -22,4 +17,5 @@
 				%td 
 					&nbsp;
 				%td 
-					= submit_tag("LOG IN")							
+					= submit_tag("LOG IN")	
+	= link_to("Create an Admin Account", new_admin_user_path)										

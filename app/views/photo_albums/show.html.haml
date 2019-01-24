@@ -11,7 +11,8 @@
 		%h3 Here are the photos from this album:
 		- @album.photos.each do |photo|
 			%p
-				= photo.title	
+				= photo.title
+			= image_tag(photo.photo_image_id_url, :width => 300, :height => 200)
 			%p
 				= link_to("Edit", edit_photo_album_photo_path(@album, photo))
 				= link_to("Delete", delete_photo_album_photo_path(@album, photo))

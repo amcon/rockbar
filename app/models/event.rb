@@ -1,10 +1,10 @@
 class Event < ApplicationRecord
 
-	belongs_to :admin_user
-
 	# scope :next_five_events, lambda { where(date: >= Date.today).order(date: :asc).limit(5) }
 
 	scope :sorted, lambda { order(date: :asc) }
+
+	mount_uploader :profile_image_id, PhotoUploader
 
 	def next_five_events
 		events.order(date: :asc).select { |e| e.date >= Date.today }.limit(5)

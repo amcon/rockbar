@@ -7,9 +7,9 @@
 		= @event.title
 	%table
 		%tr
-			%th #
+			%th image
 			%td
-				= @event.id
+				= image_tag(@event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
 		%tr		
 			%th Image
 			%td

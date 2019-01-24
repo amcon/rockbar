@@ -19,7 +19,7 @@ class AccessController < ApplicationController
 		if authorized_user
 			session[:user_id] = authorized_user.id
 			flash[:notice] = "Log In Successful!"
-			redirect_to(admin_path)
+			redirect_to(admin_users_path)
 		else
 			flash.now[:notice] = "Invalid username/password..."
 			render('login')
@@ -29,7 +29,7 @@ class AccessController < ApplicationController
 	def logout
 		session[:user_id] = nil
 		flash[:notice] = "Logged Out"
-		redirect_to(login_path)
+		redirect_to(root_path)
 	end
 
 end

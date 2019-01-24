@@ -2,5 +2,7 @@
 	= error_messages_for(f.object)
 	= f.input :photo_album_id, as: :hidden, input_html: { value: @album.id }
 	= f.input :title, as: :string
-	= f.input :photo_image_id
+	= f.input :photo_image_id_cache, as: :hidden
+	-# = f.input :photo_image_id, input_html: { id: 'photo_upload_widget' }
+	%p#photo_widget_opener Upload Photo
 	= f.button :submit

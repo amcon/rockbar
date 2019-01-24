@@ -1,7 +1,8 @@
 = simple_form_for @event do |f|
 	= error_messages_for(f.object)
 	= f.input :title, as: :string
-	= f.input :profile_image_id
+	= f.input :profile_image_id_cache, as: :hidden
+	%p#event_widget_opener Upload Photo
 	= f.input :description
 	= f.input :date, id: "datepicker", value: Date.today.strftime('%m/%d/%Y')
 	= f.input :start_time, as: :time, ampm: true, minutes_step: 30

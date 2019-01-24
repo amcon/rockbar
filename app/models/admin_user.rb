@@ -2,12 +2,8 @@ class AdminUser < ApplicationRecord
 
 	has_secure_password
 
-	has_many :events
-	has_many :photo_albums
-	has_many :photos
-
 	validates :email, confirmation: true,
-										uniqueness: true		
+										uniqueness: true
 
 	validate :is_allowed_email
 
@@ -17,7 +13,7 @@ class AdminUser < ApplicationRecord
 
 	def is_allowed_email
 		if !ALLOWED_EMAIL.include?(email)
-			errors.add("No other users, except the admin, can create an account")
+			errors.add(email, "... No other users, except the admin, can create an account")
 		end
 	end
 

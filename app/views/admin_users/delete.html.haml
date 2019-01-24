@@ -1,0 +1,7 @@
+= simple_form_for @admin_user, method: :delete do |f|
+
+	%p 
+		Are you sure you want to delete '#{@admin_user.email}'s' Admin Account?
+
+	= link_to('Cancel', admin_users_path)
+	= f.button :submit, value: 'delete'

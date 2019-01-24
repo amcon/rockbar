@@ -1,6 +1,7 @@
 = simple_form_for @album do |f|
 	= error_messages_for(f.object)
 	= f.input :title, as: :string
-	= f.input :album_image_id
+	= f.input :album_image_id_cache, as: :hidden
+	%p#album_widget_opener Upload Photo
 	= f.input :description
 	= f.button :submit

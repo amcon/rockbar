@@ -1,2 +1,23 @@
-%h1 AdminUsers#index
-%p Find me in app/views/admin_users/index.html.haml
+- @page_title = "Admin"
+
+= link_to("<< Back to Menu", admin_path)
+
+.admin-page
+	%h1
+		Admin
+
+	- if @admin_users.count > 0
+		.edit
+			= link_to("Edit Account", edit_admin_user_path(@admin_users.first))
+		.delete	
+			= link_to("Delete Account", delete_admin_user_path(@admin_users.first))
+		.actions
+			%ul
+				%li
+					= link_to("Create an Event", new_event_path)
+				%li
+					= link_to("Create an Album", new_photo_album_path)
+				%li
+					= link_to("Manage Account", '#')
+				%li
+					= link_to("Log Out", access_logout_path)		

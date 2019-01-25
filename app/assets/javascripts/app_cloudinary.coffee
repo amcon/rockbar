@@ -5,12 +5,9 @@ $ ->
     upload_preset: 'PRESET',
     field_name: 'photo[photo_image_id]',
     sources: ['local', 'camera'],
-    cropping: 'server',
-    cropping_aspect_ratio: 1.5,
-    cropping_show_dimensions: true,
-    cropping_coordinates_mode: 'custom',
-    cropping_validate_dimensions: true,
-    eager: 'custom',
+    thumbnail_transformation: [
+        { width: 300, height: 300, crop: 'lfill'}
+      ],
     multiple: false
   }, (error, result) ->
     console.log error, result

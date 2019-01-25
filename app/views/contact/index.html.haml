@@ -1,3 +1,5 @@
+- provide :head_tags do
+	<script>document.addEventListener("DOMContentLoaded", function(){initMap(40.7326534, -74.00969959999998)});</script>
 - @page_title = "Contact"
 
 .contact-page
@@ -8,6 +10,11 @@
 		= link_to("rockbarnyc@gmail.com", "#")
 	%h4
 		212.675.1864
+	= link_to("CLICK HERE TO GET DIRECTIONS", "https://www.google.com/maps/place/Rockbar/@40.7326247,-74.0119485,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259ec5eea0797:0x773f86f45b3584e!8m2!3d40.7326247!4d-74.0097598", class: "directions")
 
-	.google-map
+	.google-map#map
+
+	<script>function initMap(lat, lng) {var myCoords = new google.maps.LatLng(lat, lng); var mapOptions = {center: myCoords, zoom: 15}; var map = new google.maps.Map(document.getElementById('map'), mapOptions); var marker = new google.maps.Marker({position: myCoords, animation: google.maps.Animation.DROP, map: map});}</script>	
+
 			
+

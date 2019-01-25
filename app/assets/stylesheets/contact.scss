@@ -8,15 +8,22 @@
 		line-height: 2em;
 	}
 	h4:last-of-type {
-		margin-bottom: 531px;
+		margin-bottom: 4em;
+	}
+	.directions {
+		display: block;
+		margin-bottom: 412px;
+		font-size: .75em;
 	}
 	.google-map {
 		margin-top: 5em;
 		background: grey;
-		min-height: 400px;
+		height: 400px;
 		width: 100vw;
 		position: absolute;
 		top: 500px;
 		left: 0;
+		-webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
+	  filter: grayscale(70%);
 	}
 }

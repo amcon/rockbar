@@ -126,8 +126,11 @@ a {
 		margin-top: 5em;
 		.featured-events {
 			h6 {
-				font-size: 1.25em;
+				font-size: 1.4em;
 				text-transform: uppercase;
+				color: $brand-red;
+			}
+			p {
 				color: $brand-red;
 			}
 			.featured-event {
@@ -151,7 +154,7 @@ a {
 			}
 			.featured-event:first-of-type {
 				width: 30%;
-				h6 {
+				h6, p {
 					color: white;
 				}
 			}

@@ -10,7 +10,7 @@
 			%h1
 				= @event.title	
 			%h5
-				= @event.date.strftime("%A - %d.%y")
+				= @event.date.strftime("%A - %m.%d")
 				%br
 				= "#{@event.start_time.strftime("%-I")} - #{@event.end_time.strftime("%-I")}"
 			%h6.mt-5
@@ -25,7 +25,7 @@
 				= "Cover Charge: #{@event.cover_charge}"
 			= link_to("Learn More", @event.event_link, class: 'link')
 		.clear	
-		
+
 	- if current_user		
 		.admin-links
 			= link_to("Edit", edit_event_path(@event))	

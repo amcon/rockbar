@@ -14,5 +14,6 @@
 					%p
 						= "#{event.start_time.strftime("%-I")} - #{event.end_time.strftime("%-I")}"	
 
-	%h2.mt-5
-		= link_to("+ Add New Event", new_event_path)
+	- if current_user
+		%h2.mt-5
+			= link_to("+ Add New Event", new_event_path)

@@ -3,7 +3,7 @@
 = link_to("<< Back to Gallery", photo_albums_path)
 
 .album-page
-	%h2
+	%h1
 		= @album.title
 	%p	
 		= @album.description
@@ -13,8 +13,10 @@
 			%p
 				= photo.title
 			= image_tag(photo.photo_image_id_url, :width => 300, :height => 200)
-			%p
-				= link_to("Edit", edit_photo_album_photo_path(@album, photo))
-				= link_to("Delete", delete_photo_album_photo_path(@album, photo))
-		%h2
-			= link_to("+ Add a new photo", new_photo_album_photo_path(@album))		
+			- if current_user
+				%p
+					= link_to("Edit", edit_photo_album_photo_path(@album, photo))
+					= link_to("Delete", delete_photo_album_photo_path(@album, photo))
+		- if current_user	
+			%h2
+				= link_to("+ Add a new photo", new_photo_album_photo_path(@album))		

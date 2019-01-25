@@ -34,7 +34,7 @@ class PhotoAlbumsController < ApplicationController
 			flash[:notice] = "#{@album.title} was updated successfully!"
 			redirect_to(photo_album_path(@album))
 		else
-			render(photo_album_path(@album))
+			render('edit')
 		end
 	end
 

@@ -3,6 +3,7 @@
 = link_to("<< Back to Gallery", photo_albums_path)
 
 .album-create
-	%h1 "Edit '#{@album.title}':"
+	%h1 
+		= "Edit '#{@album.title}':"
 
 	= render partial: 'form'

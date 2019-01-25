@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 	color: white;
 	font-family: helvetica;
 	letter-spacing: 2px;
+	font-weight: 700;
 }
 
 h1 {
@@ -33,6 +34,27 @@ a {
 	&:hover {
 		color: $brand-red;
 		text-decoration: underline;
+	}
+}
+
+.btn {
+	width: 100%;
+	background: $brand-red;
+	color: white;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 3em;
+	border-radius: 0;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 1.25em;
+	margin-bottom: .5em;
+	&:hover {
+		background: white;
+		color: $brand-red;
 	}
 }
 
@@ -91,11 +113,16 @@ a {
 		width: 100%;
 		margin-top: 5em;
 		.featured-events {
+			h6 {
+				font-size: 1.25em;
+				text-transform: uppercase;
+				color: $brand-red;
+			}
 			.featured-event {
 				float: left;
 				margin-right: 2.5%;
-				width: 14.375%;
-				a {
+				width: 20.83%;
+				.cover-photo {
 					margin-top: 1em;
 					display: flex;
 					justify-content: center;
@@ -103,16 +130,17 @@ a {
 					text-align: center;
 					border: 5px solid $brand-red;
 					box-sizing: border-box;
-					height: 225px;
+					width: 100%;
+					height: inherit;
 				}
 			}
 			.featured-event:first-of-type {
 				width: 30%;
-				a {
-					height: 450px;
-				}	
+				h6 {
+					color: white;
+				}
 			}
-			.featured-event:nth-of-type(5n) {
+			.featured-event:nth-of-type(4n) {
 				margin-right: 0;
 			}
 			.clear {

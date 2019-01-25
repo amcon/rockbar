@@ -6,8 +6,8 @@ class Event < ApplicationRecord
 
 	mount_uploader :profile_image_id, PhotoUploader
 
-	def next_five_events
-		events.order(date: :asc).select { |e| e.date >= Date.today }.limit(5)
+	def next_four_events
+		events.order(date: :asc).select { |e| e.date >= Date.today }.limit(4)
 	end
 
 	validates_presence_of :title, :description, :date, :start_time, :end_time

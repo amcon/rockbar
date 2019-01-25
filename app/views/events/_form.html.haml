@@ -1,16 +1,29 @@
-= simple_form_for @event do |f|
-	= error_messages_for(f.object)
-	= f.input :title, as: :string
-	= f.input :profile_image_id_cache, as: :hidden
-	%p#event_widget_opener Upload Photo
-	= f.input :description
-	= f.input :date, id: "datepicker", value: Date.today.strftime('%m/%d/%Y')
-	= f.input :start_time, as: :time, ampm: true, minutes_step: 30
-	= f.input :end_time, as: :time, ampm: true, minute_step: 30
-	= f.input :hosted_by, as: :string
-	= f.input :dj, as: :string
-	= f.input :drink_specials, as: :string
-	= f.input :cover_charge, as: :string
-	= f.input :event_type, collection: @event_types, include_blank: false
-	= f.input :event_link, as: :url
-	= f.button :submit
+.event
+	= simple_form_for @event do |f|
+		.col.p-0
+			- if current_page?(new_event_path)
+				%p#event_widget_opener.new Upload Photo 
+			- else
+				= image_tag(@event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
+				%p#event_widget_opener Update Photo
+
+		.event-info
+			= error_messages_for(f.object)
+			= f.input :title, as: :string
+			= f.input :profile_image_id_cache, as: :hidden
+			= f.input :description
+			= f.input :date, as: :date, order: [:month, :day, :year]
+			= f.input :start_time, as: :time, ampm: true, minutes_step: 30
+			= f.input :end_time, as: :time, ampm: true, minute_step: 30
+			= f.input :hosted_by, as: :string
+			= f.input :dj, as: :string
+			= f.input :drink_specials, as: :string
+			= f.input :cover_charge, as: :string
+			= f.input :event_type, collection: @event_types, include_blank: false
+			= f.input :event_link, as: :url
+			= f.button :submit
+			- if current_page?(new_event_path)
+				= link_to('Cancel', events_path)
+			- else
+				= link_to('Cancel', event_path(@event))	
+		.clear			

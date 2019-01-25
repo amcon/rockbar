@@ -37,7 +37,7 @@ class EventsController < ApplicationController
 			flash[:notice] = "#{@event.title} was updated successfully!"
 			redirect_to(event_path(@event))
 		else
-			render(event_path(@event))
+			render('edit')
 		end
 	end
 

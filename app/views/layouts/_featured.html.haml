@@ -6,17 +6,19 @@
 			.featured-event.special
 				%h6
 					- if event.date == Date.today
-						= "TONIGHT: #{event.date}"
+						= "#{event.date.strftime("%a - %m.%d")} (TODAY)"
 					- else
-						= event.date
+						= event.date.strftime("%a - %m.%d")
 				%p 
-					= link_to( event.title, event_path(event))
+					= link_to event_path(event) do
+						= image_tag(event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
 		- else			
 			.featured-event
 				%h6
-					= event.date
+					= event.date.strftime("%a - %m.%d")
 				%p 
-					= link_to( event.title, event_path(event))
+					= link_to event_path(event) do
+						= image_tag(event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
 	.clear
 .link	
 	= link_to("see all events >>", events_path)	

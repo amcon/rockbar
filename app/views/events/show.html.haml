@@ -1,62 +1,34 @@
 - @page_title = "#{@event.title}"
 
-= link_to("<< Back to All Events", events_path)
+-# = link_to("Back to Calendar", events_path)
 
 .event-page
-	%h2
-		= @event.title
-	%table
-		%tr
-			%th image
-			%td
-				= image_tag(@event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
-		%tr		
-			%th Image
-			%td
-				= @event.profile_image_id
-		%tr		
-			%th Description
-			%td
+	.event
+		.col.p-0
+			= image_tag(@event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
+		.event-info
+			%h1
+				= @event.title	
+			%h5
+				= @event.date.strftime("%A - %d.%y")
+				%br
+				= "#{@event.start_time.strftime("%-I")} - #{@event.end_time.strftime("%-I")}"
+			%h6.mt-5
+				= "Hosted by #{@event.hosted_by}"
+				%br
+				= "DJ #{@event.dj}"
+				%br
+				= "#{@event.drink_specials}"
+			%p.mb-5.mt-5
 				= @event.description
-		%tr		
-			%th Date
-			%td
-				= @event.date
-		%tr				
-			%th Start Time
-			%td
-				= @event.start_time.strftime("%-I:%M")
-		%tr		
-			%th End Time
-			%td
-				= @event.end_time.strftime("%-I:%M")
-		%tr		
-			%th Hosted By
-			%td
-				= @event.hosted_by
-		%tr		
-			%th DJ
-			%td
-				= @event.dj
-		%tr		
-			%th Drink Specials
-			%td
-				= @event.drink_specials
-		%tr		
-			%th Cover Charge
-			%td
-				= @event.cover_charge
-		%tr		
-			%th Event Type
-			%td
-				= @event.event_type
-		%tr		
-			%th Social Media Link
-			%td
-				= @event.event_link
-		%tr
-			%td
-				= link_to("Edit", edit_event_path(@event))
-		%tr
-			%td		
-				= link_to("Delete", delete_event_path(@event))		
+				%br
+				= "Cover Charge: #{@event.cover_charge}"
+			= link_to("Learn More", @event.event_link, class: 'link')
+		.clear	
+		
+	- if current_user		
+		.admin-links
+			= link_to("Edit", edit_event_path(@event))	
+			%p
+				|
+			= link_to("Delete", delete_event_path(@event))

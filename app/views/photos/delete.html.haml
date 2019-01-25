@@ -1,6 +1,8 @@
 = simple_form_for [@album, @photo], method: :delete do |f|
 
-	%h1 "Are you sure you want to delete '#{@photo.title}'?"
+	.photo-delete
+		%h2 
+			= "Are you sure you want to delete '#{@photo.title}'?"
 
-	= link_to('Cancel', photo_album_path(@album))
-	= f.button :submit, value: 'delete'
+		= f.button :submit, value: 'delete'
+		= link_to('Cancel', photo_album_path(@album))

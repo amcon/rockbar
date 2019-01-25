@@ -1,8 +1,9 @@
 - @page_title = "New Admin Account"
 
-= link_to("<< Back to Admin Area", admin_users_path)
+-# = link_to("<< Back to Admin Area", admin_users_path)
 
 .admin-create
 	%h1 Create an Admin Account
 
 	= render partial: 'form'
+	= link_to("cancel", admin_path)

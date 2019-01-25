@@ -1,8 +1,8 @@
 - @page_title = "New Photo"
 
-= link_to("<< Back to Album", photo_album_path(@album))
 
 .photo-create
-	%h1 Create a New Photo:
+	%h1 Upload a New Photo
 
 	= render partial: 'form'
+	= link_to("Cancel", photo_album_path(@album))

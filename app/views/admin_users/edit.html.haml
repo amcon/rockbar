@@ -1,8 +1,8 @@
 - @page_title = "Edit Admin"
 
-= link_to("<< Back to Admin Area", admin_users_path)
 
 .admin-edit
 	%h1 Edit Admin Account
 
 	= render partial: 'form'
+	= link_to("Cancel", admin_path)

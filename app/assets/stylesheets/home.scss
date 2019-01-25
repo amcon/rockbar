@@ -58,6 +58,19 @@ a {
 	}
 }
 
+#error-explanation {
+  text-align: left;
+  margin-bottom: 1em;
+  h3 {
+  	margin-bottom: 1em;
+  	text-transform: uppercase;
+  }
+  p, li {
+  	color: $brand-red;
+  	margin-bottom: 1em;
+  }
+}
+
 .main-content {
 	min-height: 500px;
 	padding: 1em;
@@ -81,14 +94,13 @@ a {
   align-items: center;
 	p {
     display: flex;
-    height: 12em;
-    width: 12em;
-    background: rgba(103, 2, 27, .7);
+    height: 15em;
+    width: 15em;
+    background: $translucent-red;
     text-align: center;
     justify-content: center;
     align-items: center;
     padding: 2em;
-    border-radius: 3em;
     line-height: 2em;
     font-weight: 200;
 	}
@@ -128,10 +140,13 @@ a {
 					justify-content: center;
 					align-items: center;
 					text-align: center;
-					border: 5px solid $brand-red;
 					box-sizing: border-box;
 					width: 100%;
 					height: inherit;
+					&:hover {
+						border: 3px solid $brand-red;
+						cursor: pointer;
+					}
 				}
 			}
 			.featured-event:first-of-type {

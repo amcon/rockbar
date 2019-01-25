@@ -1,9 +1,9 @@
 - @page_title = "Edit #{@photo.title}"
 
-= link_to("<< Back to Album", photo_album_path(@album))
 
 .photo-create
 	%h1 
-		= "Edit '#{@photo.title}':"
+		= "Edit Photo #{@photo.title}"
 
 	= render partial: 'form'
+	= link_to("Cancel", photo_album_path(@album))

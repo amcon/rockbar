@@ -13,7 +13,7 @@
 							%h4
 								= album.title
 							%p
-								= album.description
+								= truncate(album.description, length: 50)
 				- if current_user				
 					.admin
 						= link_to("Edit", edit_photo_album_path(album), class: 'mr-2')

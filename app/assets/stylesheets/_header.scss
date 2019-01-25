@@ -29,6 +29,7 @@ nav {
 	background: rgba(103, 2, 27, .7);
 	-webkit-transition: .5s; /* Safari */
   transition: .5s;
+  z-index: 5;
   .fa.fa-times {
   	position: fixed;
   	top: 1em;

@@ -5,4 +5,4 @@
 			= "Are you sure you want to delete '#{@event.title}'?"
 
 		= f.button :submit, value: 'delete'
-		= link_to('Cancel', events_path)
+		= link_to('Cancel', event_path(@event))

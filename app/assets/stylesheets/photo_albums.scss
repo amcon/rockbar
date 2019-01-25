@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .gallery-page {
-	margin: 3em 0 8em;
+	margin: 4em 0 8em;
 	h1 {
 		margin-bottom: 2em;
 	}
@@ -81,6 +81,11 @@
 	h1 {
 		margin-bottom: .25em;
 	}
+	.gallery-link {
+		display: block;
+		margin-top: 7em;
+		font-size: .75em;
+	}
 	.album-photos {
 		margin-top: 5em;
 		.photo {
@@ -98,13 +103,14 @@
 		    object-fit: cover;
 			}
 			.admin {
-				margin-top: -13em;
+				margin-top: -12em;
 		    display: flex;
 		    justify-content: center;
 		    align-items: center;
 				a, p {
 					text-transform: uppercase;
 					margin-right: 1em;
+					font-size: .75em;
 				}
 				a:last-of-type {
 					margin-right: 0;
@@ -113,6 +119,25 @@
 		}
 		.photo:nth-of-type(4n) {
 			margin-right: 0;
+		}
+		.add-photo {
+	    width: 23%;
+	    height: 0;
+	    margin-bottom: 2em;
+	    float: left;
+	    overflow: hidden;
+	    border: 3px dashed #67021B;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    text-align: center;
+	    font-size: 1em;
+	    padding: 11.4% 1em;
+	    &:hover {
+	    	background: $translucent-red;
+	    	color: white !important;
+	    	text-decoration: none;
+	    }
 		}
 		.clear {
 			clear: both;

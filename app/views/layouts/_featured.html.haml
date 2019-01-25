@@ -22,4 +22,5 @@
 				= link_to event_path(event) do
 					= image_tag(event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
 	.clear
-					
+.link	
+	= link_to("VIEW CALENDAR", events_path)						

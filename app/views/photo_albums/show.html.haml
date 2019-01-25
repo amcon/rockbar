@@ -1,6 +1,5 @@
 - @page_title = "Album: #{@album.title}"
 
--# = link_to("<< Back to Gallery", photo_albums_path)
 
 .album-page
 	%h1
@@ -17,7 +16,10 @@
 						%p
 							|
 						= link_to("Delete", delete_photo_album_photo_path(@album, photo))
-		.clear				
 		- if current_user	
-			%h2
-				= link_to("+ Add a new photo", new_photo_album_photo_path(@album))		
+			= link_to( new_photo_album_photo_path(@album), class: 'add-photo') do	
+				%p
+					+ Add a New Photo
+		.clear				
+
+	= link_to("BACK TO GALLERY", photo_albums_path, class: 'gallery-link')

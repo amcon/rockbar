@@ -9,7 +9,7 @@ class AdminUser < ApplicationRecord
 
 	private
 	
-	ALLOWED_EMAIL = 'rockbar.nyc@gmail.com'
+	ALLOWED_EMAIL = 'rockbar2nyc@gmail.com'
 
 	def is_allowed_email
 		if !ALLOWED_EMAIL.include?(email)

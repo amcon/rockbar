@@ -10,18 +10,18 @@ body {
 	background-repeat: no-repeat;
 	background-size: 85%;
 	background-position: 250% 50%;
-	color: white;
+	color: $brand-white;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li {
 	margin: 0;
-	color: white;
+	color: $brand-white;
 	font-family: 'Archivo Black', sans-serif;
 	letter-spacing: 5px;
 	font-weight: 700;
 }
 
-p {
+p, li {
 	letter-spacing: 2px;
 }
 
@@ -46,10 +46,14 @@ a {
 	}
 }
 
+input, .input[type="text"], .input[type="password"], textarea, select {
+	background: $brand-white;
+}
+
 .btn {
 	width: 100%;
 	background: $brand-red;
-	color: white;
+	color: $brand-white;
 	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
@@ -62,7 +66,7 @@ a {
 	font-size: 1.25em;
 	margin-bottom: .5em;
 	&:hover {
-		background: white;
+		background: $brand-white;
 		color: $brand-red;
 	}
 }
@@ -165,7 +169,7 @@ a {
 			.featured-event:first-of-type {
 				width: 30%;
 				h6, p {
-					color: white;
+					color: $brand-white;
 				}
 			}
 			.featured-event:nth-of-type(4n) {

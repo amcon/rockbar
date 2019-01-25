@@ -69,7 +69,7 @@
 						background: rgba(103, 2, 27, .7);
 					}
 					.today {
-						background: white;
+						background: $brand-white;
 						color: $brand-red;
 						a, p {
 							color: $brand-red;
@@ -132,8 +132,8 @@
 		    background: $brand-red;
 		    font-weight: 700;
 		    &:hover {
-		    	border: 1px solid white;
-		    	background: white;
+		    	border: 1px solid $brand-white;
+		    	background: $brand-white;
 		    	color: $brand-red;
 		    }
 			}
@@ -143,7 +143,7 @@
 			width: 56.63%;
 			h1 {
 				font-size: 3.5em;
-				color: white;
+				color: $brand-white;
 				margin-bottom: 1em;
 			}
 			h5, h6, p {
@@ -158,14 +158,14 @@
 				font-size: 1.25em;
 			}
 			.link {
-				border: 1px solid white;
+				border: 1px solid $brand-white;
 		    display: block;
 		    width: 50%;
 		    padding: 1em;
 		    text-align: center;
 		    text-transform: uppercase;
 		    &:hover {
-		    	background: white;
+		    	background: $brand-white;
 		    	color: $brand-red;
 		    	text-decoration: none;
 		    }
@@ -194,7 +194,7 @@
 					text-transform: none;
 			    width: 32.8%;
 			    height: 3em;
-			    background: white;
+			    background: $brand-white;
 			    border-radius: 0;
 			    border: 2px solid $brand-red;
 				}
@@ -205,7 +205,7 @@
 					text-transform: none;
 					width: 47.5%;
 					height: 3em;
-					background: white;
+					background: $brand-white;
 					border-radius: 0;
 					border: 2px solid $brand-red;
 				}
@@ -216,7 +216,7 @@
 					text-transform: none;
 					width: 100%;
 					height: 3em;
-					background: white;
+					background: $brand-white;
 					border-radius: 0;
 					border: 2px solid $brand-red;
 				}

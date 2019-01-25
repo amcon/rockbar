@@ -52,8 +52,8 @@
 	  font-weight: 700;
 	  text-transform: uppercase;
 	  &:hover {
-	  	border: 1px solid white;
-	  	background: white;
+	  	border: 1px solid $brand-white;
+	  	background: $brand-white;
 	  	color: $brand-red;
 	  }
 	}
@@ -78,9 +78,9 @@
 			&:hover {
 				cursor: pointer;
 				background: $brand-red;
-				color: white;
+				color: $brand-white;
 				text-decoration: none;
-				border: 2px solid white;
+				border: 2px solid $brand-white;
 			}
 		}
 		a:last-of-type {

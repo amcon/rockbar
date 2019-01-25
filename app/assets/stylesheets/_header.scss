@@ -53,8 +53,8 @@ nav {
 			border: 1px solid transparent;
 			line-height: 2em;
 			&:hover {
-				color: white;
-				border-bottom: 1px solid white;
+				color: $brand-white;
+				border-bottom: 1px solid $brand-white;
 				text-decoration: none;
 			}
 		}

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 	root 'home#index'
 
-	get 'admin', to: 'access#menu'
+	get 'admin', to: 'admin_users#index'
 	get 'about', to: 'about#index'
 	get 'contact', to: 'contact#index'
 	get 'admin', to: 'access#menu'

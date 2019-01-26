@@ -17,6 +17,9 @@
 				= link_to("Gallery of Albums", photo_albums_path)	
 			.footer-section
 				%h2 Follow Us
-				= link_to "Facebook", "https://www.facebook.com/rockbarnyc/"
-				= link_to "Instagram", "https://www.instagram.com/rockbarnyc/"
+				.social
+					= link_to "https://www.facebook.com/rockbarnyc/" do
+						%i.fa.fa-facebook-square
+					= link_to "https://www.instagram.com/rockbarnyc/" do
+						%i.fa.fa-instagram
 		%p.rights All Rights Reserved ROCKBAR NYC, 2019

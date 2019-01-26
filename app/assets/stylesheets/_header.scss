@@ -50,11 +50,12 @@ nav {
 			text-transform: uppercase;
 			width: min-content;
 			display: inline-block;
-			border: 1px solid transparent;
+			border: 2px solid transparent;
 			line-height: 2em;
+			padding: 0 .5em;
 			&:hover {
 				color: $brand-white;
-				border-bottom: 1px solid $brand-white;
+				border-bottom: 2px solid $brand-white;
 				text-decoration: none;
 			}
 		}

@@ -12,6 +12,9 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+.rockbar.env
+.env
+.prodution.env
 
 # Ignore uploaded files in development
 /storage/*

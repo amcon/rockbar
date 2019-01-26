@@ -107,6 +107,13 @@
 		    display: flex;
 		    justify-content: center;
 		    align-items: center;
+        background: $brand-red;
+		    position: relative;
+		    padding: .5em;
+		    a:hover {
+		    	color: $brand-white;
+		    	text-decoration: underline;
+		    }
 				a, p {
 					text-transform: uppercase;
 					margin-right: 1em;

@@ -10,7 +10,23 @@
 %nav
 	%i.fa.fa-times
 	.nav-content
-		= link_to("calendar", events_path)
-		= link_to("about", '/about')
-		= link_to("contact", '/contact')
-		= link_to("gallery", photo_albums_path)
+		- if current_page?(root_path)
+			= link_to("home", root_path, class: 'active')
+		- else 
+			= link_to("home", root_path)
+		- if current_page?(events_path)
+			= link_to("calendar", events_path, class: 'active')
+		- else		
+			= link_to("calendar", events_path)
+		- if current_page?(about_path)	
+			= link_to("about", '/about', class: 'active')
+		- else	
+			= link_to("about", '/about')
+		- if current_page?(contact_path)
+			= link_to("contact", '/contact', class: 'active')
+		- else	
+			= link_to("contact", '/contact')
+		- if current_page?(photo_albums_path)	
+			= link_to("gallery", photo_albums_path, class: 'active')
+		- else
+			= link_to("gallery", photo_albums_path)

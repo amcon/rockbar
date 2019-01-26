@@ -44,6 +44,11 @@ nav {
 		justify-content: space-between;
 		align-items: center;
 		text-align: center;
+		a.active {
+			color: $brand-white;
+			border-bottom: 2px solid $brand-white;
+			text-decoration: none;
+		}
 		a {
 			font-size: 1.5em;
 			font-weight: 600;

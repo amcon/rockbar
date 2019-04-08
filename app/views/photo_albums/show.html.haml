@@ -6,20 +6,24 @@
 		= @album.title
 	%p	
 		= @album.description
-	.album-photos
-		- @album.photos.each do |photo|
-			.photo
-				= link_to(image_tag(photo.photo_image_id_url, :width => 300, :height => 300, :crop => :fill), photo.photo_image_id_url, data: { lightbox: "example-set", title: photo.title })
-				- if current_user
-					.admin
-						= link_to("Edit", edit_photo_album_photo_path(@album, photo))
-						%p
-							|
-						= link_to("Delete", delete_photo_album_photo_path(@album, photo))
-		- if current_user	
-			= link_to( new_photo_album_photo_path(@album), class: 'add-photo') do	
-				%p
-					+ Add a New Photo
-		.clear				
+	- if @album.photos.length > 0	
+		.album-photos
+			- @album.photos.each do |photo|
+				.photo
+					= link_to(image_tag(photo.photo_image_id_url, :width => 300, :height => 300, :crop => :fill), photo.photo_image_id_url, data: { lightbox: "example-set", title: photo.title })
+					- if current_user
+						.admin
+							= link_to("Edit", edit_photo_album_photo_path(@album, photo))
+							%p
+								|
+							= link_to("Delete", delete_photo_album_photo_path(@album, photo))
+			- if current_user	
+				= link_to( new_photo_album_photo_path(@album), class: 'add-photo') do	
+					%p
+						+ Add a New Photo
+			.clear	
+	- else 
+		%h1.mt-5
+			Hmm... No photos yet!					
 
 	= link_to("BACK TO GALLERY", photo_albums_path, class: 'gallery-link')

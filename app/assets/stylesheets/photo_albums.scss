@@ -8,17 +8,19 @@
 		margin-bottom: 2em;
 	}
 	.gallery {
+		display: flex;
+		flex-wrap: wrap;
 		.album:nth-of-type(3n) {
 			margin-right: 0;
 		}
 		.album {
 			width: 31%;
 			margin-right: 3.5%;
-			float: left;
 			margin-bottom: 1em;
 			.image-overlay {
 				position: relative;
 		    margin-bottom: 1em;
+		    border: 1px solid $brand-red;
 				span {
 					height: 100%;
 			    width: 100%;
@@ -61,13 +63,15 @@
 			height: 0;
 			padding-top: 10.3%;
 			padding-bottom: 10.3%;
-			float: left;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			border: 3px dashed $brand-red;
 			&:hover {
 				background: rgba(103, 2, 27, .7);
+			}
+			h4 {
+				text-align: center;
 			}
 		}
 		.clear {
@@ -97,18 +101,24 @@
 	    float: left;
 	    overflow: hidden;
 	    border: 1px solid $brand-red;
+	    position: relative;
 			img {
 				width: 100%;
-		    margin-top: -101%;
+		    position: absolute;
+		    top: 0;
 		    object-fit: cover;
 			}
 			.admin {
-				margin-top: -12em;
 		    display: flex;
 		    justify-content: center;
 		    align-items: center;
-        background: $brand-red;
-		    position: relative;
+		    text-align: center;
+        background: $translucent-red;
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    height: 20%;
+		    width: 100%;
 		    padding: .5em;
 		    a:hover {
 		    	color: $brand-white;

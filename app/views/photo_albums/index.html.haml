@@ -8,7 +8,10 @@
 			.album
 				= link_to photo_album_path(album) do
 					.image-overlay
-						= image_tag(album.album_image_id_url, :width => 300, :height => 200, class: 'cover-photo')
+						- if album.album_image_id_url.present?
+							= image_tag(album.album_image_id_url, :width => 300, :height => 200, class: 'cover-photo')
+						- else
+							= image_tag('rockbar_default.jpg', :width => 300, :height => 200, class: 'cover-photo')	
 						%span
 							%h4
 								= album.title
@@ -23,5 +26,4 @@
 		- if current_user
 			= link_to new_photo_album_path, class: 'new-album' do	
 				%h4
-					+ Add New Album
-		.clear			
+					+ Add New Album		

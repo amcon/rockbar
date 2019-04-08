@@ -18,8 +18,6 @@ $ ->
 
   setTimeout fade_out, 2000  
 
-  $('#datepicker').datepicker();
-
   if $('.calendar-title').text() == 'Jan'
   	$('.calendar-title').text '01'
   	return

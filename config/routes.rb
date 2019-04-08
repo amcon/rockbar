@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 	get 'login', to: 'access#login'
 	post 'access/attempt_login'
 	get 'access/logout'
+	post 'contact/subscribe', to: 'contact#subscribe'
 
 	resources :admin_users, except: [:show] do
 		member do

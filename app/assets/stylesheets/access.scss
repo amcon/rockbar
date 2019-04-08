@@ -47,16 +47,16 @@
 	  justify-content: center;
 	  align-items: center;
 	  width: 100%;
-	  border: 1px solid $brand-red;
-	  background: $brand-red;
+	  border: 1px solid $brand-white;
+	  background: $brand-white;
 	  font-weight: 100;
 	  text-transform: uppercase;
-	  color: $brand-white;
+	  color: $brand-red;
 	  font-family: 'Archivo Black', sans-serif; 
 	  &:hover {
-	  	border: 1px solid $brand-white;
-	  	background: $brand-white;
-	  	color: $brand-red;
+	  	border: 1px solid $brand-red;
+	  	background: $brand-red;
+	  	color: $brand-white;
 	  }
 	}
 }

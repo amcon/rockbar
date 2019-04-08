@@ -1,9 +1,10 @@
 GIT
-  remote: git://github.com/Nerian/bootstrap-datepicker-rails.git
-  revision: 0dcee7ddb65b2702cd8933c05ca5f238ee43e14e
+  remote: https://github.com/amro/gibbon.git
+  revision: 4f0d2d2eaf9e852abcd298105dc22678a41e44bd
   specs:
-    bootstrap-datepicker-rails (1.8.0.1)
-      railties (>= 3.0)
+    gibbon (3.2.1)
+      faraday (>= 0.9.1)
+      multi_json (>= 1.11.0)
 
 GEM
   remote: https://rubygems.org/
@@ -101,6 +102,8 @@ GEM
     erubi (1.8.0)
     erubis (2.7.0)
     execjs (2.7.0)
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
     ffi (1.10.0)
     figaro (1.1.1)
       thor (~> 0.14)
@@ -160,6 +163,7 @@ GEM
     minitest (5.11.3)
     msgpack (1.2.6)
     multi_json (1.13.1)
+    multipart-post (2.0.0)
     netrc (0.11.0)
     nio4r (2.3.1)
     nokogiri (1.10.1)
@@ -272,7 +276,6 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   bootstrap
-  bootstrap-datepicker-rails!
   byebug
   capybara (>= 2.15)
   carrierwave
@@ -281,6 +284,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   figaro
   font-awesome-rails
+  gibbon!
   haml-rails (>= 0.3.4)
   jbuilder (~> 2.5)
   jquery-rails

@@ -21,7 +21,7 @@
 							|
 						= link_to("Delete", delete_photo_album_path(album))
 		- if current_user
-			= link_to new_photo_album_path do	
-				%h4.new-album
+			= link_to new_photo_album_path, class: 'new-album' do	
+				%h4
 					+ Add New Album
 		.clear			

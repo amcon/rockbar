@@ -13,15 +13,15 @@ body {
 	color: $brand-white;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li {
+h1, h2, h3, h4, h5, h6, p, a, li, label, .cloudinary-button, span, .btn, input {
 	margin: 0;
 	color: $brand-white;
 	font-family: 'Archivo Black', sans-serif;
 	letter-spacing: 5px;
-	font-weight: 700;
+	font-weight: 100;
 }
 
-p, li {
+p, li, .cloudinary-button, label, input, span {
 	letter-spacing: 2px;
 }
 
@@ -30,7 +30,7 @@ h1 {
 	text-transform: uppercase;
 	color: $brand-red;
 	margin-bottom: 3em;
-	font-weight: 600;
+	font-weight: 100;
 	letter-spacing: 5px;
 }
 
@@ -48,6 +48,7 @@ a {
 
 input, .input[type="text"], .input[type="password"], textarea, select {
 	background: $brand-white;
+	color: black;
 }
 
 .btn {
@@ -61,7 +62,7 @@ input, .input[type="text"], .input[type="password"], textarea, select {
 	text-align: center;
 	height: 3em;
 	border-radius: 0;
-	font-weight: 700;
+	font-weight: 100;
 	letter-spacing: 2px;
 	font-size: 1.25em;
 	margin-bottom: .5em;
@@ -115,7 +116,7 @@ input, .input[type="text"], .input[type="password"], textarea, select {
     align-items: center;
     padding: 2em;
     line-height: 2em;
-    font-weight: 200;
+    font-weight: 100;
 	}
 }
 

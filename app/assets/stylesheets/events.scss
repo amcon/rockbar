@@ -23,7 +23,7 @@
 			span {
 		    font-size: 3em;
 		    text-transform: uppercase;
-		    font-weight: 700;
+		    font-weight: 100;
 			}
 			div {
 				a:first-of-type {
@@ -50,7 +50,7 @@
 					.day {
 						height: 150px;
 						border: 3px solid $brand-red;
-						font-weight: 700;
+						font-weight: 100;
 						h5 {
 							line-height: .75em;
 							margin-top: 1em;
@@ -58,7 +58,7 @@
 						}
 						a {
 							font-size: .65em;
-							font-weight: 800;
+							font-weight: 100;
 							text-transform: uppercase;
 						}
 						p {
@@ -99,6 +99,8 @@
 				height: 600px !important;
 		    border: 5px dashed !important;
 		    background: transparent !important;
+		    font-family: 'Archivo Black', sans-serif;
+		    color: $brand-white !important;
 			}
 		}
 	}
@@ -130,7 +132,10 @@
 		    width: 100%;
 		    border: 1px solid $brand-red;
 		    background: $brand-red;
-		    font-weight: 700;
+		    font-weight: 100;
+		    font-family: 'Archivo Black', sans-serif;
+		    text-transform: uppercase;
+		    color: $brand-white;
 		    &:hover {
 		    	border: 1px solid $brand-white;
 		    	background: $brand-white;
@@ -174,7 +179,7 @@
 				width: 100%;
 				color: $brand-red;
 				text-transform: uppercase;
-				font-weight: 800;
+				font-weight: 100;
 			}
 			input[type="text"], input[type="url"] {
 		    width: 100%;

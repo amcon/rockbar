@@ -19,7 +19,6 @@
 			= f.input :dj, as: :string
 			= f.input :drink_specials, as: :string
 			= f.input :cover_charge, as: :string
-			= f.input :event_type, collection: @event_types, include_blank: false
 			= f.input :event_link, as: :url
 			= f.button :submit
 			- if current_page?(new_event_path)

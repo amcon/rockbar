@@ -10,6 +10,7 @@
 	}
 
 	.simple-calendar {
+		border: 1px solid $brand-red;
 		.calendar-heading {
 			background: $brand-red;
 	    display: flex;
@@ -31,8 +32,14 @@
 				}
 				a {
 					font-size: .75em;
+					&:hover {
+						color: white;
+					}
 				}
 			}
+		}
+		table.table.table-striped {
+			margin-bottom: 0;
 		}
 		.table {
 			thead {
@@ -41,6 +48,7 @@
 					border: 1px solid $brand-red;
 					th {
 						border: $brand-red;
+						color: white;
 					}
 				}
 			}
@@ -51,6 +59,7 @@
 						height: 150px;
 						border: 3px solid $brand-red;
 						font-weight: 100;
+						color: white;
 						h5 {
 							line-height: .75em;
 							margin-top: 1em;
@@ -191,7 +200,7 @@
 			textarea {
 				width: 100%;
 		    border: 2px solid $brand-red;
-		    min-height: 5em;
+		    min-height: 7em;
 			}
 			.event_date {
 				margin-bottom: 1em;
@@ -231,7 +240,7 @@
 				margin-right: 2%;
 				float: left;
 			}
-			.event_dj, .event_cover_charge, .event_event_link, .event_end_time {
+			.event_dj, .event_cover_charge, .event_end_time {
 				width: 49%;
 				float: left;
 			}

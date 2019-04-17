@@ -1,0 +1,24 @@
+.staff-members
+	- if @staffs.length > 0
+		- @staffs.each do |staff|
+			.staff
+				.image-overlay
+					= image_tag(staff.staff_image_id_url, :width => 100, :height => 100, class: 'staff-img')
+					%span
+						%h3
+							= staff.title
+				.staff-description		
+					- if staff.description.present?
+						%p
+							= staff.description
+				- if current_user			
+					.admin
+						= link_to("Edit", edit_staff_path(staff), class: 'mr-4')
+						%p.mr-4.mt-0
+							|
+						= link_to("Delete", delete_staff_path(staff))	
+		.div.clear			
+	- if current_user
+		= link_to new_staff_path, class: 'new-staff' do
+			%h4
+				+ Add New Staff

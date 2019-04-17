@@ -43,4 +43,20 @@ $ ->
     multiple: false
   }, (error, result) ->
     console.log error, result
-    return      
+    return   
+
+  $('#staff_widget_opener').cloudinary_upload_widget {
+    cloud_name: 'rockbar',
+    upload_preset: 'PRESET',
+    field_name: 'staff[staff_image_id]',
+    sources: ['local', 'camera'],
+    cropping: 'server',
+    cropping_aspect_ratio: 1,
+    cropping_show_dimensions: true,
+    cropping_coordinates_mode: 'custom',
+    cropping_validate_dimensions: true,
+    eager: 'custom',
+    multiple: false
+  }, (error, result) ->
+    console.log error, result
+    return     

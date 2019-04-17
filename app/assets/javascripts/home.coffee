@@ -54,3 +54,9 @@ $ ->
   else if	$('.calendar-title').text() == 'Dec'
   	$('.calendar-title').text '12'
   	return	
+
+
+  $('#mc_embed_signup_scroll').click ->
+  	$('#mce-EMAIL').val('')
+  	$('#mce-FIRST_NAME').val('')
+  	$('#mce-LAST_NAME').val('')

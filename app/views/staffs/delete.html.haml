@@ -1,0 +1,8 @@
+= simple_form_for @staff, method: :delete do |f|
+
+	.staff-delete
+		%h2 
+			= "Are you sure you want to delete '#{@staff.title}'?"
+
+		= f.button :submit, value: 'delete'
+		= link_to('Cancel', about_path)

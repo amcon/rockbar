@@ -8,45 +8,4 @@
 		#{'- ROCKBAR NYC'}
 
 	%h1 STAFF
-	.staff-members
-		.staff
-			.image-overlay
-				= image_tag("jason.jpg")
-				%span
-					%h3 JASON
-		.staff
-			.image-overlay
-				= image_tag("tom.jpg")
-				%span
-					%h3 TOM
-		.staff
-			.image-overlay
-				= image_tag("steven.jpg")
-				%span
-					%h3 STEVEN
-		.staff
-			.image-overlay
-				= image_tag("joey.jpg")
-				%span
-					%h3 JOEY
-		.staff
-			.image-overlay
-				= image_tag("rowan.jpg")
-				%span
-					%h3 ROWAN
-		.staff
-			.image-overlay
-				= image_tag("patrick.jpg")
-				%span
-					%h3 PATRICK
-		.staff
-			.image-overlay
-				= image_tag("dijoun.jpg")
-				%span
-					%h3 DIJOUN
-		.staff
-			.image-overlay
-				= image_tag("ken.jpg")
-				%span
-					%h3 KEN	
-		.div.clear					
+	= render partial: 'staffs/index'		

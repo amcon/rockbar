@@ -1,0 +1,9 @@
+- @page_title = "Edit #{@staff.title}"
+
+
+.staff-create
+	%h1 
+		= "Edit #{@staff.title} ALBUM"
+
+	= render partial: 'form'
+	= link_to("Cancel", about_path)

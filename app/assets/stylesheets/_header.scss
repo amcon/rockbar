@@ -1,17 +1,20 @@
 header {
 	padding: 2em 1em;
+	background-image: linear-gradient(black, transparent);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5;
 	.main-width {
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-start;
+		align-items: center;
 		.header-logo img {
-			width: 180px;
+			width: 120px;
 			margin-top: 3px;
 		}
 		.fa.fa-bars {
 			font-size: 2em;
-			background-color: black;
-			padding: 0 2px;
 			-webkit-text-stroke: 2px black;
 			&:hover {
 				cursor: pointer;
@@ -101,11 +104,20 @@ nav.open {
 	header {
 		.main-width {
 			.fa.fa-bars {
-				font-size: 6em;
+				font-size: 4em;
+				display: flex;
+				width: 75px;
+				justify-content: flex-end;
 			}
 			.header-logo {
-				img {
+				display: flex;
+				justify-content: center;
+				padding-left: 75px;
+				a {
 					width: 40%;
+				}
+				img {
+					width: 100%;
 				}
 			}
 		}
@@ -168,11 +180,20 @@ nav.open {
 	header {
 		.main-width {
 			.fa.fa-bars {
-				font-size: 6em;
+				font-size: 4em;
+				display: flex;
+				width: 75px;
+				justify-content: flex-end;
 			}
 			.header-logo {
-				img {
+				display: flex;
+				justify-content: center;
+				padding-left: 75px;
+				a {
 					width: 40%;
+				}
+				img {
+					width: 100%;
 				}
 			}
 		}
@@ -235,11 +256,20 @@ nav.open {
 	header {
 		.main-width {
 			.fa.fa-bars {
-				font-size: 6em;
+				font-size: 4em;
+				display: flex;
+				width: 75px;
+				justify-content: flex-end;
 			}
 			.header-logo {
-				img {
+				display: flex;
+				justify-content: center;
+				padding-left: 75px;
+				a {
 					width: 40%;
+				}
+				img {
+					width: 100%;
 				}
 			}
 		}
@@ -302,11 +332,20 @@ nav.open {
 	header {
 		.main-width {
 			.fa.fa-bars {
-				font-size: 6em;
+				font-size: 4em;
+				display: flex;
+				width: 75px;
+				justify-content: flex-end;
 			}
 			.header-logo {
-				img {
+				display: flex;
+				justify-content: center;
+				padding-left: 75px;
+				a {
 					width: 40%;
+				}
+				img {
+					width: 100%;
 				}
 			}
 		}
@@ -369,11 +408,20 @@ nav.open {
 	header {
 		.main-width {
 			.fa.fa-bars {
-				font-size: 6em;
+				font-size: 4em;
+				display: flex;
+				width: 75px;
+				justify-content: flex-end;
 			}
 			.header-logo {
-				img {
+				display: flex;
+				justify-content: center;
+				padding-left: 75px;
+				a {
 					width: 40%;
+				}
+				img {
+					width: 100%;
 				}
 			}
 		}
@@ -436,11 +484,20 @@ nav.open {
 	header {
 		.main-width {
 			.fa.fa-bars {
-				font-size: 6em;
+				font-size: 4em;
+				display: flex;
+				width: 75px;
+				justify-content: flex-end;
 			}
 			.header-logo {
-				img {
+				display: flex;
+				justify-content: center;
+				padding-left: 75px;
+				a {
 					width: 40%;
+				}
+				img {
+					width: 100%;
 				}
 			}
 		}
@@ -503,11 +560,20 @@ nav.open {
 	header {
 		.main-width {
 			.fa.fa-bars {
-				font-size: 6em;
+				font-size: 4em;
+				display: flex;
+				width: 75px;
+				justify-content: flex-end;
 			}
 			.header-logo {
-				img {
+				display: flex;
+				justify-content: center;
+				padding-left: 75px;
+				a {
 					width: 40%;
+				}
+				img {
+					width: 100%;
 				}
 			}
 		}

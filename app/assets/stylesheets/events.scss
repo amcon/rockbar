@@ -271,13 +271,25 @@
 		}
 	}
 
-	.event-page {
+	.event-edit, .event-create {
 		.event {
+			.col {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	.event-page, .event-edit, .event-create {
+		.event {
+			display: flex;
+			flex-direction: column;
 			.col {
 				width: 100%;
 				margin-bottom: 100px;
+				margin-right: 0;
 			}
 			.event-info {
+				order: -1;
+				margin-bottom: 50px;
 				width: 100%;
 				h1 {
 					font-size: 4.5em;
@@ -294,6 +306,9 @@
 				p {
 					font-size: 1.75em;
 					margin-bottom: 100px !important;
+				}
+				a {
+					font-size: 2em;
 				}
 			}
 		}
@@ -345,13 +360,25 @@
 		}
 	}
 
-	.event-page {
+	.event-edit, .event-create {
 		.event {
+			.col {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	.event-page, .event-edit, .event-create {
+		.event {
+			display: flex;
+			flex-direction: column;
 			.col {
 				width: 100%;
 				margin-bottom: 100px;
+				margin-right: 0;
 			}
 			.event-info {
+				order: -1;
+				margin-bottom: 50px;
 				width: 100%;
 				h1 {
 					font-size: 4.5em;
@@ -368,6 +395,9 @@
 				p {
 					font-size: 1.75em;
 					margin-bottom: 100px !important;
+				}
+				a {
+					font-size: 2em;
 				}
 			}
 		}
@@ -419,13 +449,25 @@
 		}
 	}
 
-	.event-page {
+	.event-edit, .event-create {
 		.event {
+			.col {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	.event-page, .event-edit, .event-create {
+		.event {
+			display: flex;
+			flex-direction: column;
 			.col {
 				width: 100%;
 				margin-bottom: 100px;
+				margin-right: 0;
 			}
 			.event-info {
+				order: -1;
+				margin-bottom: 50px;
 				width: 100%;
 				h1 {
 					font-size: 4.5em;
@@ -442,6 +484,9 @@
 				p {
 					font-size: 1.75em;
 					margin-bottom: 100px !important;
+				}
+				a {
+					font-size: 2em;
 				}
 			}
 		}
@@ -493,13 +538,25 @@
 		}
 	}
 
-	.event-page {
+	.event-edit, .event-create {
 		.event {
+			.col {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	.event-page, .event-edit, .event-create {
+		.event {
+			display: flex;
+			flex-direction: column;
 			.col {
 				width: 100%;
 				margin-bottom: 100px;
+				margin-right: 0;
 			}
 			.event-info {
+				order: -1;
+				margin-bottom: 50px;
 				width: 100%;
 				h1 {
 					font-size: 4.5em;
@@ -516,6 +573,9 @@
 				p {
 					font-size: 1.75em;
 					margin-bottom: 100px !important;
+				}
+				a {
+					font-size: 2em;
 				}
 			}
 		}
@@ -567,13 +627,25 @@
 		}
 	}
 
-	.event-page {
+	.event-edit, .event-create {
 		.event {
+			.col {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	.event-page, .event-edit, .event-create {
+		.event {
+			display: flex;
+			flex-direction: column;
 			.col {
 				width: 100%;
 				margin-bottom: 100px;
+				margin-right: 0;
 			}
 			.event-info {
+				order: -1;
+				margin-bottom: 50px;
 				width: 100%;
 				h1 {
 					font-size: 4.5em;
@@ -590,6 +662,9 @@
 				p {
 					font-size: 1.75em;
 					margin-bottom: 100px !important;
+				}
+				a {
+					font-size: 2em;
 				}
 			}
 		}
@@ -641,13 +716,25 @@
 		}
 	}
 
-	.event-page {
+	.event-edit, .event-create {
 		.event {
+			.col {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	.event-page, .event-edit, .event-create {
+		.event {
+			display: flex;
+			flex-direction: column;
 			.col {
 				width: 100%;
 				margin-bottom: 100px;
+				margin-right: 0;
 			}
 			.event-info {
+				order: -1;
+				margin-bottom: 50px;
 				width: 100%;
 				h1 {
 					font-size: 4.5em;
@@ -664,6 +751,9 @@
 				p {
 					font-size: 1.75em;
 					margin-bottom: 100px !important;
+				}
+				a {
+					font-size: 2em;
 				}
 			}
 		}
@@ -715,13 +805,25 @@
 		}
 	}
 
-	.event-page {
+	.event-edit, .event-create {
 		.event {
+			.col {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	.event-page, .event-edit, .event-create {
+		.event {
+			display: flex;
+			flex-direction: column;
 			.col {
 				width: 100%;
 				margin-bottom: 100px;
+				margin-right: 0;
 			}
 			.event-info {
+				order: -1;
+				margin-bottom: 50px;
 				width: 100%;
 				h1 {
 					font-size: 4.5em;
@@ -738,6 +840,9 @@
 				p {
 					font-size: 1.75em;
 					margin-bottom: 100px !important;
+				}
+				a {
+					font-size: 2em;
 				}
 			}
 		}

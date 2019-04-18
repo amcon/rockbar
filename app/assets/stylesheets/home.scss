@@ -12,6 +12,7 @@ body {
 	background-position: 250% 50%;
 	color: $brand-white;
 	overflow-x: hidden;
+	padding-top: 5em;
 }
 
 h1, h2, h3, h4, h5, h6, .cloudinary-button, .btn {
@@ -259,14 +260,21 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio: 2)
 	and (orientation: portrait) { 
 
+	body {
+		padding-top: 200px;
+    background-size: 150%;
+    background-position: left;
+	}
+
 	h1 {
 		font-size: 5.75em;
 	}
 
 	.btn-white {
-		font-size: 2em;
+		font-size: 2em !important;
 		width: 100% !important;
 		border: 2px solid $brand-white;
+		text-align: center !important;
 	}
 
 	.notice p {
@@ -293,7 +301,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	.btn, .cloudinary-button {
 		height: 100px;
 		width: 100%;
-		font-size: 2em;
+		font-size: 2em !important;
 	}
 
 	#error-explanation {
@@ -379,14 +387,21 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio: 2) 
 	and (orientation: portrait) { 
 
+	body {
+		padding-top: 200px;
+    background-size: 150%;
+    background-position: left;
+	}
+
 	h1 {
 		font-size: 5.75em;
 	}
 
 	.btn-white {
-		font-size: 2em;
+		font-size: 2em !important;
 		width: 100% !important;
 		border: 2px solid $brand-white;
+		text-align: center !important;
 	}
 
 	.notice p {
@@ -413,7 +428,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	.btn, .cloudinary-button {
 		height: 100px;
 		width: 100%;
-		font-size: 2em;
+		font-size: 2em !important;
 	}
 
 	#error-explanation {
@@ -499,14 +514,21 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio: 2) 
 	and (orientation: portrait) { 
 
+	body {
+		padding-top: 200px;
+    background-size: 150%;
+    background-position: left;
+	}
+
 	h1 {
 		font-size: 5.75em;
 	}
 
 	.btn-white {
-		font-size: 2em;
+		font-size: 2em !important;
 		width: 100% !important;
 		border: 2px solid $brand-white;
+		text-align: center !important;
 	}
 
 	.notice p {
@@ -533,7 +555,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	.btn, .cloudinary-button {
 		height: 100px;
 		width: 100%;
-		font-size: 2em;
+		font-size: 2em !important;
 	}
 
 	#error-explanation {
@@ -619,14 +641,21 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio: 3) 
 	and (orientation: portrait) { 
 
+	body {
+		padding-top: 200px;
+    background-size: 150%;
+    background-position: left;
+	}
+
 	h1 {
 		font-size: 5.75em;
 	}
 
 	.btn-white {
-		font-size: 2em;
+		font-size: 2em !important;
 		width: 100% !important;
 		border: 2px solid $brand-white;
+		text-align: center !important;
 	}
 
 	.notice p {
@@ -653,7 +682,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	.btn, .cloudinary-button {
 		height: 100px;
 		width: 100%;
-		font-size: 2em;
+		font-size: 2em !important;
 	}
 
 	#error-explanation {
@@ -739,14 +768,21 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio: 3) 
 	and (orientation: portrait) { 
 
+	body {
+		padding-top: 200px;
+    background-size: 150%;
+    background-position: left;
+	}
+
 	h1 {
 		font-size: 5.75em;
 	}
 
 	.btn-white {
-		font-size: 2em;
+		font-size: 2em !important;
 		width: 100% !important;
 		border: 2px solid $brand-white;
+		text-align: center !important;
 	}
 
 	.notice p {
@@ -773,7 +809,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	.btn, .cloudinary-button {
 		height: 100px;
 		width: 100%;
-		font-size: 2em;
+		font-size: 2em !important;
 	}
 
 	#error-explanation {
@@ -861,14 +897,21 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio : 2) 
 	and (orientation: portrait) { 
 
+	body {
+		padding-top: 200px;
+    background-size: 150%;
+    background-position: left;
+	}
+
 	h1 {
 		font-size: 5.75em;
 	}
 
 	.btn-white {
-		font-size: 2em;
+		font-size: 2em !important;
 		width: 100% !important;
 		border: 2px solid $brand-white;
+		text-align: center !important;
 	}
 
 	.notice p {
@@ -895,7 +938,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	.btn, .cloudinary-button {
 		height: 100px;
 		width: 100%;
-		font-size: 2em;
+		font-size: 2em !important;
 	}
 
 	#error-explanation {
@@ -981,14 +1024,21 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio : 3) 
 	and (orientation: portrait) { 
 
+	body {
+		padding-top: 200px;
+    background-size: 150%;
+    background-position: left;
+	}
+
 	h1 {
 		font-size: 5.75em;
 	}
 
 	.btn-white {
-		font-size: 2em;
+		font-size: 2em !important;
 		width: 100% !important;
 		border: 2px solid $brand-white;
+		text-align: center !important;
 	}
 
 	.notice p {
@@ -1015,7 +1065,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	.btn, .cloudinary-button {
 		height: 100px;
 		width: 100%;
-		font-size: 2em;
+		font-size: 2em !important;
 	}
 
 	#error-explanation {

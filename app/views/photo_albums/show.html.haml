@@ -24,6 +24,13 @@
 			.clear	
 	- else 
 		%h1.mt-5
-			Hmm... No photos yet!					
+			Hmm... No photos yet!	
+		.album-photos		
+			- if current_user	
+				= link_to( new_photo_album_photo_path(@album), class: 'add-photo') do	
+					%p
+						+ Add a New Photo
+			.clear	
+
 
 	= link_to("BACK TO GALLERY", photo_albums_path, class: 'mt-5 btn-white')

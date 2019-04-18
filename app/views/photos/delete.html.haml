@@ -2,7 +2,7 @@
 
 	.photo-delete
 		%h2 
-			= "Are you sure you want to delete '#{@photo.title}'?"
+			= "Are you sure you want to delete the photo: '#{@photo.title}' from the album: '#{@album.title}'?"
 
 		= f.button :submit, value: 'delete'
 		= link_to('Cancel', photo_album_path(@album))

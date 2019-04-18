@@ -25,6 +25,7 @@
 		    font-size: 3em;
 		    text-transform: uppercase;
 		    font-weight: 100;
+		    font-family: 'Archivo Black', sans-serif;
 			}
 			div {
 				a:first-of-type {
@@ -239,3 +240,524 @@
 		}
 	}
 }
+
+
+
+
+/* iphone 4 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 480px) 
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: portrait) { 
+
+	.calendar-page {
+		.simple-calendar {
+			.calendar-heading {
+				span {
+					font-size: 5em;
+				}
+				div {
+					a {
+						font-size: 1.75em;
+					}
+					a:first-of-type {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.event-page {
+		.event {
+			.col {
+				width: 100%;
+				margin-bottom: 100px;
+			}
+			.event-info {
+				width: 100%;
+				h1 {
+					font-size: 4.5em;
+					margin-bottom: 100px;
+				}
+				h5 {
+					font-size: 3.5em;
+					margin-bottom: 100px;
+				}
+				h6 {
+					font-size: 2.5em;
+					margin-bottom: 50px;
+				}
+				p {
+					font-size: 1.75em;
+					margin-bottom: 100px !important;
+				}
+			}
+		}
+		.admin-links {
+			margin-top: 50px;
+			a, p {
+				font-size: 2.5em;
+			}
+		}
+	}	
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 480px) 
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 5 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 568px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: portrait) { 
+
+	.calendar-page {
+		.simple-calendar {
+			.calendar-heading {
+				span {
+					font-size: 5em;
+				}
+				div {
+					a {
+						font-size: 1.75em;
+					}
+					a:first-of-type {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.event-page {
+		.event {
+			.col {
+				width: 100%;
+				margin-bottom: 100px;
+			}
+			.event-info {
+				width: 100%;
+				h1 {
+					font-size: 4.5em;
+					margin-bottom: 100px;
+				}
+				h5 {
+					font-size: 3.5em;
+					margin-bottom: 100px;
+				}
+				h6 {
+					font-size: 2.5em;
+					margin-bottom: 50px;
+				}
+				p {
+					font-size: 1.75em;
+					margin-bottom: 100px !important;
+				}
+			}
+		}
+		.admin-links {
+			margin-top: 50px;
+			a, p {
+				font-size: 2.5em;
+			}
+		}
+	}	
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 568px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 6, 6s, 7, 8 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 667px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: portrait) { 
+
+	.calendar-page {
+		.simple-calendar {
+			.calendar-heading {
+				span {
+					font-size: 5em;
+				}
+				div {
+					a {
+						font-size: 1.75em;
+					}
+					a:first-of-type {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.event-page {
+		.event {
+			.col {
+				width: 100%;
+				margin-bottom: 100px;
+			}
+			.event-info {
+				width: 100%;
+				h1 {
+					font-size: 4.5em;
+					margin-bottom: 100px;
+				}
+				h5 {
+					font-size: 3.5em;
+					margin-bottom: 100px;
+				}
+				h6 {
+					font-size: 2.5em;
+					margin-bottom: 50px;
+				}
+				p {
+					font-size: 1.75em;
+					margin-bottom: 100px !important;
+				}
+			}
+		}
+		.admin-links {
+			margin-top: 50px;
+			a, p {
+				font-size: 2.5em;
+			}
+		}
+	}	
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 667px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 6+, 6s+, 7+, 8+ ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 414px) 
+	and (max-device-height: 736px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: portrait) { 
+
+	.calendar-page {
+		.simple-calendar {
+			.calendar-heading {
+				span {
+					font-size: 5em;
+				}
+				div {
+					a {
+						font-size: 1.75em;
+					}
+					a:first-of-type {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.event-page {
+		.event {
+			.col {
+				width: 100%;
+				margin-bottom: 100px;
+			}
+			.event-info {
+				width: 100%;
+				h1 {
+					font-size: 4.5em;
+					margin-bottom: 100px;
+				}
+				h5 {
+					font-size: 3.5em;
+					margin-bottom: 100px;
+				}
+				h6 {
+					font-size: 2.5em;
+					margin-bottom: 50px;
+				}
+				p {
+					font-size: 1.75em;
+					margin-bottom: 100px !important;
+				}
+			}
+		}
+		.admin-links {
+			margin-top: 50px;
+			a, p {
+				font-size: 2.5em;
+			}
+		}
+	}	
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 414px) 
+	and (max-device-height: 736px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone X ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: portrait) { 
+
+	.calendar-page {
+		.simple-calendar {
+			.calendar-heading {
+				span {
+					font-size: 5em;
+				}
+				div {
+					a {
+						font-size: 1.75em;
+					}
+					a:first-of-type {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.event-page {
+		.event {
+			.col {
+				width: 100%;
+				margin-bottom: 100px;
+			}
+			.event-info {
+				width: 100%;
+				h1 {
+					font-size: 4.5em;
+					margin-bottom: 100px;
+				}
+				h5 {
+					font-size: 3.5em;
+					margin-bottom: 100px;
+				}
+				h6 {
+					font-size: 2.5em;
+					margin-bottom: 50px;
+				}
+				p {
+					font-size: 1.75em;
+					margin-bottom: 100px !important;
+				}
+			}
+		}
+		.admin-links {
+			margin-top: 50px;
+			a, p {
+				font-size: 2.5em;
+			}
+		}
+	}	
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone XR ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 2) 
+	and (orientation: portrait) { 
+
+	.calendar-page {
+		.simple-calendar {
+			.calendar-heading {
+				span {
+					font-size: 5em;
+				}
+				div {
+					a {
+						font-size: 1.75em;
+					}
+					a:first-of-type {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.event-page {
+		.event {
+			.col {
+				width: 100%;
+				margin-bottom: 100px;
+			}
+			.event-info {
+				width: 100%;
+				h1 {
+					font-size: 4.5em;
+					margin-bottom: 100px;
+				}
+				h5 {
+					font-size: 3.5em;
+					margin-bottom: 100px;
+				}
+				h6 {
+					font-size: 2.5em;
+					margin-bottom: 50px;
+				}
+				p {
+					font-size: 1.75em;
+					margin-bottom: 100px !important;
+				}
+			}
+		}
+		.admin-links {
+			margin-top: 50px;
+			a, p {
+				font-size: 2.5em;
+			}
+		}
+	}	
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone XS Max ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 3) 
+	and (orientation: portrait) { 
+
+	.calendar-page {
+		.simple-calendar {
+			.calendar-heading {
+				span {
+					font-size: 5em;
+				}
+				div {
+					a {
+						font-size: 1.75em;
+					}
+					a:first-of-type {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.event-page {
+		.event {
+			.col {
+				width: 100%;
+				margin-bottom: 100px;
+			}
+			.event-info {
+				width: 100%;
+				h1 {
+					font-size: 4.5em;
+					margin-bottom: 100px;
+				}
+				h5 {
+					font-size: 3.5em;
+					margin-bottom: 100px;
+				}
+				h6 {
+					font-size: 2.5em;
+					margin-bottom: 50px;
+				}
+				p {
+					font-size: 1.75em;
+					margin-bottom: 100px !important;
+				}
+			}
+		}
+		.admin-links {
+			margin-top: 50px;
+			a, p {
+				font-size: 2.5em;
+			}
+		}
+	}	
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 3) 
+	and (orientation: landscape) { 
+
+
+
+	}	

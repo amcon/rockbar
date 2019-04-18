@@ -15,46 +15,11 @@
 		font-size: 1.75em;
 		text-align: center;
 	}
-	input[type="text"], input[type="password"] {
-		width: 100%;
-    height: 3em;
-    border: 2px solid $brand-red;
-    margin-bottom: 1em;
-    padding: .5em;
-	}
 	#description_description {
 		min-height: 10em;
 	}
-	textarea {
-		width: 100%;
-		height: 5em;
-		border: 2px solid $brand-red;
-		margin-bottom: 1em;
-		padding: .5em;
-	}
 	.btn {
 		margin-bottom: 1em;
-	}
-	.cloudinary-button {
-		height: 3em;
-	  margin-bottom: .5em;
-	  border-radius: 0;
-	  text-align: center;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  width: 100%;
-	  border: 2px solid $brand-red;
-	  background: $brand-white;
-	  font-weight: 100;
-	  text-transform: uppercase;
-	  color: $brand-red;
-	  font-family: 'Archivo Black', sans-serif; 
-	  &:hover {
-	  	border: 1px solid $brand-red;
-	  	background: $brand-red;
-	  	color: $brand-white;
-	  }
 	}
 }
 
@@ -94,3 +59,374 @@
 		}
 	}
 }
+
+
+
+
+
+
+/* iphone 4 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 480px) 
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: portrait) { 
+
+	.admin-page {
+		h1 {
+			margin-bottom: 1em;
+		}
+		.actions {
+			flex-wrap: wrap;
+			a {
+				height: 0;
+				padding: 23% 1em;
+				width: 48%;
+				margin-right: 4%;
+				margin-bottom: 1em;
+				font-size: 2em;
+			}
+			a:nth-child(2n) {
+				margin-right: 0;
+			}
+			a:nth-child(3n) {
+				margin-right: 4%;
+			}
+		}
+		.edit {
+			a, p {
+				font-size: 2em;
+			}
+		}
+	}
+
+	.login-page, .admin-create, .admin-edit, .admin-delete, .album-delete, .photo-delete, .event-delete, .album-create, .photo-create, .staff-create, .staff-delete, .about-create {
+		width: 100%;
+		padding: 0 1em;
+		a {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 2.25em;
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 480px) 
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 5 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 568px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: portrait) { 
+
+	.admin-page {
+		h1 {
+			margin-bottom: 1em;
+		}
+		.actions {
+			flex-wrap: wrap;
+			a {
+				height: 0;
+				padding: 23% 1em;
+				width: 48%;
+				margin-right: 4%;
+				margin-bottom: 1em;
+				font-size: 2em;
+			}
+			a:nth-child(2n) {
+				margin-right: 0;
+			}
+			a:nth-child(3n) {
+				margin-right: 4%;
+			}
+		}
+		.edit {
+			a, p {
+				font-size: 2em;
+			}
+		}
+	}
+
+	.login-page, .admin-create, .admin-edit, .admin-delete, .album-delete, .photo-delete, .event-delete, .album-create, .photo-create, .staff-create, .staff-delete, .about-create {
+		width: 100%;
+		padding: 0 1em;
+		a {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 2.25em;
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 568px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 6, 6s, 7, 8 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 667px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: portrait) { 
+
+	.admin-page {
+		h1 {
+			margin-bottom: 1em;
+		}
+		.actions {
+			flex-wrap: wrap;
+			a {
+				height: 0;
+				padding: 23% 1em;
+				width: 48%;
+				margin-right: 4%;
+				margin-bottom: 1em;
+				font-size: 2em;
+			}
+			a:nth-child(2n) {
+				margin-right: 0;
+			}
+			a:nth-child(3n) {
+				margin-right: 4%;
+			}
+		}
+		.edit {
+			a, p {
+				font-size: 2em;
+			}
+		}
+	}
+
+	.login-page, .admin-create, .admin-edit, .admin-delete, .album-delete, .photo-delete, .event-delete, .album-create, .photo-create, .staff-create, .staff-delete, .about-create {
+		width: 100%;
+		padding: 0 1em;
+		a {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 2.25em;
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 667px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 6+, 6s+, 7+, 8+ ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 414px) 
+	and (max-device-height: 736px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: portrait) { 
+
+	.admin-page {
+		h1 {
+			margin-bottom: 1em;
+		}
+		.actions {
+			flex-wrap: wrap;
+			a {
+				height: 0;
+				padding: 23% 1em;
+				width: 48%;
+				margin-right: 4%;
+				margin-bottom: 1em;
+				font-size: 2em;
+			}
+			a:nth-child(2n) {
+				margin-right: 0;
+			}
+			a:nth-child(3n) {
+				margin-right: 4%;
+			}
+		}
+		.edit {
+			a, p {
+				font-size: 2em;
+			}
+		}
+	}
+
+	.login-page, .admin-create, .admin-edit, .admin-delete, .album-delete, .photo-delete, .event-delete, .album-create, .photo-create, .staff-create, .staff-delete, .about-create {
+		width: 100%;
+		padding: 0 1em;
+		a {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 2.25em;
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 414px) 
+	and (max-device-height: 736px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone X ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: portrait) { 
+
+	.admin-page {
+		h1 {
+			margin-bottom: 1em;
+		}
+		.actions {
+			flex-wrap: wrap;
+			a {
+				height: 0;
+				padding: 23% 1em;
+				width: 48%;
+				margin-right: 4%;
+				margin-bottom: 1em;
+				font-size: 2em;
+			}
+			a:nth-child(2n) {
+				margin-right: 0;
+			}
+			a:nth-child(3n) {
+				margin-right: 4%;
+			}
+		}
+		.edit {
+			a, p {
+				font-size: 2em;
+			}
+		}
+	}
+
+	.login-page, .admin-create, .admin-edit, .admin-delete, .album-delete, .photo-delete, .event-delete, .album-create, .photo-create, .staff-create, .staff-delete, .about-create {
+		width: 100%;
+		padding: 0 1em;
+		a {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 2.25em;
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone XR and XS Max ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 2) 
+	and (orientation: portrait) { 
+
+	.admin-page {
+		h1 {
+			margin-bottom: 1em;
+		}
+		.actions {
+			flex-wrap: wrap;
+			a {
+				height: 0;
+				padding: 23% 1em;
+				width: 48%;
+				margin-right: 4%;
+				margin-bottom: 1em;
+				font-size: 2em;
+			}
+			a:nth-child(2n) {
+				margin-right: 0;
+			}
+			a:nth-child(3n) {
+				margin-right: 4%;
+			}
+		}
+		.edit {
+			a, p {
+				font-size: 2em;
+			}
+		}
+	}
+
+	.login-page, .admin-create, .admin-edit, .admin-delete, .album-delete, .photo-delete, .event-delete, .album-create, .photo-create, .staff-create, .staff-delete, .about-create {
+		width: 100%;
+		padding: 0 1em;
+		a {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 2.25em;
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	

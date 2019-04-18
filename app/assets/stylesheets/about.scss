@@ -23,3 +23,399 @@
 		margin-bottom: 5em;
 	}
 }
+
+
+
+
+
+/* iphone 4 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 480px) 
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: portrait) { 
+
+	.about-page {
+		h5 {
+			font-size: 2em;
+		}
+		.staff-members {
+			.staff {
+				margin-right: 10%;
+				width: 45%;
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h3 {
+							font-size: 3em;
+						}
+					}
+				}
+				.staff-description {
+					p {
+						font-size: 1.5em;
+					}
+				}
+				.admin {
+					a {
+						font-size: 2em;
+					}
+				}
+			}
+			.staff:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 480px) 
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 5 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 568px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: portrait) { 
+
+	.about-page {
+		h5 {
+			font-size: 2em;
+		}
+		.staff-members {
+			.staff {
+				margin-right: 10%;
+				width: 45%;
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h3 {
+							font-size: 3em;
+						}
+					}
+				}
+				.staff-description {
+					p {
+						font-size: 1.5em;
+					}
+				}
+				.admin {
+					a {
+						font-size: 2em;
+					}
+				}
+			}
+			.staff:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 568px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 6, 6s, 7, 8 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 667px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: portrait) { 
+
+	.about-page {
+		h5 {
+			font-size: 2em;
+		}
+		.staff-members {
+			.staff {
+				margin-right: 10%;
+				width: 45%;
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h3 {
+							font-size: 3em;
+						}
+					}
+				}
+				.staff-description {
+					p {
+						font-size: 1.5em;
+					}
+				}
+				.admin {
+					a {
+						font-size: 2em;
+					}
+				}
+			}
+			.staff:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 667px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 6+, 6s+, 7+, 8+ ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 414px) 
+	and (max-device-height: 736px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: portrait) { 
+
+	.about-page {
+		h5 {
+			font-size: 2em;
+		}
+		.staff-members {
+			.staff {
+				margin-right: 10%;
+				width: 45%;
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h3 {
+							font-size: 3em;
+						}
+					}
+				}
+				.staff-description {
+					p {
+						font-size: 1.5em;
+					}
+				}
+				.admin {
+					a {
+						font-size: 2em;
+					}
+				}
+			}
+			.staff:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 414px) 
+	and (max-device-height: 736px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone X ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: portrait) { 
+
+	.about-page {
+		h5 {
+			font-size: 2em;
+		}
+		.staff-members {
+			.staff {
+				margin-right: 10%;
+				width: 45%;
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h3 {
+							font-size: 3em;
+						}
+					}
+				}
+				.staff-description {
+					p {
+						font-size: 1.5em;
+					}
+				}
+				.admin {
+					a {
+						font-size: 2em;
+					}
+				}
+			}
+			.staff:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone XR ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 2) 
+	and (orientation: portrait) { 
+
+	.about-page {
+		h5 {
+			font-size: 2em;
+		}
+		.staff-members {
+			.staff {
+				margin-right: 10%;
+				width: 45%;
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h3 {
+							font-size: 3em;
+						}
+					}
+				}
+				.staff-description {
+					p {
+						font-size: 1.5em;
+					}
+				}
+				.admin {
+					a {
+						font-size: 2em;
+					}
+				}
+			}
+			.staff:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone XS Max ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 3) 
+	and (orientation: portrait) { 
+
+	.about-page {
+		h5 {
+			font-size: 2em;
+		}
+		.staff-members {
+			.staff {
+				margin-right: 10%;
+				width: 45%;
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h3 {
+							font-size: 3em;
+						}
+					}
+				}
+				.staff-description {
+					p {
+						font-size: 1.5em;
+					}
+				}
+				.admin {
+					a {
+						font-size: 2em;
+					}
+				}
+			}
+			.staff:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 3) 
+	and (orientation: landscape) { 
+
+
+
+	}	

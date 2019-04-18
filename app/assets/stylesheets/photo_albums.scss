@@ -56,6 +56,9 @@
 			}
 			.admin {
 				display: flex;
+				a, p {
+					text-transform: uppercase;
+				}
 			}
 		}
 		.new-album {
@@ -104,6 +107,7 @@
 	    position: relative;
 			img {
 				width: 100%;
+				height: 100%;
 		    position: absolute;
 		    top: 0;
 		    object-fit: cover;
@@ -161,3 +165,639 @@
 		}
 	}
 }
+
+
+
+
+
+
+
+/* iphone 4 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 480px) 
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: portrait) { 
+
+	.gallery-page {
+		.gallery {
+			.album, .new-album {
+				width: 100%;
+				margin-right: 0;
+				.admin {
+					a, p {
+						font-size: 3em;
+						margin-right: 35px !important;
+						margin-bottom: 1em;
+					}
+				}
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h4, p {
+							opacity: 1;
+						}
+						h4 {
+							font-size: 3.5em;
+							margin-bottom: 1em;
+						}
+						p {
+							font-size: 1.75em;
+						}
+					}
+				}
+			}
+			.new-album {
+				padding-top: 32.75%;
+		    padding-bottom: 32.75%;
+		    border: 10px dashed $brand-red;
+		    h4 {
+		    	font-size: 3.5em;
+		    }
+			}
+		}
+	}
+
+	.album-page {
+		p {
+			font-size: 2em;
+		}
+		.album-photos {
+			.photo {
+				width: 48%;
+				padding-top: 48%;
+				margin-right: 4%;
+				.admin {
+					a, p {
+						font-size: 2em;
+					}
+				}
+			}
+			.photo:nth-child(2n) {
+				margin-right: 0;
+			}
+			.add-photo {
+				width: 48%;
+				padding: 23% 1em;
+				border: 10px dashed $brand-red;
+				p {
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 480px) 
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 5 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 568px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: portrait) { 
+
+	.gallery-page {
+		.gallery {
+			.album, .new-album {
+				width: 100%;
+				margin-right: 0;
+				.admin {
+					a, p {
+						font-size: 3em;
+						margin-right: 35px !important;
+						margin-bottom: 1em;
+					}
+				}
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h4, p {
+							opacity: 1;
+						}
+						h4 {
+							font-size: 3.5em;
+							margin-bottom: 1em;
+						}
+						p {
+							font-size: 1.75em;
+						}
+					}
+				}
+			}
+			.new-album {
+				padding-top: 32.75%;
+		    padding-bottom: 32.75%;
+		    border: 10px dashed $brand-red;
+		    h4 {
+		    	font-size: 3.5em;
+		    }
+			}
+		}
+	}
+
+	.album-page {
+		p {
+			font-size: 2em;
+		}
+		.album-photos {
+			.photo {
+				width: 48%;
+				padding-top: 48%;
+				margin-right: 4%;
+				.admin {
+					a, p {
+						font-size: 2em;
+					}
+				}
+			}
+			.photo:nth-child(2n) {
+				margin-right: 0;
+			}
+			.add-photo {
+				width: 48%;
+				padding: 23% 1em;
+				border: 10px dashed $brand-red;
+				p {
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 568px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 6, 6s, 7, 8 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 667px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: portrait) { 
+
+	.gallery-page {
+		.gallery {
+			.album, .new-album {
+				width: 100%;
+				margin-right: 0;
+				.admin {
+					a, p {
+						font-size: 3em;
+						margin-right: 35px !important;
+						margin-bottom: 1em;
+					}
+				}
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h4, p {
+							opacity: 1;
+						}
+						h4 {
+							font-size: 3.5em;
+							margin-bottom: 1em;
+						}
+						p {
+							font-size: 1.75em;
+						}
+					}
+				}
+			}
+			.new-album {
+				padding-top: 32.75%;
+		    padding-bottom: 32.75%;
+		    border: 10px dashed $brand-red;
+		    h4 {
+		    	font-size: 3.5em;
+		    }
+			}
+		}
+	}
+
+	.album-page {
+		p {
+			font-size: 2em;
+		}
+		.album-photos {
+			.photo {
+				width: 48%;
+				padding-top: 48%;
+				margin-right: 4%;
+				.admin {
+					a, p {
+						font-size: 2em;
+					}
+				}
+			}
+			.photo:nth-child(2n) {
+				margin-right: 0;
+			}
+			.add-photo {
+				width: 48%;
+				padding: 23% 1em;
+				border: 10px dashed $brand-red;
+				p {
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 667px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone 6+, 6s+, 7+, 8+ ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 414px) 
+	and (max-device-height: 736px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: portrait) { 
+
+	.gallery-page {
+		.gallery {
+			.album, .new-album {
+				width: 100%;
+				margin-right: 0;
+				.admin {
+					a, p {
+						font-size: 3em;
+						margin-right: 35px !important;
+						margin-bottom: 1em;
+					}
+				}
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h4, p {
+							opacity: 1;
+						}
+						h4 {
+							font-size: 3.5em;
+							margin-bottom: 1em;
+						}
+						p {
+							font-size: 1.75em;
+						}
+					}
+				}
+			}
+			.new-album {
+				padding-top: 32.75%;
+		    padding-bottom: 32.75%;
+		    border: 10px dashed $brand-red;
+		    h4 {
+		    	font-size: 3.5em;
+		    }
+			}
+		}
+	}
+
+	.album-page {
+		p {
+			font-size: 2em;
+		}
+		.album-photos {
+			.photo {
+				width: 48%;
+				padding-top: 48%;
+				margin-right: 4%;
+				.admin {
+					a, p {
+						font-size: 2em;
+					}
+				}
+			}
+			.photo:nth-child(2n) {
+				margin-right: 0;
+			}
+			.add-photo {
+				width: 48%;
+				padding: 23% 1em;
+				border: 10px dashed $brand-red;
+				p {
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 414px) 
+	and (max-device-height: 736px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone X ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: portrait) { 
+
+	.gallery-page {
+		.gallery {
+			.album, .new-album {
+				width: 100%;
+				margin-right: 0;
+				.admin {
+					a, p {
+						font-size: 3em;
+						margin-right: 35px !important;
+						margin-bottom: 1em;
+					}
+				}
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h4, p {
+							opacity: 1;
+						}
+						h4 {
+							font-size: 3.5em;
+							margin-bottom: 1em;
+						}
+						p {
+							font-size: 1.75em;
+						}
+					}
+				}
+			}
+			.new-album {
+				padding-top: 32.75%;
+		    padding-bottom: 32.75%;
+		    border: 10px dashed $brand-red;
+		    h4 {
+		    	font-size: 3.5em;
+		    }
+			}
+		}
+	}
+
+	.album-page {
+		p {
+			font-size: 2em;
+		}
+		.album-photos {
+			.photo {
+				width: 48%;
+				padding-top: 48%;
+				margin-right: 4%;
+				.admin {
+					a, p {
+						font-size: 2em;
+					}
+				}
+			}
+			.photo:nth-child(2n) {
+				margin-right: 0;
+			}
+			.add-photo {
+				width: 48%;
+				padding: 23% 1em;
+				border: 10px dashed $brand-red;
+				p {
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone XR ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 2) 
+	and (orientation: portrait) { 
+
+	.gallery-page {
+		.gallery {
+			.album, .new-album {
+				width: 100%;
+				margin-right: 0;
+				.admin {
+					a, p {
+						font-size: 3em;
+						margin-right: 35px !important;
+						margin-bottom: 1em;
+					}
+				}
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h4, p {
+							opacity: 1;
+						}
+						h4 {
+							font-size: 3.5em;
+							margin-bottom: 1em;
+						}
+						p {
+							font-size: 1.75em;
+						}
+					}
+				}
+			}
+			.new-album {
+				padding-top: 32.75%;
+		    padding-bottom: 32.75%;
+		    border: 10px dashed $brand-red;
+		    h4 {
+		    	font-size: 3.5em;
+		    }
+			}
+		}
+	}
+
+	.album-page {
+		p {
+			font-size: 2em;
+		}
+		.album-photos {
+			.photo {
+				width: 48%;
+				padding-top: 48%;
+				margin-right: 4%;
+				.admin {
+					a, p {
+						font-size: 2em;
+					}
+				}
+			}
+			.photo:nth-child(2n) {
+				margin-right: 0;
+			}
+			.add-photo {
+				width: 48%;
+				padding: 23% 1em;
+				border: 10px dashed $brand-red;
+				p {
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 2) 
+	and (orientation: landscape) { 
+
+
+
+	}	
+
+/* iphone XS Max ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 3) 
+	and (orientation: portrait) { 
+
+	.gallery-page {
+		.gallery {
+			.album, .new-album {
+				width: 100%;
+				margin-right: 0;
+				.admin {
+					a, p {
+						font-size: 3em;
+						margin-right: 35px !important;
+						margin-bottom: 1em;
+					}
+				}
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h4, p {
+							opacity: 1;
+						}
+						h4 {
+							font-size: 3.5em;
+							margin-bottom: 1em;
+						}
+						p {
+							font-size: 1.75em;
+						}
+					}
+				}
+			}
+			.new-album {
+				padding-top: 32.75%;
+		    padding-bottom: 32.75%;
+		    border: 10px dashed $brand-red;
+		    h4 {
+		    	font-size: 3.5em;
+		    }
+			}
+		}
+	}
+
+	.album-page {
+		p {
+			font-size: 2em;
+		}
+		.album-photos {
+			.photo {
+				width: 48%;
+				padding-top: 48%;
+				margin-right: 4%;
+				.admin {
+					a, p {
+						font-size: 2em;
+					}
+				}
+			}
+			.photo:nth-child(2n) {
+				margin-right: 0;
+			}
+			.add-photo {
+				width: 48%;
+				padding: 23% 1em;
+				border: 10px dashed $brand-red;
+				p {
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 3) 
+	and (orientation: landscape) { 
+
+
+
+	}	

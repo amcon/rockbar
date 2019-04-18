@@ -11,6 +11,7 @@ body {
 	background-size: 85%;
 	background-position: 250% 50%;
 	color: $brand-white;
+	overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, .cloudinary-button, .btn {
@@ -36,6 +37,7 @@ label {
 	color: $brand-light-red !important;
 	width: 100%;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 
 h1 {
@@ -64,6 +66,8 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	color: black;
 	font-family: 'Archivo', sans-serif;
 	padding: 1em;
+	width: 100%;
+	margin-bottom: 15px;
 }
 
 .btn {
@@ -105,6 +109,29 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
   }
 }
 
+.cloudinary-button {
+	height: 3em;
+  margin-bottom: .5em;
+  border-radius: 0 !important;
+  text-align: center;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid $brand-red;
+  background: $brand-white !important;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: $brand-red !important;
+  font-family: 'Archivo Black', sans-serif !important; 
+  margin-bottom: 25px;
+  &:hover {
+  	border: 2px solid $brand-red;
+  	background: $brand-red !important;
+  	color: $brand-white !important;
+  }
+}
+
 #error-explanation {
   text-align: left;
   margin-bottom: 1em;
@@ -113,7 +140,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
   	text-transform: uppercase;
   }
   p, li {
-  	color: $brand-red;
+  	color: $brand-light-red;
   	margin-bottom: 1em;
   }
 }
@@ -232,10 +259,53 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio: 2)
 	and (orientation: portrait) { 
 
+	h1 {
+		font-size: 5.75em;
+	}
+
 	.btn-white {
 		font-size: 2em;
-		width: 100%;
+		width: 100% !important;
 		border: 2px solid $brand-white;
+	}
+
+	.notice p {
+		height: 20em !important;
+		width: 20em !important;
+		font-size: 2em !important;
+	}
+
+	input, input[type="text"], input[type="password"], input[type="email"], textarea, select {
+		height: 100px;
+		margin-bottom: 40px;
+		font-size: 2.25em;
+	}
+
+	textarea {
+		min-height: 200px !important;
+	}
+
+	label {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	.btn, .cloudinary-button {
+		height: 100px;
+		width: 100%;
+		font-size: 2em;
+	}
+
+	#error-explanation {
+		margin-bottom: 100px;
+		h3 {
+			font-size: 2.5em;
+			text-align: center;
+		}
+		p, li {
+			font-size: 2em;
+			text-align: center;
+		}
 	}
 
 	.home-content {
@@ -258,24 +328,27 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 		.home-featured {
 			padding: 6em 1em 0;
 			h1 {
-				font-size: 4em;
-				padding-bottom: .5em;
-				border-bottom: 2px solid;
 				margin-bottom: 1em;
 			}
 			.featured-events {
 				.featured-event {
 					width: 30%;
 					margin-right: 5%;
+					h6, h2 {
+						display: none;
+					}
 				}
 				.featured-event:nth-child(4) {
 					margin-right: 0;
 				}
 				.featured-event.special {
 					width: 100%;
-					margin-bottom: 2em;
 					h6 {
 						font-size: 2.5em;
+						display: block;
+					}
+					h2 {
+						display: block;
 					}
 				}
 			}
@@ -306,10 +379,53 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio: 2) 
 	and (orientation: portrait) { 
 
+	h1 {
+		font-size: 5.75em;
+	}
+
 	.btn-white {
 		font-size: 2em;
-		width: 100%;
+		width: 100% !important;
 		border: 2px solid $brand-white;
+	}
+
+	.notice p {
+		height: 20em !important;
+		width: 20em !important;
+		font-size: 2em !important;
+	}
+
+	input, input[type="text"], input[type="password"], input[type="email"], textarea, select {
+		height: 100px;
+		margin-bottom: 40px;
+		font-size: 2.25em;
+	}
+
+	textarea {
+		min-height: 200px !important;
+	}
+
+	label {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	.btn, .cloudinary-button {
+		height: 100px;
+		width: 100%;
+		font-size: 2em;
+	}
+
+	#error-explanation {
+		margin-bottom: 100px;
+		h3 {
+			font-size: 2.5em;
+			text-align: center;
+		}
+		p, li {
+			font-size: 2em;
+			text-align: center;
+		}
 	}
 
 	.home-content {
@@ -332,24 +448,27 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 		.home-featured {
 			padding: 6em 1em 0;
 			h1 {
-				font-size: 4em;
-				padding-bottom: .5em;
-				border-bottom: 2px solid;
 				margin-bottom: 1em;
 			}
 			.featured-events {
 				.featured-event {
 					width: 30%;
 					margin-right: 5%;
+					h6, h2 {
+						display: none;
+					}
 				}
 				.featured-event:nth-child(4) {
 					margin-right: 0;
 				}
 				.featured-event.special {
 					width: 100%;
-					margin-bottom: 2em;
 					h6 {
 						font-size: 2.5em;
+						display: block;
+					}
+					h2 {
+						display: block;
 					}
 				}
 			}
@@ -380,10 +499,53 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio: 2) 
 	and (orientation: portrait) { 
 
+	h1 {
+		font-size: 5.75em;
+	}
+
 	.btn-white {
 		font-size: 2em;
-		width: 100%;
+		width: 100% !important;
 		border: 2px solid $brand-white;
+	}
+
+	.notice p {
+		height: 20em !important;
+		width: 20em !important;
+		font-size: 2em !important;
+	}
+
+	input, input[type="text"], input[type="password"], input[type="email"], textarea, select {
+		height: 100px;
+		margin-bottom: 40px;
+		font-size: 2.25em;
+	}
+
+	textarea {
+		min-height: 200px !important;
+	}
+
+	label {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	.btn, .cloudinary-button {
+		height: 100px;
+		width: 100%;
+		font-size: 2em;
+	}
+
+	#error-explanation {
+		margin-bottom: 100px;
+		h3 {
+			font-size: 2.5em;
+			text-align: center;
+		}
+		p, li {
+			font-size: 2em;
+			text-align: center;
+		}
 	}
 
 	.home-content {
@@ -406,24 +568,27 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 		.home-featured {
 			padding: 6em 1em 0;
 			h1 {
-				font-size: 4em;
-				padding-bottom: .5em;
-				border-bottom: 2px solid;
 				margin-bottom: 1em;
 			}
 			.featured-events {
 				.featured-event {
 					width: 30%;
 					margin-right: 5%;
+					h6, h2 {
+						display: none;
+					}
 				}
 				.featured-event:nth-child(4) {
 					margin-right: 0;
 				}
 				.featured-event.special {
 					width: 100%;
-					margin-bottom: 2em;
 					h6 {
 						font-size: 2.5em;
+						display: block;
+					}
+					h2 {
+						display: block;
 					}
 				}
 			}
@@ -454,10 +619,53 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio: 3) 
 	and (orientation: portrait) { 
 
+	h1 {
+		font-size: 5.75em;
+	}
+
 	.btn-white {
 		font-size: 2em;
-		width: 100%;
+		width: 100% !important;
 		border: 2px solid $brand-white;
+	}
+
+	.notice p {
+		height: 20em !important;
+		width: 20em !important;
+		font-size: 2em !important;
+	}
+
+	input, input[type="text"], input[type="password"], input[type="email"], textarea, select {
+		height: 100px;
+		margin-bottom: 40px;
+		font-size: 2.25em;
+	}
+
+	textarea {
+		min-height: 200px !important;
+	}
+
+	label {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	.btn, .cloudinary-button {
+		height: 100px;
+		width: 100%;
+		font-size: 2em;
+	}
+
+	#error-explanation {
+		margin-bottom: 100px;
+		h3 {
+			font-size: 2.5em;
+			text-align: center;
+		}
+		p, li {
+			font-size: 2em;
+			text-align: center;
+		}
 	}
 
 	.home-content {
@@ -480,24 +688,27 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 		.home-featured {
 			padding: 6em 1em 0;
 			h1 {
-				font-size: 4em;
-				padding-bottom: .5em;
-				border-bottom: 2px solid;
 				margin-bottom: 1em;
 			}
 			.featured-events {
 				.featured-event {
 					width: 30%;
 					margin-right: 5%;
+					h6, h2 {
+						display: none;
+					}
 				}
 				.featured-event:nth-child(4) {
 					margin-right: 0;
 				}
 				.featured-event.special {
 					width: 100%;
-					margin-bottom: 2em;
 					h6 {
 						font-size: 2.5em;
+						display: block;
+					}
+					h2 {
+						display: block;
 					}
 				}
 			}
@@ -528,10 +739,53 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio: 3) 
 	and (orientation: portrait) { 
 
+	h1 {
+		font-size: 5.75em;
+	}
+
 	.btn-white {
 		font-size: 2em;
-		width: 100%;
+		width: 100% !important;
 		border: 2px solid $brand-white;
+	}
+
+	.notice p {
+		height: 20em !important;
+		width: 20em !important;
+		font-size: 2em !important;
+	}
+
+	input, input[type="text"], input[type="password"], input[type="email"], textarea, select {
+		height: 100px;
+		margin-bottom: 40px;
+		font-size: 2.25em;
+	}
+
+	textarea {
+		min-height: 200px !important;
+	}
+
+	label {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	.btn, .cloudinary-button {
+		height: 100px;
+		width: 100%;
+		font-size: 2em;
+	}
+
+	#error-explanation {
+		margin-bottom: 100px;
+		h3 {
+			font-size: 2.5em;
+			text-align: center;
+		}
+		p, li {
+			font-size: 2em;
+			text-align: center;
+		}
 	}
 
 	.home-content {
@@ -554,29 +808,34 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 		.home-featured {
 			padding: 6em 1em 0;
 			h1 {
-				font-size: 4em;
-				padding-bottom: .5em;
-				border-bottom: 2px solid;
 				margin-bottom: 1em;
 			}
 			.featured-events {
 				.featured-event {
 					width: 30%;
 					margin-right: 5%;
+					h6, h2 {
+						display: none;
+					}
 				}
 				.featured-event:nth-child(4) {
 					margin-right: 0;
 				}
 				.featured-event.special {
 					width: 100%;
-					margin-bottom: 2em;
 					h6 {
 						font-size: 2.5em;
+						display: block;
+					}
+					h2 {
+						display: block;
 					}
 				}
 			}
 		}
 	}
+
+
 
 
 
@@ -602,10 +861,53 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio : 2) 
 	and (orientation: portrait) { 
 
+	h1 {
+		font-size: 5.75em;
+	}
+
 	.btn-white {
 		font-size: 2em;
-		width: 100%;
+		width: 100% !important;
 		border: 2px solid $brand-white;
+	}
+
+	.notice p {
+		height: 20em !important;
+		width: 20em !important;
+		font-size: 2em !important;
+	}
+
+	input, input[type="text"], input[type="password"], input[type="email"], textarea, select {
+		height: 100px;
+		margin-bottom: 40px;
+		font-size: 2.25em;
+	}
+
+	textarea {
+		min-height: 200px !important;
+	}
+
+	label {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	.btn, .cloudinary-button {
+		height: 100px;
+		width: 100%;
+		font-size: 2em;
+	}
+
+	#error-explanation {
+		margin-bottom: 100px;
+		h3 {
+			font-size: 2.5em;
+			text-align: center;
+		}
+		p, li {
+			font-size: 2em;
+			text-align: center;
+		}
 	}
 
 	.home-content {
@@ -628,24 +930,27 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 		.home-featured {
 			padding: 6em 1em 0;
 			h1 {
-				font-size: 4em;
-				padding-bottom: .5em;
-				border-bottom: 2px solid;
 				margin-bottom: 1em;
 			}
 			.featured-events {
 				.featured-event {
 					width: 30%;
 					margin-right: 5%;
+					h6, h2 {
+						display: none;
+					}
 				}
 				.featured-event:nth-child(4) {
 					margin-right: 0;
 				}
 				.featured-event.special {
 					width: 100%;
-					margin-bottom: 2em;
 					h6 {
 						font-size: 2.5em;
+						display: block;
+					}
+					h2 {
+						display: block;
 					}
 				}
 			}
@@ -676,10 +981,53 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	and (-webkit-device-pixel-ratio : 3) 
 	and (orientation: portrait) { 
 
+	h1 {
+		font-size: 5.75em;
+	}
+
 	.btn-white {
 		font-size: 2em;
-		width: 100%;
+		width: 100% !important;
 		border: 2px solid $brand-white;
+	}
+
+	.notice p {
+		height: 20em !important;
+		width: 20em !important;
+		font-size: 2em !important;
+	}
+
+	input, input[type="text"], input[type="password"], input[type="email"], textarea, select {
+		height: 100px;
+		margin-bottom: 40px;
+		font-size: 2.25em;
+	}
+
+	textarea {
+		min-height: 200px !important;
+	}
+
+	label {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	.btn, .cloudinary-button {
+		height: 100px;
+		width: 100%;
+		font-size: 2em;
+	}
+
+	#error-explanation {
+		margin-bottom: 100px;
+		h3 {
+			font-size: 2.5em;
+			text-align: center;
+		}
+		p, li {
+			font-size: 2em;
+			text-align: center;
+		}
 	}
 
 	.home-content {
@@ -702,24 +1050,27 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 		.home-featured {
 			padding: 6em 1em 0;
 			h1 {
-				font-size: 4em;
-				padding-bottom: .5em;
-				border-bottom: 2px solid;
 				margin-bottom: 1em;
 			}
 			.featured-events {
 				.featured-event {
 					width: 30%;
 					margin-right: 5%;
+					h6, h2 {
+						display: none;
+					}
 				}
 				.featured-event:nth-child(4) {
 					margin-right: 0;
 				}
 				.featured-event.special {
 					width: 100%;
-					margin-bottom: 2em;
 					h6 {
 						font-size: 2.5em;
+						display: block;
+					}
+					h2 {
+						display: block;
 					}
 				}
 			}

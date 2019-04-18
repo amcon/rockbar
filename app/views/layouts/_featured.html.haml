@@ -6,10 +6,7 @@
 		- if event == @featured_events.first
 			.featured-event.special
 				%h6
-					- if event.date == Date.today
-						= "#{event.date.strftime("%a - %m.%d")} (TODAY)"
-					- else
-						= event.date.strftime("%a - %m.%d")
+					= event.date.strftime("%a - %m.%d")
 				%h6.mb-2
 					= "#{event.start_time.strftime("%-I")} - #{event.end_time.strftime("%-I")}"	
 				= link_to event_path(event) do

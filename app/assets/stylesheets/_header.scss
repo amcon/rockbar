@@ -3,9 +3,10 @@ header {
 	.main-width {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
 		.header-logo img {
 			width: 180px;
+			margin-top: 3px;
 		}
 		.fa.fa-bars {
 			font-size: 2em;
@@ -77,3 +78,479 @@ nav.open {
 		display: flex;
 	}
 }
+
+
+
+
+
+
+
+
+/* iphone 4 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 480px) 
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: portrait) { 
+
+	header {
+		.main-width {
+			.fa.fa-bars {
+				font-size: 6em;
+			}
+			.header-logo {
+				img {
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	nav.open {
+		width: 100%;
+		.fa.fa-times {
+			font-size: 4.5em;
+			top: 40px;
+			right: 45px;
+		}
+		.nav-content {
+			a {
+				font-size: 5.5em;
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 480px) 
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: landscape) {
+
+	header {
+  	.main-width {
+	  	.fa.fa-bars {
+	  		font-size: 2em;
+	  	}
+  	}
+  }
+
+  nav.open {
+  	width: 50%;
+  	.fa.fa-times {
+  		font-size: 2em;
+  	}
+  	.nav-content {
+  		a {
+  			font-size: 2em;
+  		}
+  	}
+  }
+
+	}	
+
+/* iphone 5 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 568px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: portrait) { 
+
+	header {
+		.main-width {
+			.fa.fa-bars {
+				font-size: 6em;
+			}
+			.header-logo {
+				img {
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	nav.open {
+		width: 100%;
+		.fa.fa-times {
+			font-size: 4.5em;
+			top: 40px;
+			right: 45px;
+		}
+		.nav-content {
+			a {
+				font-size: 5.5em;
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-height: 568px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: landscape) { 
+
+	header {
+  	.main-width {
+	  	.fa.fa-bars {
+	  		font-size: 2em;
+	  	}
+  	}
+  }
+
+  nav.open {
+  	width: 50%;
+  	.fa.fa-times {
+  		font-size: 2em;
+  	}
+  	.nav-content {
+  		a {
+  			font-size: 2em;
+  		}
+  	}
+  }
+
+	}	
+
+/* iphone 6, 6s, 7, 8 ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 667px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: portrait) { 
+
+	header {
+		.main-width {
+			.fa.fa-bars {
+				font-size: 6em;
+			}
+			.header-logo {
+				img {
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	nav.open {
+		width: 100%;
+		.fa.fa-times {
+			font-size: 4.5em;
+			top: 40px;
+			right: 45px;
+		}
+		.nav-content {
+			a {
+				font-size: 5.5em;
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 667px) 
+	and (-webkit-device-pixel-ratio: 2) 
+	and (orientation: landscape) { 
+
+	header {
+  	.main-width {
+	  	.fa.fa-bars {
+	  		font-size: 2em;
+	  	}
+  	}
+  }
+
+  nav.open {
+  	width: 50%;
+  	.fa.fa-times {
+  		font-size: 2em;
+  	}
+  	.nav-content {
+  		a {
+  			font-size: 2em;
+  		}
+  	}
+  }
+
+	}	
+
+/* iphone 6+, 6s+, 7+, 8+ ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 414px) 
+	and (max-device-height: 736px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: portrait) { 
+
+	header {
+		.main-width {
+			.fa.fa-bars {
+				font-size: 6em;
+			}
+			.header-logo {
+				img {
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	nav.open {
+		width: 100%;
+		.fa.fa-times {
+			font-size: 4.5em;
+			top: 40px;
+			right: 45px;
+		}
+		.nav-content {
+			a {
+				font-size: 5.5em;
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 414px) 
+	and (max-device-height: 736px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: landscape) { 
+
+	header {
+  	.main-width {
+	  	.fa.fa-bars {
+	  		font-size: 2em;
+	  	}
+  	}
+  }
+
+  nav.open {
+  	width: 50%;
+  	.fa.fa-times {
+  		font-size: 2em;
+  	}
+  	.nav-content {
+  		a {
+  			font-size: 2em;
+  		}
+  	}
+  }
+
+	}	
+
+/* iphone X ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: portrait) { 
+
+	header {
+		.main-width {
+			.fa.fa-bars {
+				font-size: 6em;
+			}
+			.header-logo {
+				img {
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	nav.open {
+		width: 100%;
+		.fa.fa-times {
+			font-size: 4.5em;
+			top: 40px;
+			right: 45px;
+		}
+		.nav-content {
+			a {
+				font-size: 5.5em;
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3) 
+	and (orientation: landscape) { 
+
+	header {
+  	.main-width {
+	  	.fa.fa-bars {
+	  		font-size: 2em;
+	  	}
+  	}
+  }
+
+  nav.open {
+  	width: 50%;
+  	.fa.fa-times {
+  		font-size: 2em;
+  	}
+  	.nav-content {
+  		a {
+  			font-size: 2em;
+  		}
+  	}
+  }
+
+	}	
+
+/* iphone XR ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 2) 
+	and (orientation: portrait) { 
+
+	header {
+		.main-width {
+			.fa.fa-bars {
+				font-size: 6em;
+			}
+			.header-logo {
+				img {
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	nav.open {
+		width: 100%;
+		.fa.fa-times {
+			font-size: 4.5em;
+			top: 40px;
+			right: 45px;
+		}
+		.nav-content {
+			a {
+				font-size: 5.5em;
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 2) 
+	and (orientation: landscape) { 
+
+	header {
+  	.main-width {
+	  	.fa.fa-bars {
+	  		font-size: 2em;
+	  	}
+  	}
+  }
+
+  nav.open {
+  	width: 50%;
+  	.fa.fa-times {
+  		font-size: 2em;
+  	}
+  	.nav-content {
+  		a {
+  			font-size: 2em;
+  		}
+  	}
+  }
+
+	}	
+
+/* iphone XS Max ------------------------------------------------------------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 3) 
+	and (orientation: portrait) { 
+
+	header {
+		.main-width {
+			.fa.fa-bars {
+				font-size: 6em;
+			}
+			.header-logo {
+				img {
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	nav.open {
+		width: 100%;
+		.fa.fa-times {
+			font-size: 4.5em;
+			top: 40px;
+			right: 45px;
+		}
+		.nav-content {
+			a {
+				font-size: 5.5em;
+			}
+		}
+	}
+
+	}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width : 414px) 
+	and (max-device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 3) 
+	and (orientation: landscape) { 
+
+	header {
+  	.main-width {
+	  	.fa.fa-bars {
+	  		font-size: 2em;
+	  	}
+  	}
+  }
+
+  nav.open {
+  	width: 50%;
+  	.fa.fa-times {
+  		font-size: 2em;
+  	}
+  	.nav-content {
+  		a {
+  			font-size: 2em;
+  		}
+  	}
+  }
+
+	}	

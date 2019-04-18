@@ -15,5 +15,5 @@
 						= "#{event.start_time.strftime("%-I")} - #{event.end_time.strftime("%-I")}"	
 
 	- if current_user
-		%h2.mt-5
-			= link_to("+ Add New Event", new_event_path)
+		%p.mt-5
+			= link_to("+ Add New Event", new_event_path, class: 'btn-white')

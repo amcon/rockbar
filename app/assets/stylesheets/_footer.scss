@@ -14,7 +14,7 @@ footer {
 			display: flex;
 			flex-direction: column;
 			h2 {
-				margin-bottom: 2em;
+				margin-bottom: 1.5em;
 				text-transform: uppercase;
 				font-size: 1.1em;
 			}
@@ -22,7 +22,18 @@ footer {
 		    font-size: .8em;
 		    line-height: 2em;
 		    font-weight: 100;
-		    letter-spacing: 1px;
+		    letter-spacing: 2px;
+        width: -webkit-fit-content;
+		    width: -moz-fit-content;
+		    width: fit-content;
+		    text-transform: uppercase;
+			}
+			.social {
+				a {
+					&:hover {
+						text-decoration: none;
+					}
+				}
 			}
 			.fa {
 				margin-right: .5em;

@@ -2,12 +2,12 @@
 	- @descriptions.each do |description|
 		.about-description
 			- if description.description.present?
-				%p
+				%h5
 					= description.description
 			- if current_user			
 				.admin.mt-3
-					= link_to("Edit", edit_description_path(description), class: 'mr-4')			
+					= link_to("Edit", edit_description_path(description), class: 'mt-5 btn-white')			
 - if current_user && @descriptions.length == 0
-	= link_to new_description_path, class: 'new-description' do
-		%h4
+	= link_to new_description_path, class: 'new-description btn-white' do
+		%p
 			+ Create the About Section

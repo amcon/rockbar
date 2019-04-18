@@ -19,6 +19,6 @@
 						= link_to("Delete", delete_staff_path(staff))	
 		.div.clear			
 	- if current_user
-		= link_to new_staff_path, class: 'new-staff' do
-			%h4
+		= link_to new_staff_path, class: 'new-staff btn-white' do
+			%p.mt-0
 				+ Add New Staff

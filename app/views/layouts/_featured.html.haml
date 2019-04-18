@@ -10,7 +10,7 @@
 						= "#{event.date.strftime("%a - %m.%d")} (TODAY)"
 					- else
 						= event.date.strftime("%a - %m.%d")
-				%p.mb-2
+				%h6.mb-2
 					= "#{event.start_time.strftime("%-I")} - #{event.end_time.strftime("%-I")}"	
 				= link_to event_path(event) do
 					= image_tag(event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
@@ -18,10 +18,10 @@
 			.featured-event
 				%h6
 					= event.date.strftime("%a - %m.%d")
-				%p.mb-2
+				%h6.mb-2
 					= "#{event.start_time.strftime("%-I")} - #{event.end_time.strftime("%-I")}"	
 				= link_to event_path(event) do
 					= image_tag(event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
 	.clear
 .link	
-	= link_to("VIEW CALENDAR", events_path)						
+	= link_to("VIEW CALENDAR", events_path, class: 'btn-white')					

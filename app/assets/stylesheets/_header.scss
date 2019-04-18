@@ -38,7 +38,7 @@ nav {
   	font-size: 1.5em;
   }
 	.nav-content {
-		height: 300px;
+		min-height: 300px;
 		display: none;
 		flex-direction: column;
 		justify-content: space-between;
@@ -46,8 +46,7 @@ nav {
 		text-align: center;
 		a.active {
 			color: $brand-white;
-			border-bottom: 2px solid $brand-white;
-			text-decoration: none;
+			text-decoration: line-through;
 		}
 		a {
 			font-size: 1.5em;
@@ -60,8 +59,7 @@ nav {
 			padding: 0 .5em;
 			&:hover {
 				color: $brand-white;
-				border-bottom: 2px solid $brand-white;
-				text-decoration: none;
+				text-decoration: line-through;
 			}
 		}
 	}

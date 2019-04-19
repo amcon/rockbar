@@ -223,9 +223,9 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 					box-sizing: border-box;
 					width: 100%;
 					height: inherit;
-					border: 3px solid black;
+					border-top: 3px solid transparent;
 					&:hover {
-						border: 3px solid $brand-red;
+						border-top: 3px solid $brand-red;
 						cursor: pointer;
 					}
 				}

@@ -38,7 +38,7 @@ gem 'cloudinary'
 gem 'mini_magick', '~> 4.5', '>= 4.5.1'
 gem 'figaro'
 gem 'lightbox2-rails'
-gem 'gibbon', :git => 'https://github.com/amro/gibbon.git'
+gem 'mailchimp-api', require: 'mailchimp'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

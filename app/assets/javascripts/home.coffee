@@ -56,7 +56,14 @@ $ ->
   	return	
 
 
-  $('#mc_embed_signup_scroll').click ->
-  	$('#mce-EMAIL').val('')
-  	$('#mce-FIRST_NAME').val('')
-  	$('#mce-LAST_NAME').val('')
+  $('.change-button').click ->
+    $('.change-password').css 'display', 'block'
+    $('.password-question').css 'display', 'none'
+    return
+
+  $('.admin_user_password').click ->
+    $('.admin_user_password').removeClass 'disabled'
+    $('.password').removeClass 'disabled'
+    $('#admin_user_password').removeAttr 'disabled'
+    return  
+

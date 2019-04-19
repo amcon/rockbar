@@ -1,0 +1,8 @@
+= simple_form_for @admin_user do |f|
+	= error_messages_for(f.object)
+	.password-question
+		%label Password
+		%p.change-button.mb-3 Change Password?
+	.change-password{style: 'display: none;'}	
+		= f.input :password, placeholder: :password, label: 'New Password (Do not leave blank)', disabled: true
+	= f.button :submit

@@ -12,7 +12,7 @@
 	}
 	.directions {
 		display: block;
-		margin-bottom: 700px;
+		margin-bottom: 600px;
 		font-size: .75em;
 	}
 	.google-map {
@@ -25,48 +25,6 @@
 		left: 0;
 		-webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
 	  filter: grayscale(70%);
-	}
-	.mailchimp {
-		h1 {
-			margin-bottom: 2em;
-		}
-		#mc_embed_signup_scroll {
-			display: flex;
-			flex-wrap: wrap;
-			.mc-field-group:nth-child(3) {
-				margin-right: 0;
-			}
-			.mc-field-group {
-				display: flex;
-				flex-direction: column;
-				width: 32%;
-				margin-right: 2%;
-				label {
-					margin-bottom: 1em;
-					.asterisk {
-						color: $brand-light-red;
-					}
-				}
-				input {
-					height: 50px;
-				}
-			}
-			.clear {
-				width: 100%;
-				#mc-embedded-subscribe {
-					margin-top: 1em;
-					width: 100%;
-					background: $brand-red;
-					height: 50px;
-					color: $brand-white;
-					border: none;
-					text-transform: uppercase;
-					font-size: 1.25em;
-					letter-spacing: 2px;
-					padding: 0;
-				}
-			}
-		}
 	}
 }
 
@@ -93,6 +51,9 @@
 		}
 		.google-map {
 			top: 850px;
+		}
+		.directions {
+			margin-bottom: 560px;
 		}
 	}
 
@@ -128,6 +89,9 @@
 		.google-map {
 			top: 850px;
 		}
+		.directions {
+			margin-bottom: 560px;
+		}
 	}
 
 	}
@@ -161,6 +125,9 @@
 		}
 		.google-map {
 			top: 850px;
+		}
+		.directions {
+			margin-bottom: 560px;
 		}
 	}
 
@@ -196,6 +163,9 @@
 		.google-map {
 			top: 850px;
 		}
+		.directions {
+			margin-bottom: 560px;
+		}
 	}
 
 	}
@@ -229,6 +199,9 @@
 		}
 		.google-map {
 			top: 850px;
+		}
+		.directions {
+			margin-bottom: 560px;
 		}
 	}
 
@@ -264,6 +237,9 @@
 		.google-map {
 			top: 850px;
 		}
+		.directions {
+			margin-bottom: 560px;
+		}
 	}
 
 	}
@@ -297,6 +273,9 @@
 		}
 		.google-map {
 			top: 850px;
+		}
+		.directions {
+			margin-bottom: 560px;
 		}
 	}
 

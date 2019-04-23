@@ -39,6 +39,7 @@ gem 'figaro'
 gem 'lightbox2-rails'
 gem 'mailchimp-api', require: 'mailchimp'
 gem 'rails_12factor', group: :production 
+gem 'rails_serve_static_assets'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

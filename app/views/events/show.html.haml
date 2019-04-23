@@ -3,7 +3,10 @@
 .event-page
 	.event
 		.col.p-0
-			= image_tag(@event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
+			- if @event.profile_image_id_url.present?
+				= image_tag(@event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
+			- else
+				= image_tag("event_fallback.png", :width => 200, :height => 300, class: 'cover-photo')
 		.event-info
 			%h1
 				= @event.title	

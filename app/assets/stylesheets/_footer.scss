@@ -33,7 +33,9 @@ footer {
 			}
 			.social {
 				display: flex;
+				justify-content: flex-start;
 				a {
+					width: 25%;
 					&:hover {
 						text-decoration: none;
 					}

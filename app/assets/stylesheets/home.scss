@@ -44,7 +44,7 @@ label {
 h1 {
 	font-size: 2.5em;
 	text-transform: uppercase;
-	color: $brand-red;
+	color: $brand-light-red;
 	margin-bottom: 3em;
 	font-weight: 100;
 	letter-spacing: 5px;
@@ -205,10 +205,10 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 			h6 {
 				font-size: .9em;
 				text-transform: uppercase;
-				color: $brand-red;
+				color: $brand-light-red;
 			}
 			p {
-				color: $brand-red;
+				color: $brand-light-red;
 			}
 			.featured-event {
 				float: left;
@@ -252,7 +252,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 /* As main design shrinks */
 
 @media only screen
-	and (min-width : 1050px) {
+	and (min-width: 1050px) {
 
 	.home-content .home-featured .featured-events .featured-event h6:first-of-type {
 		font-size: 1.35em;
@@ -269,8 +269,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 @media only screen 
 	and (min-device-width: 320px) 
 	and (max-device-height: 480px) 
-	and (-webkit-device-pixel-ratio: 2)
-	and (orientation: portrait) { 
+	and (-webkit-device-pixel-ratio: 2) { 
 
 	body {
 		padding-top: 200px;
@@ -363,30 +362,24 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 				}
 				.featured-event.special {
 					width: 100%;
-					h6 {
-						font-size: 2.5em;
-						display: block;
-					}
-					h2 {
-						display: block;
-					}
 				}
 			}
 		}
 	}
 
+	}	
 
-
-	}
 
 /* Landscape */
-@media only screen 
+@media only screen
 	and (min-device-width: 320px) 
-	and (max-device-height: 480px) 
+	and (max-device-height: 480px)
 	and (-webkit-device-pixel-ratio: 2)
-	and (orientation: landscape) { 
+	and (orientation: landscape) {
 
-
+	.home-content {
+		padding-top: 0;
+	}
 
 	}	
 
@@ -396,8 +389,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 @media only screen 
 	and (min-device-width: 320px) 
 	and (max-device-height: 568px) 
-	and (-webkit-device-pixel-ratio: 2) 
-	and (orientation: portrait) { 
+	and (-webkit-device-pixel-ratio: 2) { 
 
 	body {
 		padding-top: 200px;
@@ -490,30 +482,24 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 				}
 				.featured-event.special {
 					width: 100%;
-					h6 {
-						font-size: 2.5em;
-						display: block;
-					}
-					h2 {
-						display: block;
-					}
 				}
 			}
 		}
 	}
 
+	}	
 
-
-	}
 
 /* Landscape */
-@media only screen 
+@media only screen
 	and (min-device-width: 320px) 
-	and (max-device-height: 568px) 
-	and (-webkit-device-pixel-ratio: 2) 
-	and (orientation: landscape) { 
+	and (max-device-height: 568px)
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: landscape) {
 
-
+	.home-content {
+		padding-top: 0;
+	}
 
 	}	
 
@@ -523,8 +509,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 @media only screen 
 	and (min-device-width: 375px) 
 	and (max-device-height: 667px) 
-	and (-webkit-device-pixel-ratio: 2) 
-	and (orientation: portrait) { 
+	and (-webkit-device-pixel-ratio: 2) { 
 
 	body {
 		padding-top: 200px;
@@ -617,30 +602,24 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 				}
 				.featured-event.special {
 					width: 100%;
-					h6 {
-						font-size: 2.5em;
-						display: block;
-					}
-					h2 {
-						display: block;
-					}
 				}
 			}
 		}
 	}
 
+	}	
 
-
-	}
 
 /* Landscape */
-@media only screen 
+@media only screen
 	and (min-device-width: 375px) 
-	and (max-device-height: 667px) 
-	and (-webkit-device-pixel-ratio: 2) 
-	and (orientation: landscape) { 
+	and (max-device-height: 667px)
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: landscape) {
 
-
+	.home-content {
+		padding-top: 0;
+	}
 
 	}	
 
@@ -650,8 +629,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 @media only screen 
 	and (min-device-width: 414px) 
 	and (max-device-height: 736px) 
-	and (-webkit-device-pixel-ratio: 3) 
-	and (orientation: portrait) { 
+	and (-webkit-device-pixel-ratio: 3) { 
 
 	body {
 		padding-top: 200px;
@@ -744,30 +722,24 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 				}
 				.featured-event.special {
 					width: 100%;
-					h6 {
-						font-size: 2.5em;
-						display: block;
-					}
-					h2 {
-						display: block;
-					}
 				}
 			}
 		}
 	}
 
+	}	
 
-
-	}
 
 /* Landscape */
-@media only screen 
+@media only screen
 	and (min-device-width: 414px) 
-	and (max-device-height: 736px) 
-	and (-webkit-device-pixel-ratio: 3) 
-	and (orientation: landscape) { 
+	and (max-device-height: 736px)
+	and (-webkit-device-pixel-ratio: 3)
+	and (orientation: landscape) {
 
-
+	.home-content {
+		padding-top: 0;
+	}
 
 	}	
 
@@ -777,8 +749,7 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 @media only screen 
 	and (min-device-width: 375px) 
 	and (max-device-height: 812px) 
-	and (-webkit-device-pixel-ratio: 3) 
-	and (orientation: portrait) { 
+	and (-webkit-device-pixel-ratio: 3) { 
 
 	body {
 		padding-top: 200px;
@@ -871,43 +842,35 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 				}
 				.featured-event.special {
 					width: 100%;
-					h6 {
-						font-size: 2.5em;
-						display: block;
-					}
-					h2 {
-						display: block;
-					}
 				}
 			}
 		}
 	}
 
+	}	
 
-
-
-
-	}
 
 /* Landscape */
-@media only screen 
+@media only screen
 	and (min-device-width: 375px) 
-	and (max-device-height: 812px) 
-	and (-webkit-device-pixel-ratio: 3) 
-	and (orientation: landscape) { 
+	and (max-device-height: 812px)
+	and (-webkit-device-pixel-ratio: 3)
+	and (orientation: landscape) {
 
-
+	.home-content {
+		padding-top: 0;
+	}
 
 	}	
+	
 
-/* iphone XR ------------------------------------------------------------- */
+/* iphone XR and XS Max ------------------------------------------------------------- */
 
 /* Portrait */
 @media only screen 
-	and (min-device-width : 414px) 
-	and (max-device-height : 896px) 
-	and (-webkit-device-pixel-ratio : 2) 
-	and (orientation: portrait) { 
+	and (min-device-width: 414px) 
+	and (max-device-height: 896px) 
+	and (-webkit-device-pixel-ratio: 2) { 
 
 	body {
 		padding-top: 200px;
@@ -1000,156 +963,23 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 				}
 				.featured-event.special {
 					width: 100%;
-					h6 {
-						font-size: 2.5em;
-						display: block;
-					}
-					h2 {
-						display: block;
-					}
 				}
 			}
 		}
 	}
-
-
-
-	}
-
-/* Landscape */
-@media only screen 
-	and (min-device-width : 414px) 
-	and (max-device-height : 896px) 
-	and (-webkit-device-pixel-ratio : 2) 
-	and (orientation: landscape) { 
-
-
 
 	}	
 
-/* iphone XS Max ------------------------------------------------------------- */
-
-/* Portrait */
-@media only screen 
-	and (min-device-width : 414px) 
-	and (max-device-height : 896px) 
-	and (-webkit-device-pixel-ratio : 3) 
-	and (orientation: portrait) { 
-
-	body {
-		padding-top: 200px;
-    background-size: 150%;
-    background-position: left;
-	}
-
-	h1 {
-		font-size: 5.75em;
-	}
-
-	.btn-white {
-		font-size: 2em !important;
-		width: 100% !important;
-		border: 2px solid $brand-white;
-		text-align: center !important;
-	}
-
-	.notice p {
-		height: 20em !important;
-		width: 20em !important;
-		font-size: 2em !important;
-	}
-
-	input, input[type="text"], input[type="password"], input[type="email"], textarea, select {
-		height: 100px;
-		margin-bottom: 40px;
-		font-size: 2.25em;
-	}
-
-	textarea {
-		min-height: 200px !important;
-	}
-
-	label {
-		font-size: 2em;
-		margin-bottom: 20px;
-	}
-
-	.btn, .cloudinary-button {
-		height: 100px;
-		width: 100%;
-		font-size: 2em !important;
-	}
-
-	#error-explanation {
-		margin-bottom: 100px;
-		h3 {
-			font-size: 2.5em;
-			text-align: center;
-		}
-		p, li {
-			font-size: 2em;
-			text-align: center;
-		}
-	}
-
-	.home-content {
-		.home-logo {
-			img {
-				width: 100%;
-				padding: 0 1em;
-			}
-		}
-		h5 {
-			font-size: 2.35em;
-			letter-spacing: 10px;
-			margin-top: 3em;
-		}
-		h6 {
-			font-size: 1.75em;
-			letter-spacing: 10px;
-			margin-top: 1em;
-		}
-		.home-featured {
-			padding: 6em 1em 0;
-			h1 {
-				margin-bottom: 1em;
-			}
-			.featured-events {
-				.featured-event {
-					width: 30%;
-					margin-right: 5%;
-					h6, h2 {
-						display: none;
-					}
-				}
-				.featured-event:nth-child(4) {
-					margin-right: 0;
-				}
-				.featured-event.special {
-					width: 100%;
-					h6 {
-						font-size: 2.5em;
-						display: block;
-					}
-					h2 {
-						display: block;
-					}
-				}
-			}
-		}
-	}
-
-
-
-	}
 
 /* Landscape */
-@media only screen 
-	and (min-device-width : 414px) 
-	and (max-device-height : 896px) 
-	and (-webkit-device-pixel-ratio : 3) 
-	and (orientation: landscape) { 
+@media only screen
+	and (min-device-width: 414px)
+	and (max-device-height: 896px)
+	and (-webkit-device-pixel-ratio: 2)
+	and (orientation: landscape) {
 
-
+	.home-content {
+		padding-top: 0;
+	}
 
 	}	

@@ -205,6 +205,9 @@ textarea {
 		margin-bottom: 5em;
 		letter-spacing: 5px;
 		font-weight: 100;
+		a {
+			font-family: inherit;
+		}
 	}
 	.home-featured {
 		width: 100%;

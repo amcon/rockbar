@@ -33,6 +33,8 @@ footer {
 			}
 			.social {
 				a {
+					display: inline-block;
+					width: initial;
 					&:hover {
 						text-decoration: none;
 					}

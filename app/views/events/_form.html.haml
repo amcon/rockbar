@@ -9,17 +9,17 @@
 
 		.event-info
 			= error_messages_for(f.object)
-			= f.input :title, as: :string
+			= f.input :title, as: :string, placeholder: 'Ex. Rockstrap'
 			= f.input :profile_image_id_cache, as: :hidden
-			= f.input :description
+			= f.input :description, placeholder: 'Describe the event'
 			= f.input :date, as: :date, order: [:month, :day, :year]
 			= f.input :start_time, as: :time, ampm: true, minutes_step: 30
 			= f.input :end_time, as: :time, ampm: true, minute_step: 30
-			= f.input :hosted_by, as: :string
-			= f.input :dj, as: :string
-			= f.input :drink_specials, as: :string
-			= f.input :cover_charge, as: :string
-			= f.input :event_link, as: :url
+			= f.input :hosted_by, as: :string, placeholder: 'Ex. Joey'
+			= f.input :dj, as: :string, placeholder: 'Ex. Lorant (no need to type dj)'
+			= f.input :drink_specials, as: :string, placeholder: 'Ex. $5 Draft Beers'
+			= f.input :cover_charge, as: :string, 'Ex. $5 (no need to type cover)'
+			= f.input :event_link, as: :url 'Ex. https://facebook.com/events/82474927'
 			= f.button :submit
 			= link_to('Cancel', :back)	
 		.clear			

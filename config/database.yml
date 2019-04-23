@@ -83,3 +83,5 @@ test:
 production:
   <<: *default
   database: rockbar_production
+  username: rockbar
+  password: <%= ENV['ROCKBAR_DATABASE_PASSWORD'] %>

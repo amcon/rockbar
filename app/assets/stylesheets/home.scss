@@ -73,7 +73,9 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 }
 
 textarea {
-	padding: 1em;
+	padding: .5em 1em;
+	letter-spacing: 2px;
+  font-size: 1.1em;
 }
 
 .btn {

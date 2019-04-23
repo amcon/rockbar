@@ -2,8 +2,6 @@ class AccessController < ApplicationController
 
 	before_action :confirm_logged_in, except: [:login, :attempt_login, :logout]
 
-	respond_to :html
-
 	def menu
 	end
 

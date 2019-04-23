@@ -2,8 +2,6 @@ class PhotoAlbumsController < ApplicationController
 
   before_action :confirm_logged_in, except: [:index, :show]
 
-  respond_to :html
-
   def index
   	@albums = PhotoAlbum.newest_first
   end

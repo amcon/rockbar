@@ -1,7 +1,5 @@
 class ContactController < ApplicationController
 
-	respond_to :html
-
   def index
   end
 

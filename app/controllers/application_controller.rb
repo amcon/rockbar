@@ -4,8 +4,6 @@ class ApplicationController < ActionController::Base
 
 	helper_method :current_user
 
-	respond_to :html
-
 	private
 
 	def confirm_logged_in

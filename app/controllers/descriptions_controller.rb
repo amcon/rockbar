@@ -2,8 +2,6 @@ class DescriptionsController < ApplicationController
 
 	before_action :confirm_logged_in, except: [:index]
 
-	respond_to :html
-
 	def index
 		@descriptions = Description.all
 	end

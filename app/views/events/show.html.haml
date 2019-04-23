@@ -13,7 +13,7 @@
 			%h5
 				= @event.date.strftime("%A - %m.%d")
 				%br
-				= "#{@event.start_time.strftime("%-I")} - #{@event.end_time.strftime("%-I")}"
+				= "#{@event.start_time.strftime("%-I%p")} - #{@event.end_time.strftime("%-I%p")}"
 			%h6.mt-5
 				= "Hosted by #{@event.hosted_by}"
 				%br

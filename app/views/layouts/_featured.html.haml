@@ -8,7 +8,7 @@
 				%h6
 					= event.date.strftime("%a - %m.%d")
 				%h6.mb-2
-					= "#{event.start_time.strftime("%-I")} - #{event.end_time.strftime("%-I")}"	
+					= "#{event.start_time.strftime("%-I%p")} - #{event.end_time.strftime("%-I%p")}"	
 				= link_to event_path(event) do
 					- if event.profile_image_id_url.present?
 						= image_tag(event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
@@ -19,7 +19,7 @@
 				%h6
 					= event.date.strftime("%a - %m.%d")
 				%h6.mb-2
-					= "#{event.start_time.strftime("%-I")} - #{event.end_time.strftime("%-I")}"	
+					= "#{event.start_time.strftime("%-I%p")} - #{event.end_time.strftime("%-I%p")}"	
 				= link_to event_path(event) do
 					= image_tag(event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
 	.clear

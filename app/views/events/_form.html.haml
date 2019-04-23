@@ -23,6 +23,8 @@
 			= f.button :submit
 			- if current_page?(new_event_path)
 				= link_to('Cancel', events_path)
+			- if !current_page?(new_event_path) && @event.blank?
+				= link_to('Cancel', events_path)
 			- else
 				= link_to('Cancel', event_path(@event))	
 		.clear			

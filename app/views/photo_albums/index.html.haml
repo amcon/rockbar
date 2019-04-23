@@ -29,7 +29,7 @@
 					%h4
 						+ Add New Album		
 		- else 
-			%h1.mt-5
+			%h1.mt-5.w-100
 				Hmm... No photos yet!	
 			- if current_user
 				= link_to new_photo_album_path, class: 'new-album' do	

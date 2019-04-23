@@ -1,7 +1,7 @@
 - @page_title = "#{@event.title}"
 
 .event-page
-	.event
+	.event.clearfix
 		.col.p-0
 			- if @event.profile_image_id_url.present?
 				= image_tag(@event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')

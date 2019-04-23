@@ -1,8 +1,8 @@
 = simple_form_for @album do |f|
 	= error_messages_for(f.object)
-	= f.input :title, as: :string
+	= f.input :title, as: :string, label: 'Album Name', placeholder: 'Ex. World Pride'
 	= f.input :album_image_id_cache, as: :hidden
 	%label Upload Album Cover Photo
 	%p#album_widget_opener
-	= f.input :description
+	= f.input :description, placeholder: 'Ex. Photos from World Pride Summer 2019. Photographer: Dijoun...'
 	= f.button :submit

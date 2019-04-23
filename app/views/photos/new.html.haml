@@ -2,7 +2,8 @@
 
 
 .photo-create
-	%h1 Upload a New Photo
+	%h1 
+		= "Upload a New Photo to the album '#{@album.title}'" 
 
 	= render partial: 'form'
 	= link_to("Cancel", photo_album_path(@album))

@@ -18,8 +18,8 @@
 			= f.input :hosted_by, as: :string, placeholder: 'Ex. Joey'
 			= f.input :dj, as: :string, placeholder: 'Ex. Lorant (no need to type dj)'
 			= f.input :drink_specials, as: :string, placeholder: 'Ex. $5 Draft Beers'
-			= f.input :cover_charge, as: :string, 'Ex. $5 (no need to type cover)'
-			= f.input :event_link, as: :url 'Ex. https://facebook.com/events/82474927'
+			= f.input :cover_charge, as: :string, placeholder: 'Ex. $5 (no need to type cover)'
+			= f.input :event_link, as: :url, placeholder: 'Ex. https://facebook.com/events/82474927'
 			= f.button :submit
 			= link_to('Cancel', :back)	
 		.clear			

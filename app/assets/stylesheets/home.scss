@@ -66,9 +66,13 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	background: $brand-white;
 	color: black;
 	font-family: 'Archivo', sans-serif;
-	padding: 1em;
+	padding: 0 1em;
 	width: 100%;
 	margin-bottom: 15px;
+}
+
+textarea {
+	padding: 1em;
 }
 
 .btn {

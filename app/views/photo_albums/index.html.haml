@@ -4,26 +4,34 @@
 	%h1 Gallery
 
 	.gallery
-		- @albums.each do |album|
-			.album
-				= link_to photo_album_path(album) do
-					.image-overlay
-						- if album.album_image_id_url.present?
-							= image_tag(album.album_image_id_url, :width => 300, :height => 200, class: 'cover-photo')
-						- else
-							= image_tag('rockbar_default.jpg', :width => 300, :height => 200, class: 'cover-photo')	
-						%span
-							%h4
-								= album.title
-							%p
-								= truncate(album.description, length: 50)
-				- if current_user				
-					.admin
-						= link_to("Edit", edit_photo_album_path(album), class: 'mr-2')
-						%p.mr-2 
-							|
-						= link_to("Delete", delete_photo_album_path(album))
-		- if current_user
-			= link_to new_photo_album_path, class: 'new-album' do	
-				%h4
-					+ Add New Album		
+		- if @albums.length > 0
+			- @albums.each do |album|
+				.album
+					= link_to photo_album_path(album) do
+						.image-overlay
+							- if album.album_image_id_url.present?
+								= image_tag(album.album_image_id_url, :width => 300, :height => 200, class: 'cover-photo')
+							- else
+								= image_tag('rockbar_default.jpg', :width => 300, :height => 200, class: 'cover-photo')	
+							%span
+								%h4
+									= album.title
+								%p
+									= truncate(album.description, length: 50)
+					- if current_user				
+						.admin
+							= link_to("Edit", edit_photo_album_path(album), class: 'mr-2')
+							%p.mr-2 
+								|
+							= link_to("Delete", delete_photo_album_path(album))
+			- if current_user
+				= link_to new_photo_album_path, class: 'new-album' do	
+					%h4
+						+ Add New Album		
+		- else 
+			%h1.mt-5
+				Hmm... No photos yet!	
+			- if current_user
+				= link_to new_photo_album_path, class: 'new-album' do	
+					%h4
+						+ Add New Album		

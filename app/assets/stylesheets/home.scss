@@ -235,8 +235,10 @@ textarea {
 					width: 100%;
 					height: inherit;
 					border-top: 3px solid transparent;
+					border-bottom: 3px solid transparent;
 					&:hover {
-						border-top: 3px solid $brand-red;
+						border-top: 3px solid $brand-light-red;
+						border-bottom: 3px solid $brand-light-red;
 						cursor: pointer;
 					}
 				}

@@ -1,6 +1,8 @@
 class StaffsController < ApplicationController
 	before_action :confirm_logged_in, except: [:index]
 
+  respond_to :html
+
   def index
   	@staffs = Staff.oldest_first
   end

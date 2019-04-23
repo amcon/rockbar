@@ -2,6 +2,8 @@ class EventsController < ApplicationController
 
 	before_action :confirm_logged_in, except: [:index, :show]
 
+	respond_to :html
+
 	def index
 		@events = Event.sorted
 	end

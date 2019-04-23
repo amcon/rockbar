@@ -2,6 +2,8 @@ class AdminUsersController < ApplicationController
 
   before_action :confirm_logged_in, only: [:index, :edit, :delete]
 
+  respond_to :html
+
   def index
   	@admin_users = AdminUser.all
   end

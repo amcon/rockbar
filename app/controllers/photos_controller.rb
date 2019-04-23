@@ -3,6 +3,8 @@ class PhotosController < ApplicationController
   before_action :confirm_logged_in, except: [:index, :show]
   before_action :find_album, except: [:index]
 
+  respond_to :html
+
   def index
   	@photos = Photo.all
   end

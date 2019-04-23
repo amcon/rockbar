@@ -32,10 +32,9 @@ footer {
 		    text-transform: uppercase;
 			}
 			.social {
-				display: flex;
-				justify-content: flex-start;
 				a {
-					width: 50px;
+					display: inline-block;
+					width: initial;
 					&:hover {
 						text-decoration: none;
 					}

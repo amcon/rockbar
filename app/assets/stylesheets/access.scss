@@ -369,3 +369,150 @@
 	}
 
 	}
+
+/* Samsung Galaxy 5,6,7 ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 360px) 
+	and (max-device-height: 640px) {
+
+	.admin-page {
+		padding: 0 1em;
+		h1 {
+			margin-bottom: 1em;
+		}
+		.actions {
+			flex-wrap: wrap;
+			a {
+				height: 0;
+				padding: 23% 1em;
+				width: 48%;
+				margin-right: 4%;
+				margin-bottom: 1em;
+				font-size: 2em;
+			}
+			a:nth-child(2n) {
+				margin-right: 0;
+			}
+			a:nth-child(3n) {
+				margin-right: 4%;
+			}
+		}
+		.edit {
+			a, p {
+				font-size: 2em;
+			}
+		}
+	}
+
+	.login-page, .admin-create, .admin-edit, .admin-delete, .album-delete, .photo-delete, .event-delete, .album-create, .photo-create, .staff-create, .staff-delete, .about-create {
+		width: 100%;
+		padding: 0 1em;
+		a {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 2.25em;
+		}
+	}
+
+}			
+
+/* Samsung Galaxy 8, 9 ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 360px) 
+	and (max-device-height: 740px) {
+
+	.admin-page {
+		padding: 0 1em;
+		h1 {
+			margin-bottom: 1em;
+		}
+		.actions {
+			flex-wrap: wrap;
+			a {
+				height: 0;
+				padding: 23% 1em;
+				width: 48%;
+				margin-right: 4%;
+				margin-bottom: 1em;
+				font-size: 2em;
+			}
+			a:nth-child(2n) {
+				margin-right: 0;
+			}
+			a:nth-child(3n) {
+				margin-right: 4%;
+			}
+		}
+		.edit {
+			a, p {
+				font-size: 2em;
+			}
+		}
+	}
+
+	.login-page, .admin-create, .admin-edit, .admin-delete, .album-delete, .photo-delete, .event-delete, .album-create, .photo-create, .staff-create, .staff-delete, .about-create {
+		width: 100%;
+		padding: 0 1em;
+		a {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 2.25em;
+		}
+	}
+
+}
+
+/* Google Pixel ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 411px) 
+	and (max-device-height: 731px) {
+
+	.admin-page {
+		padding: 0 1em;
+		h1 {
+			margin-bottom: 1em;
+		}
+		.actions {
+			flex-wrap: wrap;
+			a {
+				height: 0;
+				padding: 23% 1em;
+				width: 48%;
+				margin-right: 4%;
+				margin-bottom: 1em;
+				font-size: 2em;
+			}
+			a:nth-child(2n) {
+				margin-right: 0;
+			}
+			a:nth-child(3n) {
+				margin-right: 4%;
+			}
+		}
+		.edit {
+			a, p {
+				font-size: 2em;
+			}
+		}
+	}
+
+	.login-page, .admin-create, .admin-edit, .admin-delete, .album-delete, .photo-delete, .event-delete, .album-create, .photo-create, .staff-create, .staff-delete, .about-create {
+		width: 100%;
+		padding: 0 1em;
+		a {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 2.25em;
+		}
+	}
+
+}	

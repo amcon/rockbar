@@ -651,3 +651,240 @@
 	}
 
 	}
+
+/* Samsung Galaxy 5,6,7 ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 360px) 
+	and (max-device-height: 640px) {
+
+	.gallery-page {
+		padding: 0 1em;
+		.gallery {
+			.album, .new-album {
+				width: 100%;
+				margin-right: 0;
+				.admin {
+					a, p {
+						font-size: 3em;
+						margin-right: 35px !important;
+						margin-bottom: 1em;
+					}
+				}
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h4, p {
+							opacity: 1;
+						}
+						h4 {
+							font-size: 3.5em;
+							margin-bottom: 1em;
+						}
+						p {
+							font-size: 1.75em;
+						}
+					}
+				}
+			}
+			.new-album {
+				padding-top: 32.75%;
+		    padding-bottom: 32.75%;
+		    border: 10px dashed $brand-red;
+		    h4 {
+		    	font-size: 3.5em;
+		    }
+			}
+		}
+	}
+
+	.album-page {
+		padding: 0 1em;
+		p {
+			font-size: 2em;
+		}
+		.album-photos {
+			.photo {
+				width: 48%;
+				padding-top: 48%;
+				margin-right: 4%;
+				.admin {
+					a, p {
+						font-size: 2em;
+					}
+				}
+			}
+			.photo:nth-child(2n) {
+				margin-right: 0;
+			}
+			.add-photo {
+				width: 48%;
+				padding: 23% 1em;
+				border: 10px dashed $brand-red;
+				p {
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+
+}
+
+/* Samsung Galaxy 8, 9 ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 360px) 
+	and (max-device-height: 740px) {
+
+	.gallery-page {
+		padding: 0 1em;
+		.gallery {
+			.album, .new-album {
+				width: 100%;
+				margin-right: 0;
+				.admin {
+					a, p {
+						font-size: 3em;
+						margin-right: 35px !important;
+						margin-bottom: 1em;
+					}
+				}
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h4, p {
+							opacity: 1;
+						}
+						h4 {
+							font-size: 3.5em;
+							margin-bottom: 1em;
+						}
+						p {
+							font-size: 1.75em;
+						}
+					}
+				}
+			}
+			.new-album {
+				padding-top: 32.75%;
+		    padding-bottom: 32.75%;
+		    border: 10px dashed $brand-red;
+		    h4 {
+		    	font-size: 3.5em;
+		    }
+			}
+		}
+	}
+
+	.album-page {
+		padding: 0 1em;
+		p {
+			font-size: 2em;
+		}
+		.album-photos {
+			.photo {
+				width: 48%;
+				padding-top: 48%;
+				margin-right: 4%;
+				.admin {
+					a, p {
+						font-size: 2em;
+					}
+				}
+			}
+			.photo:nth-child(2n) {
+				margin-right: 0;
+			}
+			.add-photo {
+				width: 48%;
+				padding: 23% 1em;
+				border: 10px dashed $brand-red;
+				p {
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+
+}	
+
+/* Google Pixel ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 411px) 
+	and (max-device-height: 731px) {
+
+	.gallery-page {
+		padding: 0 1em;
+		.gallery {
+			.album, .new-album {
+				width: 100%;
+				margin-right: 0;
+				.admin {
+					a, p {
+						font-size: 3em;
+						margin-right: 35px !important;
+						margin-bottom: 1em;
+					}
+				}
+				.image-overlay {
+					span {
+						background-color: $light-trans-red;
+						h4, p {
+							opacity: 1;
+						}
+						h4 {
+							font-size: 3.5em;
+							margin-bottom: 1em;
+						}
+						p {
+							font-size: 1.75em;
+						}
+					}
+				}
+			}
+			.new-album {
+				padding-top: 32.75%;
+		    padding-bottom: 32.75%;
+		    border: 10px dashed $brand-red;
+		    h4 {
+		    	font-size: 3.5em;
+		    }
+			}
+		}
+	}
+
+	.album-page {
+		padding: 0 1em;
+		p {
+			font-size: 2em;
+		}
+		.album-photos {
+			.photo {
+				width: 48%;
+				padding-top: 48%;
+				margin-right: 4%;
+				.admin {
+					a, p {
+						font-size: 2em;
+					}
+				}
+			}
+			.photo:nth-child(2n) {
+				margin-right: 0;
+			}
+			.add-photo {
+				width: 48%;
+				padding: 23% 1em;
+				border: 10px dashed $brand-red;
+				p {
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+
+}		

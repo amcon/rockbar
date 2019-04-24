@@ -188,3 +188,74 @@
 
 	}
 
+/* Samsung Galaxy 5,6,7 ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 360px) 
+	and (max-device-height: 640px) {
+
+	.contact-page {
+		h1 {
+			margin-bottom: 1em;
+		}
+		h4 {
+			font-size: 2em;
+		}
+		.google-map {
+			top: 850px;
+		}
+		.directions {
+			margin-bottom: 560px;
+		}
+	}
+
+}		
+
+/* Samsung Galaxy 8, 9 ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 360px) 
+	and (max-device-height: 740px) {
+
+	.contact-page {
+		h1 {
+			margin-bottom: 1em;
+		}
+		h4 {
+			font-size: 2em;
+		}
+		.google-map {
+			top: 850px;
+		}
+		.directions {
+			margin-bottom: 560px;
+		}
+	}
+
+}
+
+/* Google Pixel ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 411px) 
+	and (max-device-height: 731px) {
+
+	.contact-page {
+		h1 {
+			margin-bottom: 1em;
+		}
+		h4 {
+			font-size: 2em;
+		}
+		.google-map {
+			top: 850px;
+		}
+		.directions {
+			margin-bottom: 560px;
+		}
+	}
+
+}	

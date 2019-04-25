@@ -583,3 +583,57 @@ footer {
 	}
 
 }	
+
+/* Google Pixel XL ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 411px) 
+	and (max-device-height: 823px) {
+
+	footer {
+		padding: 4em 2em;
+		.footer-logo {
+			img {
+				display: none;
+			}
+		}
+		.footer-sections {
+			.footer-section {
+				width: 100%;
+				margin-bottom: 4em;
+				border-bottom: 1px solid white;
+				padding-bottom: 4em;
+				h2 {
+					font-size: 2.5em;
+				}
+				p, a {
+					font-size: 2em;
+					line-height: 3em;
+					letter-spacing: 5px;
+				}
+			}
+			.footer-section:nth-child(3) {
+				border-bottom: none;
+				padding-bottom: 0;
+				margin-bottom: 0;
+			}
+		}
+		.rights {
+			font-size: 1.5em;
+			flex-direction: column;
+			text-align: center;
+			.contact {
+				order: -1;
+				margin-bottom: 20px;
+				p {
+					margin-left: 80px;
+				}
+				p:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+}	

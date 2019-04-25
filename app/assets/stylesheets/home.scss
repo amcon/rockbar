@@ -297,7 +297,7 @@ textarea {
 
 	body {
 		padding-top: 200px;
-    background-size: 315%;
+    background-size: 285%;
     background-attachment: unset;
     background-position: top;
 	}
@@ -431,7 +431,7 @@ textarea {
 
 	body {
 		padding-top: 200px;
-    background-size: 315%;
+    background-size: 285%;
     background-attachment: unset;
     background-position: top;
 	}
@@ -565,7 +565,7 @@ textarea {
 
 	body {
 		padding-top: 200px;
-    background-size: 315%;
+    background-size: 285%;
     background-attachment: unset;
     background-position: top;
 	}
@@ -699,7 +699,7 @@ textarea {
 
 	body {
 		padding-top: 200px;
-    background-size: 315%;
+    background-size: 285%;
     background-attachment: unset;
     background-position: top;
 	}
@@ -833,7 +833,7 @@ textarea {
 
 	body {
 		padding-top: 200px;
-    background-size: 315%;
+    background-size: 285%;
     background-attachment: unset;
     background-position: top;
 	}
@@ -968,7 +968,7 @@ textarea {
 
 	body {
 		padding-top: 200px;
-    background-size: 315%;
+    background-size: 285%;
     background-attachment: unset;
     background-position: top;
 	}
@@ -1102,7 +1102,7 @@ textarea {
 
 	body {
 		padding-top: 200px;
-    background-size: 315%;
+    background-size: 285%;
     background-attachment: unset;
     background-position: top;
 	}
@@ -1233,7 +1233,7 @@ textarea {
 
 	body {
 		padding-top: 200px;
-    background-size: 315%;
+    background-size: 285%;
     background-attachment: unset;
     background-position: top;
 	}
@@ -1364,7 +1364,7 @@ textarea {
 
 	body {
 		padding-top: 200px;
-    background-size: 315%;
+    background-size: 285%;
     background-attachment: unset;
     background-position: top;
 	}
@@ -1471,6 +1471,137 @@ textarea {
 @media only screen 
 	and (min-device-width: 360px) 
 	and (max-device-height: 740px)
+	and (orientation: landscape) {
+
+	.home-content {
+		padding-top: 0;
+		.home-logo {
+			width: 70%;
+			margin-top: -50px;
+			img {
+				padding-top: 0;
+			}
+		}
+	}
+
+}
+
+/* Google Pixel XL ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 411px) 
+	and (max-device-height: 823px) {
+
+	body {
+		padding-top: 200px;
+    background-size: 285%;
+    background-attachment: unset;
+    background-position: top;
+	}
+
+	.main-width {
+		padding: 0 1em;
+	}
+
+	h1 {
+		font-size: 5.75em;
+	}
+
+	.btn-white {
+		font-size: 2em !important;
+		width: 100% !important;
+		border: 2px solid $brand-white;
+		text-align: center !important;
+	}
+
+	.notice p {
+		height: 20em !important;
+		width: 20em !important;
+		font-size: 2em !important;
+	}
+
+	input, input[type="text"], input[type="password"], input[type="email"], textarea, select {
+		height: 100px;
+		margin-bottom: 40px;
+		font-size: 2.25em;
+	}
+
+	textarea {
+		min-height: 200px !important;
+	}
+
+	label {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	.btn, .cloudinary-button {
+		height: 100px;
+		width: 100%;
+		font-size: 2em !important;
+	}
+
+	#error-explanation {
+		margin-bottom: 100px;
+		h3 {
+			font-size: 2.5em;
+			text-align: center;
+		}
+		p, li {
+			font-size: 2em;
+			text-align: center;
+		}
+	}
+
+	.home-content {
+		.home-logo {
+			img {
+				width: 100%;
+				padding: 0 1em;
+				padding-top: 15vh;
+			}
+		}
+		h5 {
+			font-size: 2.35em;
+			letter-spacing: 10px;
+			margin-top: 3em;
+		}
+		h6 {
+			font-size: 1.75em;
+			letter-spacing: 10px;
+			margin-top: 1em;
+			margin-bottom: 20vh !important;
+		}
+		.home-featured {
+			padding: 6em 1em 0;
+			h1 {
+				margin-bottom: 1em;
+			}
+			.featured-events {
+				.featured-event {
+					width: 30%;
+					margin-right: 5%;
+					h6, h2 {
+						display: none;
+					}
+				}
+				.featured-event:nth-child(4) {
+					margin-right: 0;
+				}
+				.featured-event.special {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+}	
+
+/* Landscape Only */
+@media only screen 
+	and (min-device-width: 360px) 
+	and (max-device-height: 823px)
 	and (orientation: landscape) {
 
 	.home-content {

@@ -889,3 +889,80 @@ nav.open {
   }
 
 }	
+
+/* Google Pixel XL ------------------------------------------------------------- */
+
+@media only screen 
+	and (min-device-width: 411px) 
+	and (max-device-height: 823px) {
+
+	header {
+		padding: 2em;
+		.main-width {
+			.hamburger {
+				width: 75px;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			.fa-bars {
+				font-size: 4em;
+			}
+			.header-logo {
+				display: flex;
+				justify-content: center;
+				padding-left: 75px;
+				a {
+					width: 40%;
+				}
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	nav.open {
+		width: 100%;
+		.fa.fa-times {
+			font-size: 4.5em;
+			top: 40px;
+			right: 45px;
+		}
+		.nav-content {
+			a {
+				font-size: 5.5em;
+			}
+		}
+	}
+
+}
+
+/* Landscape Only */
+@media only screen 
+	and (min-device-width: 411px) 
+	and (max-device-height: 823px)
+	and (orientation: landscape) {
+
+	header {
+		padding: 2em;
+  	.main-width {
+	  	.fa.fa-bars {
+	  		font-size: 2em;
+	  	}
+  	}
+  }
+
+  nav.open {
+  	width: 50%;
+  	.fa.fa-times {
+  		font-size: 2em;
+  	}
+  	.nav-content {
+  		a {
+  			font-size: 2em;
+  		}
+  	}
+  }
+
+}	

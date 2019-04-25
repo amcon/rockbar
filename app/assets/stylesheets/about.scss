@@ -431,3 +431,46 @@
 	}
 
 }		
+
+/* Google Pixel XL ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 411px) 
+	and (max-device-height: 823px) {
+
+	.about-page {
+		padding: 0 1em;
+		h5 {
+			font-size: 2em;
+		}
+		.staff-members {
+			.staff {
+				margin-right: 10%;
+				width: 45%;
+				.image-overlay {
+					span {
+						background-color: rgba(0, 0, 0, .4);
+						h3 {
+							font-size: 3em;
+						}
+					}
+				}
+				.staff-description {
+					p {
+						font-size: 1.5em;
+					}
+				}
+				.admin {
+					a {
+						font-size: 2em;
+					}
+				}
+			}
+			.staff:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+}		

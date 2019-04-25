@@ -993,3 +993,85 @@
 	}
 
 }		
+
+/* Google Pixel XL ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 411px) 
+	and (max-device-height: 823px) {
+
+	.calendar-page {
+		padding: 0 1em;
+		.simple-calendar {
+			.calendar-heading {
+				span {
+					font-size: 5em;
+				}
+				div {
+					a {
+						font-size: 1.75em;
+					}
+					a:first-of-type {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.event-edit, .event-create {
+		.event {
+			.col {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	.event-page, .event-edit, .event-create {
+		padding: 0 1em;
+		.event {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			min-height: 2500px;
+			.col {
+				float: none;
+				width: 100%;
+				margin-bottom: 100px;
+				margin-right: 0;
+				order: 1;
+			}
+			.event-info {
+				margin-bottom: 50px;
+				width: 100%;
+				float: none;
+				h1 {
+					font-size: 4.5em;
+					margin-bottom: 100px;
+				}
+				h5 {
+					font-size: 3.5em;
+					margin-bottom: 100px;
+				}
+				h6 {
+					font-size: 2.5em;
+					margin-bottom: 50px;
+				}
+				p {
+					font-size: 1.75em;
+					margin-bottom: 100px !important;
+				}
+				a {
+					font-size: 2em;
+				}
+			}
+		}
+		.admin-links {
+			margin-top: 50px;
+			a, p {
+				font-size: 2.5em;
+			}
+		}
+	}
+
+}		

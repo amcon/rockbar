@@ -1077,3 +1077,103 @@
 	}
 
 }		
+
+/* Google Pixel XL ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 411px) 
+	and (max-device-height: 823px) {
+
+	.gallery-page {
+		padding: 0 1em;
+		.gallery {
+			.album, .new-album {
+				width: 100%;
+				margin-right: 0;
+				.admin {
+					a, p {
+						font-size: 3em;
+						margin-right: 35px !important;
+						margin-bottom: 1em;
+					}
+				}
+				.image-overlay {
+					span {
+						background-color: rgba(0, 0, 0, .4);
+						overflow-x: hidden;
+						h4, p {
+							opacity: 1;
+						}
+						h4 {
+							font-size: 4.25em;
+							margin-bottom: 50px;
+						}
+						p {
+							font-size: 2.25em;
+						}
+					}
+				}
+			}
+			.new-album {
+				padding-top: 32.75%;
+		    padding-bottom: 32.75%;
+		    border: 10px dashed $brand-red;
+		    h4 {
+		    	font-size: 3.5em;
+		    }
+			}
+		}
+	}
+
+	.album-page {
+		padding: 0 1em;
+		p {
+			font-size: 2em;
+		}
+		.album-photos {
+			.photo {
+				width: 48%;
+				padding-top: 48%;
+				margin-right: 4%;
+				.admin {
+					a, p {
+						font-size: 2em;
+					}
+				}
+			}
+			.photo:nth-child(2n) {
+				margin-right: 0;
+			}
+			.add-photo {
+				width: 48%;
+				padding: 23% 1em;
+				border: 10px dashed $brand-red;
+				p {
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+
+	#lightbox {
+		.lb-outerContainer {
+			width: 90% !important;
+			height: inherit !important;
+			img.lb-image {
+				width: 100% !important;
+				height: auto !important;
+			}
+		}
+		.lb-dataContainer {
+			width: 90% !important;
+		}
+	}
+
+	#cloudinary-overlay {
+		#cloudinary-widget.widget.slider.active.opened {
+			width: 90% !important;
+		}
+	}
+
+}		

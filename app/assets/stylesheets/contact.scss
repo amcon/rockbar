@@ -268,3 +268,28 @@
 	}
 
 }	
+
+/* Google Pixel XL ------------------------------------------------------------- */
+
+/* Both */
+@media only screen 
+	and (min-device-width: 411px) 
+	and (max-device-height: 823px) {
+
+	.contact-page {
+		h1 {
+			margin-bottom: 1em;
+		}
+		h4 {
+			font-size: 2em;
+		}
+		.google-map {
+			top: 850px;
+			height: 1200px;
+		}
+		.directions {
+			margin-bottom: 1260px;
+		}
+	}
+
+}	

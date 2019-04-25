@@ -215,10 +215,22 @@ textarea {
 		width: 100%;
 		margin-top: 6.5em;
 		.featured-events {
+			h6:first-of-type {
+				min-height: 45px;
+			}
 			h6 {
-				font-size: .9em;
 				text-transform: uppercase;
 				color: $brand-light-red;
+				display: flex;
+				align-items: flex-end;
+				.day {
+					font-size: .45em;
+			    line-height: 1.85em;
+				}
+				.big-date {
+			    font-size: 1.15em;
+			    margin-right: 10px;
+				}
 			}
 			p {
 				color: $brand-light-red;
@@ -249,6 +261,14 @@ textarea {
 				width: 30%;
 				h6, p {
 					color: $brand-white;
+				}
+				h6 {
+					.day {
+						font-size: .65em;
+					}
+					.big-date {
+						font-size: 1.75em;
+					}
 				}
 			}
 			.featured-event:nth-of-type(4n) {

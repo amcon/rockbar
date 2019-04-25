@@ -6,7 +6,10 @@
 		- if event == @featured_events.first
 			.featured-event.special
 				%h6
-					= event.date.strftime("%a - %m.%d")
+					.big-date
+						= event.date.strftime("%m.%d")
+					.day
+						= event.date.strftime("%a")
 				%h6.mb-2
 					= "#{event.start_time.strftime("%-I%p")} - #{event.end_time.strftime("%-I%p")}"	
 				= link_to event_path(event) do
@@ -17,7 +20,10 @@
 		- else			
 			.featured-event
 				%h6
-					= event.date.strftime("%a - %m.%d")
+					.big-date
+						= event.date.strftime("%m.%d")
+					.day
+						= event.date.strftime("%a")
 				%h6.mb-2
 					= "#{event.start_time.strftime("%-I%p")} - #{event.end_time.strftime("%-I%p")}"	
 				= link_to event_path(event) do

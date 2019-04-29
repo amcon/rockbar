@@ -305,6 +305,84 @@ textarea {
 }
 
 
+/* Font size increase on larger screens */
+
+@media only screen
+	and (min-width: 1750px) {
+
+	h1 {
+		font-size: 3.25em;
+	}
+
+	h2, .btn-white {
+		font-size: 1.5em !important;
+	}
+
+	p, a {
+		font-size: 1em !important;
+		a {
+			font-size: inherit !important;
+		}
+	}
+
+	.rights p {
+		font-size: 1.25em !important;
+	}
+
+	nav .nav-content a, nav .fa.fa-times {
+		font-size: 2em !important;
+	}
+
+	header .fa-bars {
+		font-size: 2.75em !important;
+	}
+
+	header .header-logo img {
+		width: 180px !important;
+	}
+
+	.featured-event .day {
+		font-size: .75em !important;
+	}
+
+	.featured-event .big-date {
+		font-size: 1.75em !important;
+	}
+
+	.featured-event:first-of-type .big-date {
+		font-size: 2.25em !important;
+	}
+
+	.featured-event h6:nth-of-type(2) {
+		font-size: 1.5em;
+		margin-top: 10px;
+	}
+
+	.about-page h5, .staff h3, .staff p {
+		font-size: 1.55em !important;
+	}
+
+	.contact-page .google-map {
+		top: 692px !important;
+	}
+
+	.event-info{
+		h1 {
+			font-size: 4em !important;
+		} 
+		h5 {
+			font-size: 2.5em !important;
+		}
+		h6 {
+			font-size: 1.75em !important;
+		}
+		p {
+			font-size: 1.25em !important;
+		}
+	}
+
+}
+
 
 
 /* iphone 4 ------------------------------------------------------------- */

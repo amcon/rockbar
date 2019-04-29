@@ -15,11 +15,13 @@
 				%br
 				= "#{@event.start_time.strftime("%-I%p")} - #{@event.end_time.strftime("%-I%p")}"
 			%h6.mt-5
-				= "Hosted by #{@event.hosted_by}"
-				%br
-				= "DJ #{@event.dj}"
-				%br
-				= "#{@event.drink_specials}"
+				= "Hosted by #{@event.hosted_by}" if @event.hosted_by.present?
+				- if @event.dj.present?
+					%br
+					= "DJ #{@event.dj}" 
+				- if @event.drink_specials.present?	
+					%br
+					= "#{@event.drink_specials}"
 			%p.mb-5.mt-5
 				= @event.description
 				%br

@@ -41,6 +41,12 @@ class EventsController < ApplicationController
 		end
 	end
 
+	def duplicate
+	  template = Event.find(params[:id])
+	  @event = template.dup # define in Invoice.duplicate how to create a dup
+	  render action: 'new'
+	end
+
 	def delete
 		@event = Event.find(params[:id])
 	end

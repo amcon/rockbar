@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   resources :events do
   	member do
   		get :delete
+  		get :duplicate
   	end
   	resources :home, only: [:index]
   end

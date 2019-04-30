@@ -12,7 +12,7 @@
 					%h5
 						= link_to event.title, event
 					%p
-						= "#{event.start_time.strftime("%-I")} - #{event.end_time.strftime("%-I")}"	
+						= "#{event.start_time.strftime("%-I%p")} - #{event.end_time.strftime("%-I%p")}"	
 
 	- if current_user
 		%p.mt-5

@@ -4,5 +4,5 @@
 	= f.input :photo_image_id_cache, as: :hidden
 	%label Upload a Photo
 	%p#photo_widget_opener
-	= f.input :title, as: :string, placeholder: 'Ex. The Lovely Rockbar Staff'
+	= f.input :title, as: :string, placeholder: 'Ex. The Lovely Rockbar Staff', required: true
 	= f.button :submit

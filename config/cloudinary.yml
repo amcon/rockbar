@@ -5,15 +5,18 @@ development:
   api_secret: 12J834oLwG8ryT9VThKFD-XZ0tM
   enhance_image_tag: true
   static_file_support: false
+  secure: true
 production:
   cloud_name: rockbar
   api_key: '621622588733672'
   api_secret: 12J834oLwG8ryT9VThKFD-XZ0tM
   enhance_image_tag: true
   static_file_support: true
+  secure: true
 test:
   cloud_name: rockbar
   api_key: '621622588733672'
   api_secret: 12J834oLwG8ryT9VThKFD-XZ0tM
   enhance_image_tag: true
   static_file_support: false
+  secure: true

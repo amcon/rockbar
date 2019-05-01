@@ -8,6 +8,7 @@ $ ->
     thumbnail_transformation: [
         { width: 300, height: 300, crop: 'lfill'}
       ],
+    secure: true,
     multiple: false
   }, (error, result) ->
     console.log error, result
@@ -24,6 +25,7 @@ $ ->
     cropping_coordinates_mode: 'custom',
     cropping_validate_dimensions: true,
     eager: 'custom',
+    secure: true,
     multiple: false
   }, (error, result) ->
     console.log error, result
@@ -40,6 +42,7 @@ $ ->
     cropping_coordinates_mode: 'custom',
     cropping_validate_dimensions: true,
     eager: 'custom',
+    secure: true,
     multiple: false
   }, (error, result) ->
     console.log error, result
@@ -56,6 +59,7 @@ $ ->
     cropping_coordinates_mode: 'custom',
     cropping_validate_dimensions: true,
     eager: 'custom',
+    secure: true,
     multiple: false
   }, (error, result) ->
     console.log error, result

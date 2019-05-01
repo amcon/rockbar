@@ -240,21 +240,45 @@ textarea {
 				float: left;
 				margin-right: 2.5%;
 				width: 20.83%;
-				.cover-photo {
-					margin-top: 2em;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					text-align: center;
-					box-sizing: border-box;
-					width: 100%;
-					height: inherit;
-					border-top: 3px solid transparent;
-					border-bottom: 3px solid transparent;
-					&:hover {
-						border-top: 3px solid $brand-light-red;
-						border-bottom: 3px solid $brand-light-red;
-						cursor: pointer;
+				.image-overlay {
+					position: relative;
+					span {
+						height: 100%;
+				    width: 100%;
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    display: flex;
+				    flex-direction: column;
+				    justify-content: center;
+				    align-items: center;
+				    h3 {
+				    	opacity: 0;
+				    	font-size: .85em;
+				    	font-family: 'Archivo', sans-serif;
+				    	text-align: center;
+				    	letter-spacing: 5px;
+				    }
+				  }
+					.cover-photo {
+						margin-top: 2em;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+						box-sizing: border-box;
+						width: 100%;
+						height: inherit;
+					}
+				}
+				&:hover {
+					cursor: pointer;
+					span {
+						background-color: $translucent-red;
+						h3 {
+							opacity: 1;
+							font-style: normal !important;
+						}
 					}
 				}
 			}
@@ -357,6 +381,10 @@ textarea {
 	.featured-event h6:nth-of-type(2) {
 		font-size: 1.5em;
 		margin-top: 10px;
+	}
+
+	.featured-event span h3 {
+		font-size: 1.35em !important;
 	}
 
 	.about-page h5, .staff h3, .staff p {

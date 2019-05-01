@@ -33,9 +33,11 @@
 			    align-items: center;
 			    h4 {
 			    	text-transform: uppercase;
+			    	font-style: normal;
 			    }
 			    p {
 			    	font-size: .75em;
+			    	font-style: normal;
 			    }
 			    h4, p {
 			    	opacity: 0;
@@ -50,6 +52,7 @@
 						background: rgba(103, 2, 27, .7);
 						h4, p {
 							opacity: 1;
+							font-style: normal !important;
 						}
 					}
 				}

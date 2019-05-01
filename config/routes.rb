@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 	get 'contact', to: 'contact#index'
 	get 'admin', to: 'access#menu'
 	get 'login', to: 'access#login'
+  get 'calendar', to: 'events#index'
 	post 'access/attempt_login'
 	get 'access/logout'
 	post 'contact/subscribe', to: 'contact#subscribe'

@@ -8,7 +8,7 @@ header {
 	.main-width {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
 		.header-logo img {
 			width: 120px;
 			margin-top: 3px;
@@ -103,6 +103,7 @@ nav.open {
 	header {
 		padding: 2em;
 		.main-width {
+			align-items: center;
 			.hamburger {
 				width: 75px;
 				display: flex;
@@ -110,12 +111,12 @@ nav.open {
 				align-items: center;
 			}
 			.fa-bars {
-				font-size: 4em;
+				font-size: 3.5em;
 			}
 			.header-logo {
 				display: flex;
 				justify-content: center;
-				padding-left: 75px;
+				padding-left: 75px;	
 				a {
 					width: 40%;
 				}
@@ -184,6 +185,7 @@ nav.open {
 	header {
 		padding: 2em;
 		.main-width {
+			align-items: center;
 			.hamburger {
 				width: 75px;
 				display: flex;
@@ -191,12 +193,12 @@ nav.open {
 				align-items: center;
 			}
 			.fa-bars {
-				font-size: 4em;
+				font-size: 3.5em;
 			}
 			.header-logo {
 				display: flex;
 				justify-content: center;
-				padding-left: 75px;
+				padding-left: 75px;	
 				a {
 					width: 40%;
 				}
@@ -265,6 +267,7 @@ nav.open {
 	header {
 		padding: 2em;
 		.main-width {
+			align-items: center;
 			.hamburger {
 				width: 75px;
 				display: flex;
@@ -272,12 +275,12 @@ nav.open {
 				align-items: center;
 			}
 			.fa-bars {
-				font-size: 4em;
+				font-size: 3.5em;
 			}
 			.header-logo {
 				display: flex;
 				justify-content: center;
-				padding-left: 75px;
+				padding-left: 75px;	
 				a {
 					width: 40%;
 				}
@@ -346,6 +349,7 @@ nav.open {
 	header {
 		padding: 2em;
 		.main-width {
+			align-items: center;
 			.hamburger {
 				width: 75px;
 				display: flex;
@@ -353,12 +357,12 @@ nav.open {
 				align-items: center;
 			}
 			.fa-bars {
-				font-size: 4em;
+				font-size: 3.5em;
 			}
 			.header-logo {
 				display: flex;
 				justify-content: center;
-				padding-left: 75px;
+				padding-left: 75px;	
 				a {
 					width: 40%;
 				}
@@ -427,6 +431,7 @@ nav.open {
 	header {
 		padding: 2em;
 		.main-width {
+			align-items: center;
 			.hamburger {
 				width: 75px;
 				display: flex;
@@ -434,12 +439,12 @@ nav.open {
 				align-items: center;
 			}
 			.fa-bars {
-				font-size: 4em;
+				font-size: 3.5em;
 			}
 			.header-logo {
 				display: flex;
 				justify-content: center;
-				padding-left: 75px;
+				padding-left: 75px;	
 				a {
 					width: 40%;
 				}
@@ -508,6 +513,7 @@ nav.open {
 	header {
 		padding: 2em;
 		.main-width {
+			align-items: center;
 			.hamburger {
 				width: 75px;
 				display: flex;
@@ -515,12 +521,12 @@ nav.open {
 				align-items: center;
 			}
 			.fa-bars {
-				font-size: 4em;
+				font-size: 3.5em;
 			}
 			.header-logo {
 				display: flex;
 				justify-content: center;
-				padding-left: 75px;
+				padding-left: 75px;	
 				a {
 					width: 40%;
 				}
@@ -589,6 +595,7 @@ nav.open {
 	header {
 		padding: 2em;
 		.main-width {
+			align-items: center;
 			.hamburger {
 				width: 75px;
 				display: flex;
@@ -596,12 +603,12 @@ nav.open {
 				align-items: center;
 			}
 			.fa-bars {
-				font-size: 4em;
+				font-size: 3.5em;
 			}
 			.header-logo {
 				display: flex;
 				justify-content: center;
-				padding-left: 75px;
+				padding-left: 75px;	
 				a {
 					width: 40%;
 				}
@@ -668,6 +675,7 @@ nav.open {
 	header {
 		padding: 2em;
 		.main-width {
+			align-items: center;
 			.hamburger {
 				width: 75px;
 				display: flex;
@@ -675,12 +683,12 @@ nav.open {
 				align-items: center;
 			}
 			.fa-bars {
-				font-size: 4em;
+				font-size: 3.5em;
 			}
 			.header-logo {
 				display: flex;
 				justify-content: center;
-				padding-left: 75px;
+				padding-left: 75px;	
 				a {
 					width: 40%;
 				}
@@ -745,6 +753,7 @@ nav.open {
 	header {
 		padding: 2em;
 		.main-width {
+			align-items: center;
 			.hamburger {
 				width: 75px;
 				display: flex;
@@ -752,12 +761,12 @@ nav.open {
 				align-items: center;
 			}
 			.fa-bars {
-				font-size: 4em;
+				font-size: 3.5em;
 			}
 			.header-logo {
 				display: flex;
 				justify-content: center;
-				padding-left: 75px;
+				padding-left: 75px;	
 				a {
 					width: 40%;
 				}
@@ -822,6 +831,7 @@ nav.open {
 	header {
 		padding: 2em;
 		.main-width {
+			align-items: center;
 			.hamburger {
 				width: 75px;
 				display: flex;
@@ -829,12 +839,12 @@ nav.open {
 				align-items: center;
 			}
 			.fa-bars {
-				font-size: 4em;
+				font-size: 3.5em;
 			}
 			.header-logo {
 				display: flex;
 				justify-content: center;
-				padding-left: 75px;
+				padding-left: 75px;	
 				a {
 					width: 40%;
 				}
@@ -899,6 +909,7 @@ nav.open {
 	header {
 		padding: 2em;
 		.main-width {
+			align-items: center;
 			.hamburger {
 				width: 75px;
 				display: flex;
@@ -906,12 +917,12 @@ nav.open {
 				align-items: center;
 			}
 			.fa-bars {
-				font-size: 4em;
+				font-size: 3.5em;
 			}
 			.header-logo {
 				display: flex;
 				justify-content: center;
-				padding-left: 75px;
+				padding-left: 75px;	
 				a {
 					width: 40%;
 				}

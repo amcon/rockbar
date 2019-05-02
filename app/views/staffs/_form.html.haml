@@ -1,8 +1,8 @@
 = simple_form_for @staff do |f|
 	= error_messages_for(f.object)
-	= f.input :title, as: :string, label: "First Name"
+	= f.input :title, as: :string, label: "First Name", required: true
 	= f.input :staff_image_id_cache, as: :hidden
 	%label Upload Staff Image
 	%p#staff_widget_opener
-	= f.input :description
+	= f.input :description, required: true
 	= f.button :submit

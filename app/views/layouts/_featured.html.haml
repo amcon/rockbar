@@ -19,7 +19,8 @@
 						- else
 							= image_tag("event_fallback.png", :width => 200, :height => 300, class: 'cover-photo')
 						%span
-							%h3 LEARN MORE
+							%h3 
+								= event.title
 		- else			
 			.featured-event
 				%h6
@@ -36,7 +37,8 @@
 						- else
 							= image_tag("event_fallback.png", :width => 200, :height => 300, class: 'cover-photo')
 						%span
-							%h3 LEARN MORE
+							%h3 
+								= event.title
 	.clear
 .link	
 	= link_to("VIEW CALENDAR", events_path, class: 'btn-white')					

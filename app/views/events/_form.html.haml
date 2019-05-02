@@ -1,7 +1,7 @@
 .event
 	= simple_form_for @event do |f|
 		.col.p-0
-			- if current_page?(new_event_path) || current_page?(duplicate_event_path)
+			- if current_page?(new_event_path) || (@event&.id.present? && current_page?(duplicate_event_path(@event)))
 				%p#event_widget_opener.new Upload Photo 
 			- else
 				= image_tag(@event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')

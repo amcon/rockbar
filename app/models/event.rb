@@ -12,6 +12,6 @@ class Event < ApplicationRecord
 
 	validates_presence_of :title, :description, :date, :start_time, :end_time
 	validates_length_of :title, maximum: 255
-	validates_length_of :description, within: 10..300
+	validates_length_of :description, within: 10..500
 
 end

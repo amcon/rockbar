@@ -27,7 +27,8 @@
 				%br
 				%br
 				= "Cover Charge: #{@event.cover_charge}"
-			= link_to("Visit Event Page", @event.event_link, target: '_blank', class: 'btn-white w-50')
+			- if @event.event_link.present?	
+				= link_to("Visit Event Page", @event.event_link, target: '_blank', class: 'btn-white w-50')
 		.clear	
 
 	- if current_user		

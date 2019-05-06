@@ -10,7 +10,7 @@
 			- if event.date == date
 				%div
 					%h5
-						= link_to event.title, event
+						= link_to truncate(event.title, length: 25), event
 					%p
 						= "#{event.start_time.strftime("%-I%p")} - #{event.end_time.strftime("%-I%p")}"	
 

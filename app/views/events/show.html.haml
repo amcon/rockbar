@@ -24,9 +24,10 @@
 					= "#{@event.drink_specials}"
 			%p.mb-5.mt-5
 				= @event.description
-				%br
-				%br
-				= "Cover Charge: #{@event.cover_charge}"
+				- unless @event.cover_charge == "No Cover"
+					%br
+					%br
+					= "#{@event.cover_charge} COVER"	
 			- if @event.event_link.present?	
 				= link_to("Visit Event Page", @event.event_link, target: '_blank', class: 'btn-white w-50')
 		.clear	

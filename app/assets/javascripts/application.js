@@ -16,4 +16,5 @@
 //= require lightbox
 // require turbolinks
 //= require home
+//= require recurring_select
 //= require_tree .

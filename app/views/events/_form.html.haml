@@ -15,6 +15,9 @@
 			= f.input :date, as: :date, order: [:month, :day, :year]
 			= f.input :start_time, as: :time, ampm: true, minutes_step: 30
 			= f.input :end_time, as: :time, ampm: true, minute_step: 30
+			= f.label "recurring"
+			= f.select_recurring :recurring, nil, allow_blank: true
+			= f.input :end_date, as: :date, order: [:month, :day, :year]
 			= f.input :hosted_by, as: :string, placeholder: 'Ex. Joey'
 			= f.input :dj, as: :string, placeholder: 'Ex. Lorant (no need to type dj)'
 			= f.input :drink_specials, as: :string, placeholder: 'Ex. $5 Draft Beers'

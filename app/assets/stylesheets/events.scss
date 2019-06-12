@@ -97,6 +97,26 @@
 	}
 }
 
+.rs_dialog_holder {
+	.rs_dialog {
+		.rs_dialog_content {
+			h1, p, span {
+				color: $brand-red !important;
+			}
+			div {
+				p {
+					color: $brand-red !important;
+				}
+			}
+			.freq_option_section {
+				.rs_interval {
+					width: 50px !important;
+				}
+			}
+		}
+	}
+}
+
 .event-edit {
 	h1 {
 		margin-bottom: 1em;
@@ -191,7 +211,7 @@
 		    border: 2px solid $brand-red;
 		    min-height: 7em;
 			}
-			.event_date {
+			.event_date, .event_end_date {
 				margin-bottom: 1em;
 				select {
 					text-transform: none;

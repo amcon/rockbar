@@ -11,9 +11,12 @@
 			%h1
 				= @event.title	
 			%h5
-				= @event.date.strftime("%A - %m.%d")
+				= @date.strftime("%A - %m.%d")
 				%br
 				= "#{@event.start_time.strftime("%-I%p")} - #{@event.end_time.strftime("%-I%p")}"
+			-# %p	
+			-# 	%br
+			-# 	= @event.recurring
 			%h6.mt-5
 				= "Hosted by #{@event.hosted_by}" if @event.hosted_by.present?
 				- if @event.dj.present?
@@ -32,12 +35,18 @@
 				= link_to("Visit Event Page", @event.event_link, target: '_blank', class: 'btn-white w-50')
 		.clear	
 
-	- if current_user		
+	- if current_user
+		- if @event.recurring.present? && @event.end_date.present?
+			%div.mb-3 
+				%p
+					= "** recurs until: #{@event.end_date.strftime("%m/%d/%y")}"	
 		.admin-links
 			= link_to("Edit", edit_event_path(@event))	
 			%p
 				|
-			= link_to("Duplicate", duplicate_event_path(@event))	
+			= link_to("Duplicate", duplicate_event_path(@event, time: @date))
 			%p
 				|	
-			= link_to("Delete", delete_event_path(@event))
+			= link_to("Delete", delete_event_path(@event, time: @date))
+	.link.mt-5
+		= link_to("BACK TO CALENDAR", events_path, class: 'btn-white')			

@@ -1,10 +1,48 @@
 class Event < ApplicationRecord
 
+	serialize :recurring, Hash
+
+	has_many :event_exceptions, dependent: :destroy
+
 	# scope :next_five_events, lambda { where(date: >= Date.today).order(date: :asc).limit(5) }
 
 	scope :sorted, lambda { order(date: :asc).order(start_time: :asc) }
 
 	mount_uploader :profile_image_id, PhotoUploader
+
+	def recurring=(value)
+		if RecurringSelect.is_valid_rule?(value)
+			super(RecurringSelect&.dirty_hash_to_rule(value)&.to_hash)
+		else
+			super(nil)
+		end
+	end
+
+	def rule
+		IceCube::Rule.from_hash recurring
+ 	end
+
+ 	def schedule(start)
+ 		schedule = IceCube::Schedule.new(start)
+ 		schedule.add_recurrence_rule(rule)
+
+ 		event_exceptions.each do |exception|
+	 		schedule.add_exception_time(exception.date)
+	 	end
+ 		schedule
+ 	end
+
+	def calendar_events(start)
+		if recurring.empty?
+			[self]
+		else
+			# start_date = start.beginning_of_month.beginning_of_week
+			end_date = self.end_date.present? ? self.end_date : start.end_of_month.end_of_week 
+			schedule(date).occurrences(end_date).map do |date|
+				Event.new(id: id, date: date, title: title, start_time: start_time, end_time: end_time)
+			end
+		end
+	end
 
 	def next_four_events
 		events.order(date: :asc).select { |e| e.date >= Date.today }.limit(4)

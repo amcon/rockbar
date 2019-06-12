@@ -67,3 +67,13 @@ $ ->
     $('#admin_user_password').removeAttr 'disabled'
     return  
 
+
+  $('.event_end_date').hide()
+  
+  $('#event_recurring').change ->
+    if $(this).val() != 'null'
+      $('.event_end_date').show()
+    else
+      $('.event_end_date').hide()
+    return 
+

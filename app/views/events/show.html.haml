@@ -44,7 +44,10 @@
 			- else 
 				%div.mb-3
 					%p
-						= "** recurring forever"			
+						= "** recurring forever"
+		- else 
+			%div.mb-3 
+				%p ** this event does not recur						
 		- if @event.recurring.present? && @event.event_exceptions.present?
 			%div.mb-3 
 				%p

@@ -98,7 +98,16 @@
 }
 
 .rs_dialog_holder {
+	padding-left: 0 !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	.rs_dialog {
+		margin-top: 0 !important;
+		padding: 2em;
+		border-radius: 0 !important;
+		background-color: white !important;
+		margin-left: 0 !important;
 		.rs_dialog_content {
 			h1, p, span {
 				color: $brand-red !important;
@@ -111,6 +120,17 @@
 			.freq_option_section {
 				.rs_interval {
 					width: 50px !important;
+				}
+				.rs_calendar_day {
+					a {
+						font-size: 9px !important;
+					}
+				}
+			}
+			.controls {
+				text-align: left !important;
+				.rs_save:first-child {
+					margin-left: 0 !important;
 				}
 			}
 		}

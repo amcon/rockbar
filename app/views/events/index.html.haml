@@ -12,6 +12,7 @@
 					%h5
 						= link_to truncate(event.title, length: 25), event_path(event.id, time: event.date)
 					%p
+						= event.profile_image_id
 						= "#{event.start_time.strftime("%-I%p")} - #{event.end_time.strftime("%-I%p")}"	
 
 	- if current_user

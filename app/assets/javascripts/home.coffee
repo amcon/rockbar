@@ -92,5 +92,7 @@ $ ->
       return
   return  
 
+  $("input.date_picker").datepicker();
+
 
 

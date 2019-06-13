@@ -39,13 +39,25 @@ class Event < ApplicationRecord
 			# start_date = start.beginning_of_month.beginning_of_week
 			end_date = self.end_date.present? ? self.end_date : start.end_of_month.end_of_week 
 			schedule(date).occurrences(end_date).map do |date|
-				Event.new(id: id, date: date, title: title, start_time: start_time, end_time: end_time)
+				Event.new(id: id, date: date, title: title, start_time: start_time, end_time: end_time, profile_image_id: profile_image_id)
 			end
 		end
 	end
 
 	def next_four_events
 		events.order(date: :asc).select { |e| e.date >= Date.today }.limit(4)
+	end
+
+	def photo_url
+		@calendar_events = self.calendar_events(self.start_time)
+		@calendar_events.each do |event|
+			if event.profile_image_id_url.blank?
+				photo_url = Event.find(event.id).profile_image_id_url
+				return photo_url
+			else
+				return event.profile_image_id
+			end	
+		end
 	end
 
 	validates_presence_of :title, :description, :date, :start_time, :end_time

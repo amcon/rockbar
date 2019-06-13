@@ -12,15 +12,15 @@
 						= event.date.strftime("%a")
 				%h6.mb-2
 					= "#{event.start_time.strftime("%-I%p")} - #{event.end_time.strftime("%-I%p")}"	
-				= link_to event_path(event) do
+				= link_to event_path(event.id, time: event.date) do
 					.image-overlay
-						- if event.profile_image_id_url.present?
-							= image_tag(event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
+						- if event.photo_url.present?
+							= image_tag("#{event.photo_url}", :width => 200, :height => 300, class: 'cover-photo')
 						- else
 							= image_tag("event_fallback.png", :width => 200, :height => 300, class: 'cover-photo')
 						%span
 							%h3 
-								= event.title
+								= event.title	
 		- else			
 			.featured-event
 				%h6
@@ -30,10 +30,10 @@
 						= event.date.strftime("%a")
 				%h6.mb-2
 					= "#{event.start_time.strftime("%-I%p")} - #{event.end_time.strftime("%-I%p")}"	
-				= link_to event_path(event) do
+				= link_to event_path(event.id, time: event.date) do
 					.image-overlay
-						- if event.profile_image_id_url.present?
-							= image_tag(event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
+						- if event.photo_url.present?
+							= image_tag("#{event.photo_url}", :width => 200, :height => 300, class: 'cover-photo')
 						- else
 							= image_tag("event_fallback.png", :width => 200, :height => 300, class: 'cover-photo')
 						%span

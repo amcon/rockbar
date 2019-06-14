@@ -10,6 +10,10 @@
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAPS_API_KEY']}"
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = favicon_link_tag asset_path('favicon.jpg')
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142121295-1"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-142121295-1');</script>
+
 
 
   %body

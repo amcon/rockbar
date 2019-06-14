@@ -33,7 +33,7 @@ class Event < ApplicationRecord
  	end
 
 	def calendar_events(start)
-		if recurring.empty?
+		if recurring.empty? || recurring == nil
 			[self]
 		else
 			# start_date = start.beginning_of_month.beginning_of_week

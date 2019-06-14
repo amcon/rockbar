@@ -5,13 +5,14 @@
 		.col.p-0
 			- if @event.profile_image_id_url.present?
 				= image_tag(@event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
+
 			- else
 				= image_tag("event_fallback.png", :width => 200, :height => 300, class: 'cover-photo')
 		.event-info
 			%h1
 				= @event.title	
 			%h5
-				= @event.date.strftime("%A - %m.%d")
+				= @date.strftime("%A - %m.%d")
 				%br
 				= "#{@event.start_time.strftime("%-I%p")} - #{@event.end_time.strftime("%-I%p")}"
 			%h6.mt-5
@@ -32,12 +33,34 @@
 				= link_to("Visit Event Page", @event.event_link, target: '_blank', class: 'btn-white w-50')
 		.clear	
 
-	- if current_user		
+	- if current_user
+		- if @event.recurring.present? 
+			- if @event.end_date.present?
+				%div.mb-3 
+					%p
+						= "** recurs until: #{@event.end_date.strftime("%m/%d/%y")}"	
+			- else 
+				%div.mb-3
+					%p
+						= "** recurring forever"
+		- else 
+			%div.mb-3 
+				%p ** this event does not recur						
+		- if @event.recurring.present? && @event.event_exceptions.present?
+			%div.mb-3 
+				%p
+					= "** skips these dates: "
+					%ul
+						- @event.event_exceptions.each do |exception|
+							%li
+								= exception.date.strftime("%m/%d/%y")	
 		.admin-links
 			= link_to("Edit", edit_event_path(@event))	
 			%p
 				|
-			= link_to("Duplicate", duplicate_event_path(@event))	
+			= link_to("Duplicate", duplicate_event_path(@event, time: @date))
 			%p
 				|	
-			= link_to("Delete", delete_event_path(@event))
+			= link_to("Delete", delete_event_path(@event, time: @date))
+	.link.mt-5
+		= link_to("BACK TO CALENDAR", events_path, class: 'btn-white')			

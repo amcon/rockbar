@@ -16,4 +16,10 @@
 //= require lightbox
 // require turbolinks
 //= require home
+//= require recurring_select
+//= require bootstrap
+//= require moment
+//= require bootstrap-datetimepicker
+//= require bootstrap-datetimepicker/pickers
 //= require_tree .
+

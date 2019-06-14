@@ -67,3 +67,32 @@ $ ->
     $('#admin_user_password').removeAttr 'disabled'
     return  
 
+
+  if $('#event_recurring').val() == 'null'
+    console.log 'Recurring is null'
+    $('.event_end_date').hide()
+    $('#event_recurring').change ->
+      if $(this).val() != 'null'
+        console.log 'Recurring is not null now'
+        $('.event_end_date').show()
+      else
+        console.log 'Recurring is null now'
+        $('.event_end_date').hide()
+      return 
+  else
+    console.log 'Recurring is not null'
+    $('.event_end_date').show()
+    $('#event_recurring').change ->
+      if $(this).val() != 'null'
+        console.log 'Recurring is not null now'
+        $('.event_end_date').show()
+      else
+        console.log 'Recurring is null now'
+        $('.event_end_date').hide()
+      return
+  return  
+
+  $("input.date_picker").datepicker();
+
+
+

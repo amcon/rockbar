@@ -4,10 +4,17 @@ class EventsController < ApplicationController
 
 	def index
 		@events = Event.sorted
+		@unordered_calendar_events = @events.flat_map{ |e| e.calendar_events(params.fetch(:start_date, Time.zone.now).to_date) }
+		@calendar_events = @unordered_calendar_events.sort{ |a, b| [a['date'], a['start_time']] <=> [b['date'], b['start_time']] }
 	end
 
 	def show
 		@event = Event.find(params[:id])
+		begin
+			@date = Date.parse(params[:time])
+		rescue
+			@date = @event.date
+		end
 	end
 
 	def new
@@ -43,12 +50,17 @@ class EventsController < ApplicationController
 
 	def duplicate
 	  template = Event.find(params[:id])
-	  @event = template.dup # define in Invoice.duplicate how to create a dup
+	  @event = template.dup
 	  render action: 'new'
 	end
 
 	def delete
 		@event = Event.find(params[:id])
+		begin
+			@date = Date.parse(params[:time])
+		rescue
+			@date = @event.date
+		end
 	end
 
 	def destroy
@@ -61,7 +73,7 @@ class EventsController < ApplicationController
   private
 
   def event_params
-  	params.require(:event).permit(:title, :profile_image_id, :description, :date, :start_time, :end_time, :hosted_by, :dj, :drink_specials, :cover_charge, :event_type, :event_link)
+  	params.require(:event).permit(:title, :profile_image_id, :description, :date, :start_time, :end_time, :recurring, :end_date, :hosted_by, :dj, :drink_specials, :cover_charge, :event_type, :event_link)
   end
 
 end

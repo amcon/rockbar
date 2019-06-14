@@ -1,8 +1,16 @@
 = simple_form_for @event, method: :delete do |f|
 
 	.event-delete	
-		%h2 
-			= "Are you sure you want to delete '#{@event.title}'?"
+		- if @event.recurring.blank?
+			%h2 
+				= "Are you sure you want to delete '#{@event.title}'?"
 
-		= f.button :submit, value: 'delete'
-		= link_to('Cancel', event_path(@event))
+			= f.button :submit, value: 'delete'
+			= link_to('Cancel', event_path(@event))
+		- else
+			%h2 
+				= "Do you want to delete all records of this event: '#{@event.title}'?"
+
+			= f.button :submit, value: 'delete all'
+			= link_to 'remove this one date', event_exceptions_path(@event, event_exception: {date: @date}), class: "btn", method: :post
+			= link_to('Cancel', event_path(@event))

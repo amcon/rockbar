@@ -24,10 +24,15 @@ gem 'jquery-ui-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'rails-i18n'
 gem 'jbuilder', '~> 2.5'
 gem 'simple_form'
 gem "font-awesome-rails"
+gem 'bootstrap-datepicker-rails'
+gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails', tag: 'v1.0.0'
+gem 'momentjs-rails', '~> 2.9'
 gem "simple_calendar", "~> 2.0"
+gem 'recurring_select', github: "GetJobber/recurring_select"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

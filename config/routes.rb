@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 	end
 
   resources :events do
+    resources :exceptions, module: :events
   	member do
   		get :delete
   		get :duplicate

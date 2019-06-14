@@ -1,4 +1,5 @@
-@import "bootstrap";
+@import 'bootstrap';
+@import 'bootstrap-datetimepicker';
 @import "variables";
 @import "header";
 @import "footer";
@@ -12,6 +13,7 @@
 @import "staff";
 @import "font-awesome";
 @import "simple_calendar";
+@import "recurring_select";
 @import "access";
 @import "lightbox";
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');

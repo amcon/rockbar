@@ -61,7 +61,7 @@ a {
 	}
 }
 
-input, .input[type="text"], .input[type="password"], .input[type="email"], textarea, select {
+input, .input[type="text"], .input[type="password"], .input[type="email"], textarea, select, .recurring_select {
 	background: $brand-white;
 	color: black;
 	font-family: 'Archivo', sans-serif;
@@ -69,6 +69,11 @@ input, .input[type="text"], .input[type="password"], .input[type="email"], texta
 	width: 100%;
 	min-height: 3em;
 	margin-bottom: 15px;
+}
+
+.recurring_select {
+	height: 3em;
+	border: 2px solid $brand-red;
 }
 
 textarea {

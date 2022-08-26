@@ -20,17 +20,17 @@ class Event < ApplicationRecord
 
 	def rule
 		IceCube::Rule.from_hash recurring
- 	end
+	end
 
- 	def schedule(start)
- 		schedule = IceCube::Schedule.new(start)
- 		schedule.add_recurrence_rule(rule)
+	def schedule(start)
+		schedule = IceCube::Schedule.new(start)
+		schedule.add_recurrence_rule(rule)
 
- 		event_exceptions.each do |exception|
-	 		schedule.add_exception_time(exception.date)
-	 	end
- 		schedule
- 	end
+		event_exceptions.each do |exception|
+			schedule.add_exception_time(exception.date)
+		end
+		schedule
+	end
 
 	def calendar_events(start)
 		if recurring.empty? || recurring == nil

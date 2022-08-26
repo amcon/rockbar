@@ -6,13 +6,14 @@
 	= month_calendar do |date|
 		= date.day
 
-		- @calendar_events.each do |event|
-			- if event.date == date
-				%div
-					%h5
-						= link_to truncate(event.title, length: 25), event_path(event.id, time: event.date)
-					%p
-						= "#{event.start_time.strftime("%-I%p")} - #{event.end_time.strftime("%-I%p")}"	
+		- if @calendar_events.present?
+			- @calendar_events.each do |event|
+				- if event.date == date
+					%div
+						%h5
+							= link_to truncate(event.title, length: 25), event_path(event.id, time: event.date)
+						%p
+							= "#{event.start_time.strftime("%-I%p")} - #{event.end_time.strftime("%-I%p")}"
 
 	- if current_user
 		%p.mt-5

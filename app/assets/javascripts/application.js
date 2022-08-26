@@ -14,7 +14,8 @@
 //= require jquery_ujs
 //= require activestorage
 //= require lightbox
-// require turbolinks
+//= require turbolinks
+//= require cloudinary
 //= require home
 //= require recurring_select
 //= require bootstrap

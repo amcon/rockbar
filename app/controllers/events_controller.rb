@@ -49,9 +49,9 @@ class EventsController < ApplicationController
 	end
 
 	def duplicate
-	  template = Event.find(params[:id])
-	  @event = template.dup
-	  render action: 'new'
+		template = Event.find(params[:id])
+		@event = template.dup
+		render action: 'new'
 	end
 
 	def delete
@@ -68,12 +68,12 @@ class EventsController < ApplicationController
 		@event.destroy
 		flash[:notice] = "#{@event.title} was deleted successfully!"
 		redirect_to(events_path)
-  end
+	end
 
-  private
+	private
 
-  def event_params
-  	params.require(:event).permit(:title, :profile_image_id, :description, :date, :start_time, :end_time, :recurring, :end_date, :hosted_by, :dj, :drink_specials, :cover_charge, :event_type, :event_link)
-  end
+	def event_params
+		params.require(:event).permit(:title, :profile_image_id, :description, :date, :start_time, :end_time, :recurring, :end_date, :hosted_by, :dj, :drink_specials, :cover_charge, :event_type, :event_link)
+	end
 
 end

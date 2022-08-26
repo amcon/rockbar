@@ -1,8 +1,8 @@
 .event
 	= simple_form_for @event do |f|
 		.col.p-0
-			- if current_page?(new_event_path) || (@event&.profile_image_id_url.present? && current_page?(duplicate_event_path))
-				%p#event_widget_opener.new Upload Photo 
+			- if !@event&.profile_image_id_url&.present?
+				%p#event_widget_opener.new Upload Photo
 			- else
 				= image_tag(@event.profile_image_id_url, :width => 200, :height => 300, class: 'cover-photo')
 				%p#event_widget_opener Update Photo
@@ -24,5 +24,5 @@
 			= f.input :cover_charge, as: :string, placeholder: 'Ex. $5 (no need to type cover)'
 			= f.input :event_link, as: :url, placeholder: 'Ex. https://facebook.com/events/82474927'
 			= f.button :submit
-			= link_to('Cancel', :back)	
-		.clear			
+			= link_to('Cancel', :back)
+		.clear

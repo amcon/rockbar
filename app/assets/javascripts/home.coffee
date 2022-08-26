@@ -92,7 +92,7 @@ $ ->
       return
   return
 
-  $("input.date_picker").datepicker();
+  $(".date_picker").datepicker();
 
 
 

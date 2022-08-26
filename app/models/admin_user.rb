@@ -8,7 +8,7 @@ class AdminUser < ApplicationRecord
 	validate :is_allowed_email
 
 	private
-	
+
 	ALLOWED_EMAIL = 'rockbar2nyc@gmail.com, aconklindevelopment@gmail.com'
 
 	def is_allowed_email

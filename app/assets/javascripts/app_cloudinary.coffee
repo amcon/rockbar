@@ -1,66 +1,67 @@
 $ ->
 
-  $('#photo_widget_opener').cloudinary_upload_widget {
-    cloud_name: 'rockbar',
-    upload_preset: 'PRESET',
-    field_name: 'photo[photo_image_id]',
-    sources: ['local', 'camera'],
-    thumbnail_transformation: [
-        { width: 300, height: 300, crop: 'lfill'}
-      ],
-    secure: true,
-    multiple: false
-  }, (error, result) ->
-    console.log error, result
-    return  
+  if $('#photo_widget_opener').length
+    cloudinary.applyUploadWidget document.getElementById('photo_widget_opener'), {
+      cloudName: 'rockbar'
+      uploadPreset: 'PRESET'
+      fieldName: 'photo[photo_image_id]'
+      sources: [ 'local', 'camera']
+      thumbnailTransformation: [{width: 300, height: 300, crop: 'lfill'}]
+      secure: true
+      multiple: false
+    }, (error, result) ->
+      console.log error, result
+      return
 
-  $('#album_widget_opener').cloudinary_upload_widget {
-    cloud_name: 'rockbar',
-    upload_preset: 'PRESET',
-    field_name: 'photo_album[album_image_id]',
-    sources: ['local', 'camera'],
-    cropping: 'server',
-    cropping_aspect_ratio: 1.5,
-    cropping_show_dimensions: true,
-    cropping_coordinates_mode: 'custom',
-    cropping_validate_dimensions: true,
-    eager: 'custom',
-    secure: true,
-    multiple: false
-  }, (error, result) ->
-    console.log error, result
-    return 
+  if $('#album_widget_opener').length
+    cloudinary.applyUploadWidget document.getElementById('album_widget_opener'), {
+      cloudName: 'rockbar'
+      uploadPreset: 'PRESET'
+      fieldName: 'photo_album[album_image_id]'
+      sources: [ 'local', 'camera']
+      cropping: 'server'
+      croppingAspectRatio: 1.5
+      croppingShowDimensions: true
+      croppingCoordinatesMode: 'custom'
+      eager: 'custom'
+      secure: true
+      multiple: false
+    }, (error, result) ->
+      console.log error, result
+      return
 
-  $('#event_widget_opener').cloudinary_upload_widget {
-    cloud_name: 'rockbar',
-    upload_preset: 'PRESET',
-    field_name: 'event[profile_image_id]',
-    sources: ['local', 'camera'],
-    cropping: 'server',
-    cropping_aspect_ratio: .67,
-    cropping_show_dimensions: true,
-    cropping_coordinates_mode: 'custom',
-    cropping_validate_dimensions: true,
-    eager: 'custom',
-    secure: true,
-    multiple: false
-  }, (error, result) ->
-    console.log error, result
-    return   
+  if $('#event_widget_opener').length
+    cloudinary.applyUploadWidget document.getElementById('event_widget_opener'), {
+      cloudName: 'rockbar'
+      uploadPreset: 'PRESET'
+      fieldName: 'event[profile_image_id]'
+      sources: ['local', 'camera']
+      cropping: 'server'
+      croppingAspectRatio: 0.67
+      croppingShowDimensions: true
+      croppingCoordinatesMode: 'custom'
+      eager: 'custom'
+      secure: true
+      multiple: false
+    }, (error, result) ->
+      console.log error, result
+      return
 
-  $('#staff_widget_opener').cloudinary_upload_widget {
-    cloud_name: 'rockbar',
-    upload_preset: 'PRESET',
-    field_name: 'staff[staff_image_id]',
-    sources: ['local', 'camera'],
-    cropping: 'server',
-    cropping_aspect_ratio: 1,
-    cropping_show_dimensions: true,
-    cropping_coordinates_mode: 'custom',
-    cropping_validate_dimensions: true,
-    eager: 'custom',
-    secure: true,
-    multiple: false
-  }, (error, result) ->
-    console.log error, result
-    return     
+  if $('#staff_widget_opener').length
+    cloudinary.applyUploadWidget document.getElementById('staff_widget_opener'), {
+      cloudName: 'rockbar'
+      uploadPreset: 'PRESET'
+      fieldName: 'staff[staff_image_id]'
+      sources: ['local', 'camera']
+      cropping: 'server'
+      croppingAspectRatio: 1
+      croppingShowDimensions: true
+      croppingCoordinatesMode: 'custom'
+      eager: 'custom'
+      secure: true
+      multiple: false
+    }, (error, result) ->
+      console.log error, result
+      return
+
+

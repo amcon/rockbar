@@ -13,19 +13,19 @@
 		border: 1px solid $brand-light-red;
 		.calendar-heading {
 			background: $brand-light-red;
-	    display: flex;
-	    flex-direction: column;
-	    align-items: flex-end;
-	    justify-content: flex-end;
-	    padding: 2em 2em 8em;
-	    .calendar-title {
-	    	margin-right: -3px;
-	    }
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: flex-end;
+			padding: 2em 2em 8em;
+			.calendar-title {
+				margin-right: -3px;
+			}
 			span {
-		    font-size: 3em;
-		    text-transform: uppercase;
-		    font-weight: 100;
-		    font-family: 'Archivo Black', sans-serif;
+				font-size: 3em;
+				text-transform: uppercase;
+				font-weight: 100;
+				font-family: 'Archivo Black', sans-serif;
 			}
 			div {
 				a:first-of-type {
@@ -153,10 +153,10 @@
 		.col {
 			.cloudinary-button {
 				height: 600px !important;
-		    border: 5px dashed !important;
-		    background: transparent !important;
-		    font-family: 'Archivo Black', sans-serif;
-		    color: $brand-white !important;
+				border: 5px dashed !important;
+				background: transparent !important;
+				font-family: 'Archivo Black', sans-serif;
+				color: $brand-white !important;
 			}
 		}
 	}
@@ -176,27 +176,28 @@
 				width: 100%;
 				margin-top: .5em;
 			}
-			.cloudinary-button {
+			#event_widget_opener {
 				height: 3em;
-		    margin-top: .5em;
-		    border-radius: 0;
-		    text-align: center;
-		    text-transform: uppercase;
-		    display: flex;
-		    justify-content: center;
-		    align-items: center;
-		    width: 100%;
-		    border: 1px solid $brand-red;
-		    background: $brand-red;
-		    font-weight: 100;
-		    font-family: 'Archivo Black', sans-serif;
-		    text-transform: uppercase;
-		    color: $brand-white;
-		    &:hover {
-		    	border: 1px solid $brand-white;
-		    	background: $brand-white;
-		    	color: $brand-red;
-		    }
+				margin-top: .5em;
+				border-radius: 0;
+				text-align: center;
+				text-transform: uppercase;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				border: 1px solid $brand-red;
+				background: $brand-red;
+				font-weight: 100;
+				font-family: 'Archivo Black', sans-serif;
+				text-transform: uppercase;
+				color: $brand-white;
+				&:hover {
+					border: 1px solid $brand-white;
+					background: $brand-white;
+					color: $brand-red;
+					cursor: pointer;
+				}
 			}
 		}
 		.event-info {
@@ -224,38 +225,38 @@
 			}
 			.add-on {
 				float: left;
-			    width: 7%;
-			    height: 3em;
-			    display: flex;
-			    justify-content: flex-end;
-			    align-items: center;
-			    i.fa.fa-calendar {
-			    	font-size: 20px;
-				    height: auto !important;
-				    width: auto !important;
-			    }
+					width: 7%;
+					height: 3em;
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					i.fa.fa-calendar {
+						font-size: 20px;
+						height: auto !important;
+						width: auto !important;
+					}
 			}
 			input[type="text"], input[type="url"] {
-			    width: 100%;
-			    height: 3em;
-			    padding: 1em;
-			    border: 2px solid $brand-red;
-			    margin-bottom: 1em;
+					width: 100%;
+					height: 3em;
+					padding: 1em;
+					border: 2px solid $brand-red;
+					margin-bottom: 1em;
 			}
 			textarea {
 				width: 100%;
-			    border: 2px solid $brand-red;
-			    min-height: 7em;
+					border: 2px solid $brand-red;
+					min-height: 7em;
 			}
 			.event_date, .event_end_date {
 				margin-bottom: 1em;
 				select {
 					text-transform: none;
-				    width: 32.8%;
-				    height: 3em;
-				    background: $brand-white;
-				    border-radius: 0;
-				    border: 2px solid $brand-red;
+						width: 32.8%;
+						height: 3em;
+						background: $brand-white;
+						border-radius: 0;
+						border: 2px solid $brand-red;
 				}
 			}
 			.event_start_time, .event_end_time {

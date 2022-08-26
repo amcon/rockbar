@@ -5,7 +5,7 @@
       - if @page_title.present?
         = "Rockbar | #{@page_title}"
       - else
-        = Rockbar   
+        = Rockbar
 
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAPS_API_KEY']}"
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -14,12 +14,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142121295-1"></script>
     <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-142121295-1');</script>
 
-
-
   %body
     = render 'layouts/header'
-    .main-content 
-      .main-width 
+    .main-content
+      .main-width
 
         - if !flash[:notice].blank?
           .notice
@@ -29,6 +27,6 @@
         = yield
     = render 'layouts/footer'
     = javascript_include_tag 'application'
-    = javascript_include_tag "//widget.cloudinary.com/global/all.js"
+    = javascript_include_tag "https://upload-widget.cloudinary.com/global/all.js"
     <script type="text/javascript">$('.datetimepicker').datetimepicker();</script>
     = yield(:head_tags)

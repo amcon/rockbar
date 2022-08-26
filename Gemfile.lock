@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/zpaulovics/datetimepicker-rails
-  revision: f0316e55d6a46794e56d5e636ea838c9eaef34cb
-  tag: v1.0.0
-  specs:
-    datetimepicker-rails (0.0.8)
-
-GIT
   remote: https://github.com/GetJobber/recurring_select.git
   revision: 29febc4c4abdd6c30636c33a7d2daecb09973ecf
   specs:
@@ -22,6 +15,15 @@ GIT
   specs:
     momentjs-rails (2.29.4.1)
       railties (>= 3.1)
+
+GIT
+  remote: https://github.com/zpaulovics/datetimepicker-rails.git
+  revision: 7a4640cb932e55866500a86c4f78808a4fca46e6
+  branch: master
+  submodules: true
+  specs:
+    datetimepicker-rails (4.7.16)
+      momentjs-rails (>= 2.9.0)
 
 GEM
   remote: https://rubygems.org/

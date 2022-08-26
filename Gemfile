@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
@@ -32,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'simple_form'
 gem "font-awesome-rails"
 gem 'bootstrap-datepicker-rails'
-gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails', tag: 'v1.0.0'
 gem 'momentjs-rails', '~> 2.9'
 gem "simple_calendar", "~> 2.4"
 gem 'recurring_select', github: "GetJobber/recurring_select"

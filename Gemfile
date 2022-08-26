@@ -30,7 +30,7 @@ gem 'simple_form'
 gem "font-awesome-rails"
 gem 'bootstrap-datepicker-rails'
 gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails', tag: 'v1.0.0'
-gem 'momentjs-rails', '~> 2.9'
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
 gem "simple_calendar", "~> 2.4"
 gem 'recurring_select', github: "GetJobber/recurring_select"
 # Use Redis adapter to run Action Cable in production

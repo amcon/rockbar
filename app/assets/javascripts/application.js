@@ -19,8 +19,5 @@
 //= require home
 //= require recurring_select
 //= require bootstrap
-//= require moment
-//= require bootstrap-datetimepicker
-//= require pickers
 //= require_tree .
 

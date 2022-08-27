@@ -1,5 +1,5 @@
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
-/Users/aaron_conklin/.rbenv/versions/2.6.0/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.0/lib/ruby/site_ruby/2.6.0 extconf.rb
+/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-80980-1ip18op.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for linux/io_uring.h... no
@@ -13,10 +13,10 @@ checking for sys/resource.h... yes
 creating Makefile
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-1sp6jw2 sitelibdir\=./.gem.20220826-81600-1sp6jw2 clean
+make "DESTDIR=" clean
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-1sp6jw2 sitelibdir\=./.gem.20220826-81600-1sp6jw2
+make "DESTDIR="
 compiling bytebuffer.c
 compiling monitor.c
 monitor.c:185:40: warning: implicit conversion loses integer precision: 'VALUE' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
@@ -92,5 +92,5 @@ compiling selector.c
 linking shared-object nio4r_ext.bundle
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-1sp6jw2 sitelibdir\=./.gem.20220826-81600-1sp6jw2 install
-/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20220826-81600-1sp6jw2
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20220827-80980-xyg6qs

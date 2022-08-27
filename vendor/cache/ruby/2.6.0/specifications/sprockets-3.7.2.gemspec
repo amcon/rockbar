@@ -16,31 +16,47 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/rails/sprockets".freeze
   s.licenses = ["MIT".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.3".freeze)
-  s.rubygems_version = "3.3.21".freeze
+  s.rubygems_version = "3.0.3.1".freeze
   s.summary = "Rack-based asset packaging system".freeze
 
-  s.installed_by_version = "3.3.21" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.0.3.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
-  end
 
-  if s.respond_to? :add_runtime_dependency then
-    s.add_runtime_dependency(%q<rack>.freeze, ["> 1", "< 3"])
-    s.add_runtime_dependency(%q<concurrent-ruby>.freeze, ["~> 1.0"])
-    s.add_development_dependency(%q<closure-compiler>.freeze, ["~> 1.1"])
-    s.add_development_dependency(%q<coffee-script-source>.freeze, ["~> 1.6"])
-    s.add_development_dependency(%q<coffee-script>.freeze, ["~> 2.2"])
-    s.add_development_dependency(%q<eco>.freeze, ["~> 1.0"])
-    s.add_development_dependency(%q<ejs>.freeze, ["~> 1.0"])
-    s.add_development_dependency(%q<execjs>.freeze, ["~> 2.0"])
-    s.add_development_dependency(%q<minitest>.freeze, ["~> 5.0"])
-    s.add_development_dependency(%q<nokogiri>.freeze, ["~> 1.3"])
-    s.add_development_dependency(%q<rack-test>.freeze, ["~> 0.6"])
-    s.add_development_dependency(%q<rake>.freeze, ["~> 10.0"])
-    s.add_development_dependency(%q<sass>.freeze, ["~> 3.1"])
-    s.add_development_dependency(%q<uglifier>.freeze, ["~> 2.3"])
-    s.add_development_dependency(%q<yui-compressor>.freeze, ["~> 0.12"])
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<rack>.freeze, ["> 1", "< 3"])
+      s.add_runtime_dependency(%q<concurrent-ruby>.freeze, ["~> 1.0"])
+      s.add_development_dependency(%q<closure-compiler>.freeze, ["~> 1.1"])
+      s.add_development_dependency(%q<coffee-script-source>.freeze, ["~> 1.6"])
+      s.add_development_dependency(%q<coffee-script>.freeze, ["~> 2.2"])
+      s.add_development_dependency(%q<eco>.freeze, ["~> 1.0"])
+      s.add_development_dependency(%q<ejs>.freeze, ["~> 1.0"])
+      s.add_development_dependency(%q<execjs>.freeze, ["~> 2.0"])
+      s.add_development_dependency(%q<minitest>.freeze, ["~> 5.0"])
+      s.add_development_dependency(%q<nokogiri>.freeze, ["~> 1.3"])
+      s.add_development_dependency(%q<rack-test>.freeze, ["~> 0.6"])
+      s.add_development_dependency(%q<rake>.freeze, ["~> 10.0"])
+      s.add_development_dependency(%q<sass>.freeze, ["~> 3.1"])
+      s.add_development_dependency(%q<uglifier>.freeze, ["~> 2.3"])
+      s.add_development_dependency(%q<yui-compressor>.freeze, ["~> 0.12"])
+    else
+      s.add_dependency(%q<rack>.freeze, ["> 1", "< 3"])
+      s.add_dependency(%q<concurrent-ruby>.freeze, ["~> 1.0"])
+      s.add_dependency(%q<closure-compiler>.freeze, ["~> 1.1"])
+      s.add_dependency(%q<coffee-script-source>.freeze, ["~> 1.6"])
+      s.add_dependency(%q<coffee-script>.freeze, ["~> 2.2"])
+      s.add_dependency(%q<eco>.freeze, ["~> 1.0"])
+      s.add_dependency(%q<ejs>.freeze, ["~> 1.0"])
+      s.add_dependency(%q<execjs>.freeze, ["~> 2.0"])
+      s.add_dependency(%q<minitest>.freeze, ["~> 5.0"])
+      s.add_dependency(%q<nokogiri>.freeze, ["~> 1.3"])
+      s.add_dependency(%q<rack-test>.freeze, ["~> 0.6"])
+      s.add_dependency(%q<rake>.freeze, ["~> 10.0"])
+      s.add_dependency(%q<sass>.freeze, ["~> 3.1"])
+      s.add_dependency(%q<uglifier>.freeze, ["~> 2.3"])
+      s.add_dependency(%q<yui-compressor>.freeze, ["~> 0.12"])
+    end
   else
     s.add_dependency(%q<rack>.freeze, ["> 1", "< 3"])
     s.add_dependency(%q<concurrent-ruby>.freeze, ["~> 1.0"])

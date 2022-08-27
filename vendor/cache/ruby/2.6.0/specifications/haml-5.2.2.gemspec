@@ -17,23 +17,31 @@ Gem::Specification.new do |s|
   s.homepage = "http://haml.info/".freeze
   s.licenses = ["MIT".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.0.0".freeze)
-  s.rubygems_version = "3.3.21".freeze
+  s.rubygems_version = "3.0.3.1".freeze
   s.summary = "An elegant, structured (X)HTML/XML templating engine.".freeze
 
-  s.installed_by_version = "3.3.21" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.0.3.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
-  end
 
-  if s.respond_to? :add_runtime_dependency then
-    s.add_runtime_dependency(%q<temple>.freeze, [">= 0.8.0"])
-    s.add_runtime_dependency(%q<tilt>.freeze, [">= 0"])
-    s.add_development_dependency(%q<rails>.freeze, [">= 4.0.0"])
-    s.add_development_dependency(%q<rbench>.freeze, [">= 0"])
-    s.add_development_dependency(%q<minitest>.freeze, [">= 4.0"])
-    s.add_development_dependency(%q<nokogiri>.freeze, [">= 0"])
-    s.add_development_dependency(%q<simplecov>.freeze, [">= 0"])
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<temple>.freeze, [">= 0.8.0"])
+      s.add_runtime_dependency(%q<tilt>.freeze, [">= 0"])
+      s.add_development_dependency(%q<rails>.freeze, [">= 4.0.0"])
+      s.add_development_dependency(%q<rbench>.freeze, [">= 0"])
+      s.add_development_dependency(%q<minitest>.freeze, [">= 4.0"])
+      s.add_development_dependency(%q<nokogiri>.freeze, [">= 0"])
+      s.add_development_dependency(%q<simplecov>.freeze, [">= 0"])
+    else
+      s.add_dependency(%q<temple>.freeze, [">= 0.8.0"])
+      s.add_dependency(%q<tilt>.freeze, [">= 0"])
+      s.add_dependency(%q<rails>.freeze, [">= 4.0.0"])
+      s.add_dependency(%q<rbench>.freeze, [">= 0"])
+      s.add_dependency(%q<minitest>.freeze, [">= 4.0"])
+      s.add_dependency(%q<nokogiri>.freeze, [">= 0"])
+      s.add_dependency(%q<simplecov>.freeze, [">= 0"])
+    end
   else
     s.add_dependency(%q<temple>.freeze, [">= 0.8.0"])
     s.add_dependency(%q<tilt>.freeze, [">= 0"])

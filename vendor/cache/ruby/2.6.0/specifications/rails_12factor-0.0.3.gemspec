@@ -13,20 +13,25 @@ Gem::Specification.new do |s|
   s.email = ["richard@heroku.com".freeze, "terence@heroku.com".freeze]
   s.homepage = "https://github.com/heroku/rails_12factor".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "3.3.21".freeze
+  s.rubygems_version = "3.0.3.1".freeze
   s.summary = "Following best practices from http://12factor.net run a maintainable, clean, and scalable app on Rails".freeze
 
-  s.installed_by_version = "3.3.21" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.0.3.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
-  end
 
-  if s.respond_to? :add_runtime_dependency then
-    s.add_development_dependency(%q<minitest>.freeze, [">= 0"])
-    s.add_development_dependency(%q<rake>.freeze, [">= 0"])
-    s.add_runtime_dependency(%q<rails_serve_static_assets>.freeze, [">= 0"])
-    s.add_runtime_dependency(%q<rails_stdout_logging>.freeze, [">= 0"])
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_development_dependency(%q<minitest>.freeze, [">= 0"])
+      s.add_development_dependency(%q<rake>.freeze, [">= 0"])
+      s.add_runtime_dependency(%q<rails_serve_static_assets>.freeze, [">= 0"])
+      s.add_runtime_dependency(%q<rails_stdout_logging>.freeze, [">= 0"])
+    else
+      s.add_dependency(%q<minitest>.freeze, [">= 0"])
+      s.add_dependency(%q<rake>.freeze, [">= 0"])
+      s.add_dependency(%q<rails_serve_static_assets>.freeze, [">= 0"])
+      s.add_dependency(%q<rails_stdout_logging>.freeze, [">= 0"])
+    end
   else
     s.add_dependency(%q<minitest>.freeze, [">= 0"])
     s.add_dependency(%q<rake>.freeze, [">= 0"])

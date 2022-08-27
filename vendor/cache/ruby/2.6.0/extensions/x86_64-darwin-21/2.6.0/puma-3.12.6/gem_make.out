@@ -1,15 +1,15 @@
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
-/Users/aaron_conklin/.rbenv/versions/2.6.0/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.0/lib/ruby/site_ruby/2.6.0 extconf.rb
+/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-80980-19zd8yb.rb extconf.rb
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
 creating Makefile
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-wj17j sitelibdir\=./.gem.20220826-81600-wj17j clean
+make "DESTDIR=" clean
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-wj17j sitelibdir\=./.gem.20220826-81600-wj17j
+make "DESTDIR="
 compiling http11_parser.c
 ext/puma_http11/http11_parser.c:44:18: warning: unused variable 'puma_parser_en_main' [-Wunused-const-variable]
 static const int puma_parser_en_main = 1;
@@ -20,13 +20,13 @@ compiling mini_ssl.c
 mini_ssl.c:220:27: warning: 'DTLSv1_method' is deprecated [-Wdeprecated-declarations]
   conn->ctx = SSL_CTX_new(DTLSv1_method());
                           ^
-/Users/aaron_conklin/.rbenv/versions/2.6.0/openssl/include/openssl/ssl.h:1905:1: note: 'DTLSv1_method' has been explicitly marked deprecated here
+/Users/aaron_conklin/.rbenv/versions/2.6.10/openssl/include/openssl/ssl.h:1905:1: note: 'DTLSv1_method' has been explicitly marked deprecated here
 DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *DTLSv1_method(void)) /* DTLSv1.0 */
 ^
-/Users/aaron_conklin/.rbenv/versions/2.6.0/openssl/include/openssl/opensslconf.h:163:34: note: expanded from macro 'DEPRECATEDIN_1_1_0'
+/Users/aaron_conklin/.rbenv/versions/2.6.10/openssl/include/openssl/opensslconf.h:163:34: note: expanded from macro 'DEPRECATEDIN_1_1_0'
 # define DEPRECATEDIN_1_1_0(f)   DECLARE_DEPRECATED(f)
                                  ^
-/Users/aaron_conklin/.rbenv/versions/2.6.0/openssl/include/openssl/opensslconf.h:121:55: note: expanded from macro 'DECLARE_DEPRECATED'
+/Users/aaron_conklin/.rbenv/versions/2.6.10/openssl/include/openssl/opensslconf.h:121:55: note: expanded from macro 'DECLARE_DEPRECATED'
 #   define DECLARE_DEPRECATED(f)    f __attribute__ ((deprecated));
                                                       ^
 mini_ssl.c:250:40: warning: function 'raise_error' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
@@ -37,5 +37,5 @@ compiling puma_http11.c
 linking shared-object puma/puma_http11.bundle
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-wj17j sitelibdir\=./.gem.20220826-81600-wj17j install
-/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20220826-81600-wj17j/puma
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20220827-80980-gmut13/puma

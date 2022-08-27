@@ -1,5 +1,5 @@
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/pg-1.4.3/ext
-/Users/aaron_conklin/.rbenv/versions/2.6.0/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.0/lib/ruby/site_ruby/2.6.0 extconf.rb
+/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-80980-13fizj5.rb extconf.rb
 Calling libpq with GVL unlocked
 checking for pg_config... yes
 Using config values from /usr/local/bin/pg_config
@@ -26,10 +26,10 @@ creating extconf.h
 creating Makefile
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/pg-1.4.3/ext
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-18jwnki sitelibdir\=./.gem.20220826-81600-18jwnki clean
+make "DESTDIR=" clean
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/pg-1.4.3/ext
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-18jwnki sitelibdir\=./.gem.20220826-81600-18jwnki
+make "DESTDIR="
 compiling gvl_wrappers.c
 compiling pg.c
 compiling pg_binary_decoder.c
@@ -61,6 +61,6 @@ compiling pg_util.c
 linking shared-object pg_ext.bundle
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/pg-1.4.3/ext
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-18jwnki sitelibdir\=./.gem.20220826-81600-18jwnki install
-/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20220826-81600-18jwnki
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20220827-80980-14w80hr
 installing pg_ext libraries

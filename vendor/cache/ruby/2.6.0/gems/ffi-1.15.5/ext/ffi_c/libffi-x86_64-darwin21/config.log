@@ -30,13 +30,13 @@ Kernel configured for up to 6 processors.
 Processor type: x86_64h (Intel x86-64h Haswell)
 Processors active: 0 1 2 3 4 5
 Primary memory available: 16.00 gigabytes
-Default processor set: 713 tasks, 4097 threads, 6 processors
-Load average: 3.04, Mach factor: 2.96
+Default processor set: 703 tasks, 3942 threads, 6 processors
+Load average: 14.46, Mach factor: 0.93
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /Users/aaron_conklin/.rbenv/versions/2.6.0/bin
+PATH: /Users/aaron_conklin/.rbenv/versions/2.6.10/bin
 PATH: /usr/local/Cellar/rbenv/1.2.0/libexec
 PATH: /Users/aaron_conklin/.rbenv/shims
 PATH: /Users/aaron_conklin/.rbenv/bin
@@ -797,7 +797,7 @@ configure:17482: checking for memfd_create
 configure:17482: clang -o conftest  -Wall -fexceptions   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_memfd_create", referenced from:
-      _main in conftest-e7c329.o
+      _main in conftest-1c50a0.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:17482: $? = 1

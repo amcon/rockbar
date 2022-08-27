@@ -1,15 +1,15 @@
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/bootsnap-1.13.0/ext/bootsnap
-/Users/aaron_conklin/.rbenv/versions/2.6.0/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.0/lib/ruby/site_ruby/2.6.0 extconf.rb
+/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-80980-1wypq2s.rb extconf.rb
 creating Makefile
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/bootsnap-1.13.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-1e41idu sitelibdir\=./.gem.20220826-81600-1e41idu clean
+make "DESTDIR=" clean
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/bootsnap-1.13.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-1e41idu sitelibdir\=./.gem.20220826-81600-1e41idu
+make "DESTDIR="
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/bootsnap-1.13.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-1e41idu sitelibdir\=./.gem.20220826-81600-1e41idu install
-/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220826-81600-1e41idu/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220827-80980-z1eux6/bootsnap

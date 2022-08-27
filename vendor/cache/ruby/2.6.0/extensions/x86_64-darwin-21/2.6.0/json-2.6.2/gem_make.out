@@ -1,13 +1,13 @@
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/json-2.6.2/ext/json
-/Users/aaron_conklin/.rbenv/versions/2.6.0/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.0/lib/ruby/site_ruby/2.6.0 extconf.rb
+/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-80980-1oj8mxy.rb extconf.rb
 creating Makefile
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/json-2.6.2/ext/json
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-7rglpq sitelibdir\=./.gem.20220826-81600-7rglpq clean
+make "DESTDIR=" clean
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/json-2.6.2/ext/json
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-7rglpq sitelibdir\=./.gem.20220826-81600-7rglpq
+make "DESTDIR="
 make: Nothing to be done for `all'.
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/json-2.6.2/ext/json
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-7rglpq sitelibdir\=./.gem.20220826-81600-7rglpq install
+make "DESTDIR=" install

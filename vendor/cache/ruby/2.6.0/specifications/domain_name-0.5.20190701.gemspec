@@ -15,21 +15,27 @@ Gem::Specification.new do |s|
   s.files = ["LICENSE.txt".freeze, "README.md".freeze]
   s.homepage = "https://github.com/knu/ruby-domain_name".freeze
   s.licenses = ["BSD-2-Clause".freeze, "BSD-3-Clause".freeze, "MPL-2.0".freeze]
-  s.rubygems_version = "3.3.21".freeze
+  s.rubygems_version = "3.0.3.1".freeze
   s.summary = "Domain Name manipulation library for Ruby".freeze
 
-  s.installed_by_version = "3.3.21" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.0.3.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
-  end
 
-  if s.respond_to? :add_runtime_dependency then
-    s.add_runtime_dependency(%q<unf>.freeze, [">= 0.0.5", "< 1.0.0"])
-    s.add_development_dependency(%q<test-unit>.freeze, ["~> 2.5.5"])
-    s.add_development_dependency(%q<bundler>.freeze, [">= 1.2.0"])
-    s.add_development_dependency(%q<rake>.freeze, [">= 0.9.2.2"])
-    s.add_development_dependency(%q<rdoc>.freeze, [">= 2.4.2"])
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<unf>.freeze, [">= 0.0.5", "< 1.0.0"])
+      s.add_development_dependency(%q<test-unit>.freeze, ["~> 2.5.5"])
+      s.add_development_dependency(%q<bundler>.freeze, [">= 1.2.0"])
+      s.add_development_dependency(%q<rake>.freeze, [">= 0.9.2.2"])
+      s.add_development_dependency(%q<rdoc>.freeze, [">= 2.4.2"])
+    else
+      s.add_dependency(%q<unf>.freeze, [">= 0.0.5", "< 1.0.0"])
+      s.add_dependency(%q<test-unit>.freeze, ["~> 2.5.5"])
+      s.add_dependency(%q<bundler>.freeze, [">= 1.2.0"])
+      s.add_dependency(%q<rake>.freeze, [">= 0.9.2.2"])
+      s.add_dependency(%q<rdoc>.freeze, [">= 2.4.2"])
+    end
   else
     s.add_dependency(%q<unf>.freeze, [">= 0.0.5", "< 1.0.0"])
     s.add_dependency(%q<test-unit>.freeze, ["~> 2.5.5"])

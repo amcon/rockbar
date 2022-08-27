@@ -18,21 +18,27 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT".freeze]
   s.post_install_message = "\nRuby Sass has reached end-of-life and should no longer be used.\n\n* If you use Sass as a command-line tool, we recommend using Dart Sass, the new\n  primary implementation: https://sass-lang.com/install\n\n* If you use Sass as a plug-in for a Ruby web framework, we recommend using the\n  sassc gem: https://github.com/sass/sassc-ruby#readme\n\n* For more details, please refer to the Sass blog:\n  https://sass-lang.com/blog/posts/7828841\n\n".freeze
   s.required_ruby_version = Gem::Requirement.new(">= 2.0.0".freeze)
-  s.rubygems_version = "3.3.21".freeze
+  s.rubygems_version = "3.0.3.1".freeze
   s.summary = "A powerful but elegant CSS compiler that makes CSS fun again.".freeze
 
-  s.installed_by_version = "3.3.21" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.0.3.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
-  end
 
-  if s.respond_to? :add_runtime_dependency then
-    s.add_runtime_dependency(%q<sass-listen>.freeze, ["~> 4.0.0"])
-    s.add_development_dependency(%q<yard>.freeze, ["~> 0.8.7.6"])
-    s.add_development_dependency(%q<redcarpet>.freeze, ["~> 3.3"])
-    s.add_development_dependency(%q<nokogiri>.freeze, ["~> 1.6.0"])
-    s.add_development_dependency(%q<minitest>.freeze, [">= 5"])
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<sass-listen>.freeze, ["~> 4.0.0"])
+      s.add_development_dependency(%q<yard>.freeze, ["~> 0.8.7.6"])
+      s.add_development_dependency(%q<redcarpet>.freeze, ["~> 3.3"])
+      s.add_development_dependency(%q<nokogiri>.freeze, ["~> 1.6.0"])
+      s.add_development_dependency(%q<minitest>.freeze, [">= 5"])
+    else
+      s.add_dependency(%q<sass-listen>.freeze, ["~> 4.0.0"])
+      s.add_dependency(%q<yard>.freeze, ["~> 0.8.7.6"])
+      s.add_dependency(%q<redcarpet>.freeze, ["~> 3.3"])
+      s.add_dependency(%q<nokogiri>.freeze, ["~> 1.6.0"])
+      s.add_dependency(%q<minitest>.freeze, [">= 5"])
+    end
   else
     s.add_dependency(%q<sass-listen>.freeze, ["~> 4.0.0"])
     s.add_dependency(%q<yard>.freeze, ["~> 0.8.7.6"])

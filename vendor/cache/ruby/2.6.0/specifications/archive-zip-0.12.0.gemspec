@@ -13,22 +13,29 @@ Gem::Specification.new do |s|
   s.email = ["jeremy@bopp.net".freeze, "ronnie@dio.jp".freeze, "tatsuya.b.sato@rakuten.com".freeze, "kou@clear-code.com".freeze]
   s.homepage = "http://github.com/javanthropus/archive-zip".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "3.3.21".freeze
+  s.rubygems_version = "3.0.3.1".freeze
   s.summary = "Simple, extensible, pure Ruby ZIP archive support.".freeze
 
-  s.installed_by_version = "3.3.21" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.0.3.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
-  end
 
-  if s.respond_to? :add_runtime_dependency then
-    s.add_runtime_dependency(%q<io-like>.freeze, ["~> 0.3.0"])
-    s.add_development_dependency(%q<rake>.freeze, ["~> 12.3"])
-    s.add_development_dependency(%q<minitest>.freeze, ["~> 5.11"])
-    s.add_development_dependency(%q<yard>.freeze, ["~> 0.9.12"])
-    s.add_development_dependency(%q<github-markup>.freeze, ["~> 1.6"])
-    s.add_development_dependency(%q<redcarpet>.freeze, ["~> 3.4"])
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<io-like>.freeze, ["~> 0.3.0"])
+      s.add_development_dependency(%q<rake>.freeze, ["~> 12.3"])
+      s.add_development_dependency(%q<minitest>.freeze, ["~> 5.11"])
+      s.add_development_dependency(%q<yard>.freeze, ["~> 0.9.12"])
+      s.add_development_dependency(%q<github-markup>.freeze, ["~> 1.6"])
+      s.add_development_dependency(%q<redcarpet>.freeze, ["~> 3.4"])
+    else
+      s.add_dependency(%q<io-like>.freeze, ["~> 0.3.0"])
+      s.add_dependency(%q<rake>.freeze, ["~> 12.3"])
+      s.add_dependency(%q<minitest>.freeze, ["~> 5.11"])
+      s.add_dependency(%q<yard>.freeze, ["~> 0.9.12"])
+      s.add_dependency(%q<github-markup>.freeze, ["~> 1.6"])
+      s.add_dependency(%q<redcarpet>.freeze, ["~> 3.4"])
+    end
   else
     s.add_dependency(%q<io-like>.freeze, ["~> 0.3.0"])
     s.add_dependency(%q<rake>.freeze, ["~> 12.3"])

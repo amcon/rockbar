@@ -1,13 +1,13 @@
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
-/Users/aaron_conklin/.rbenv/versions/2.6.0/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.0/lib/ruby/site_ruby/2.6.0 extconf.rb
+/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-80980-14fqlr6.rb extconf.rb
 checking for -lstdc++... yes
 creating Makefile
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-a2gs3p sitelibdir\=./.gem.20220826-81600-a2gs3p clean
+make "DESTDIR=" clean
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-a2gs3p sitelibdir\=./.gem.20220826-81600-a2gs3p
+make "DESTDIR="
 compiling unf.cc
 In file included from unf.cc:1:
 In file included from ./unf/normalizer.hh:8:
@@ -34,5 +34,5 @@ In file included from unf.cc:1:
 linking shared-object unf_ext.bundle
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-a2gs3p sitelibdir\=./.gem.20220826-81600-a2gs3p install
-/usr/bin/install -c -m 0755 unf_ext.bundle ./.gem.20220826-81600-a2gs3p
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unf_ext.bundle ./.gem.20220827-80980-z5dqpu

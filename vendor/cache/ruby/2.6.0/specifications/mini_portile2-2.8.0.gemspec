@@ -14,22 +14,29 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/flavorjones/mini_portile".freeze
   s.licenses = ["MIT".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.3.0".freeze)
-  s.rubygems_version = "3.3.21".freeze
+  s.rubygems_version = "3.0.3.1".freeze
   s.summary = "Simplistic port-like solution for developers".freeze
 
-  s.installed_by_version = "3.3.21" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.0.3.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
-  end
 
-  if s.respond_to? :add_runtime_dependency then
-    s.add_development_dependency(%q<bundler>.freeze, ["~> 2.3"])
-    s.add_development_dependency(%q<minitar>.freeze, ["~> 0.9"])
-    s.add_development_dependency(%q<minitest>.freeze, ["~> 5.15"])
-    s.add_development_dependency(%q<minitest-hooks>.freeze, ["~> 1.5"])
-    s.add_development_dependency(%q<rake>.freeze, ["~> 13.0"])
-    s.add_development_dependency(%q<webrick>.freeze, ["~> 1.7"])
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_development_dependency(%q<bundler>.freeze, ["~> 2.3"])
+      s.add_development_dependency(%q<minitar>.freeze, ["~> 0.9"])
+      s.add_development_dependency(%q<minitest>.freeze, ["~> 5.15"])
+      s.add_development_dependency(%q<minitest-hooks>.freeze, ["~> 1.5"])
+      s.add_development_dependency(%q<rake>.freeze, ["~> 13.0"])
+      s.add_development_dependency(%q<webrick>.freeze, ["~> 1.7"])
+    else
+      s.add_dependency(%q<bundler>.freeze, ["~> 2.3"])
+      s.add_dependency(%q<minitar>.freeze, ["~> 0.9"])
+      s.add_dependency(%q<minitest>.freeze, ["~> 5.15"])
+      s.add_dependency(%q<minitest-hooks>.freeze, ["~> 1.5"])
+      s.add_dependency(%q<rake>.freeze, ["~> 13.0"])
+      s.add_dependency(%q<webrick>.freeze, ["~> 1.7"])
+    end
   else
     s.add_dependency(%q<bundler>.freeze, ["~> 2.3"])
     s.add_dependency(%q<minitar>.freeze, ["~> 0.9"])

@@ -1,12 +1,12 @@
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/sassc-2.4.0/ext
-/Users/aaron_conklin/.rbenv/versions/2.6.0/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.0/lib/ruby/site_ruby/2.6.0 extconf.rb
+/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-80980-1yxjoef.rb extconf.rb
 creating Makefile
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-gk3sh9 sitelibdir\=./.gem.20220826-81600-gk3sh9 clean
+make "DESTDIR=" clean
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-gk3sh9 sitelibdir\=./.gem.20220826-81600-gk3sh9
+make "DESTDIR="
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
 compiling ./libsass/src/ast_fwd_decl.cpp
@@ -76,5 +76,5 @@ compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.bundle
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20220826-81600-gk3sh9 sitelibdir\=./.gem.20220826-81600-gk3sh9 install
-/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20220826-81600-gk3sh9/sassc
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20220827-80980-16pvpua/sassc

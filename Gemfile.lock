@@ -9,22 +9,6 @@ GIT
       rails (>= 5.2)
       sass-rails (>= 4.0)
 
-GIT
-  remote: https://github.com/derekprior/momentjs-rails.git
-  revision: de473b81db40d0dc19e277895746c79b41a0607a
-  specs:
-    momentjs-rails (2.29.4.1)
-      railties (>= 3.1)
-
-GIT
-  remote: https://github.com/zpaulovics/datetimepicker-rails.git
-  revision: 7a4640cb932e55866500a86c4f78808a4fca46e6
-  branch: master
-  submodules: true
-  specs:
-    datetimepicker-rails (4.7.16)
-      momentjs-rails (>= 2.9.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -199,10 +183,6 @@ GEM
     nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-linux)
-      racc (~> 1.4)
     pg (1.4.3)
     popper_js (2.11.5)
     public_suffix (5.0.0)
@@ -328,8 +308,6 @@ GEM
 
 PLATFORMS
   ruby
-  x86_64-darwin-21
-  x86_64-linux
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
@@ -342,7 +320,6 @@ DEPENDENCIES
   chromedriver-helper
   cloudinary
   coffee-rails (~> 4.2)
-  datetimepicker-rails!
   figaro
   font-awesome-rails
   haml-rails (>= 0.3.4)
@@ -353,7 +330,6 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   mailchimp-api
   mini_magick (~> 4.5, >= 4.5.1)
-  momentjs-rails (~> 2.9)!
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rails (~> 5.2.1)
@@ -376,4 +352,4 @@ RUBY VERSION
    ruby 2.6.0p0
 
 BUNDLED WITH
-   2.3.21
+   2.1.4

@@ -22,7 +22,7 @@ class PhotoUploader < CarrierWave::Uploader::Base
   end
 
   def public_id
-    return model.title
+    return model.title.gsub(/[^\w\s]/, '').parameterize.underscore
   end 
 
   # Provide a default URL as a default if there hasn't been a file uploaded:

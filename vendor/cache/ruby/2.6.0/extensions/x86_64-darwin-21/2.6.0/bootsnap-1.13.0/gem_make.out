@@ -1,5 +1,5 @@
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/bootsnap-1.13.0/ext/bootsnap
-/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-80980-1wypq2s.rb extconf.rb
+/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-91211-1v4p6hz.rb extconf.rb
 creating Makefile
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/bootsnap-1.13.0/ext/bootsnap
@@ -12,4 +12,4 @@ linking shared-object bootsnap/bootsnap.bundle
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/bootsnap-1.13.0/ext/bootsnap
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220827-80980-z1eux6/bootsnap
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220827-91211-r38f3c/bootsnap

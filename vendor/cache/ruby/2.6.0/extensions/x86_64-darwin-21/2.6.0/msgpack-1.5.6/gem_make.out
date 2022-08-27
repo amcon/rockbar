@@ -1,5 +1,5 @@
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/msgpack-1.5.6/ext/msgpack
-/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-80980-1ho6yp4.rb extconf.rb
+/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-91211-1g3ga5o.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_enc_interned_str() in ruby.h... no
@@ -27,4 +27,4 @@ linking shared-object msgpack/msgpack.bundle
 
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/msgpack-1.5.6/ext/msgpack
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20220827-80980-yeijlx/msgpack
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20220827-91211-m9t3rl/msgpack

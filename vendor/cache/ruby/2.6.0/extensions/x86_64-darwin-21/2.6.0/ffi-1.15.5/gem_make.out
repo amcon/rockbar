@@ -1,5 +1,5 @@
 current directory: /Users/aaron_conklin/Code/rockbar/vendor/cache/ruby/2.6.0/gems/ffi-1.15.5/ext/ffi_c
-/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-80980-11emcrb.rb extconf.rb
+/Users/aaron_conklin/.rbenv/versions/2.6.10/bin/ruby -I /Users/aaron_conklin/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220827-91211-e0ohvj.rb extconf.rb
 checking for ffi_prep_closure_loc() in -lffi... no
 checking for ffi_prep_closure_loc() in -llibffi... no
 checking for ffi_prep_closure_loc() in -llibffi-8... no
@@ -124,4 +124,4 @@ compiling Types.c
 compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.bundle
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20220827-80980-50l9gk
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20220827-91211-14ttljp
